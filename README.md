@@ -1,5 +1,5 @@
-[![Travis-CI Build Status](https://travis-ci.org/.svg?branch=master)](https://travis-ci.org/)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/adamhsparks/GSODR_data?branch=master&svg=true)](https://ci.appveyor.com/project/adamhsparks/GSODR_data)
+[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/GSODR.data.svg?branch=master)](https://travis-ci.org/adamhsparks/GSODR.data)
+[![Build status](https://ci.appveyor.com/api/projects/status/8daqtllo2sg6me07/branch/master?svg=true)](https://ci.appveyor.com/project/adamhsparks/GSODR.data/branch/master?svg=true)
 
 # GSODR.data
 
