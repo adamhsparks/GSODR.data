@@ -16,8 +16,6 @@ CRU CL2.0 data are a gridded climatology of 1961-1990 monthly means released in 
 ```{r session_setup}
 library(getCRUCLdata)
 
-# load existing GSOD_clim data from package
-GSOD_clim <- GSODR::GSOD_clim
 ```
 ## Get CRU CL2.0 data
 ```{r get_data}
@@ -215,22 +213,12 @@ names(CRU_stack) <- CRU_stack_names
 
 # Extract CRU data at GSOD station locations
 CRU_GSOD <- raster::extract(CRU_stack, stations)
-CRU_GSOD <- data.frame(as.data.frame(stations$STNID), CRU_GSOD)
-```
-
-## Merge data sets
-```{r merge}
-# Convert STNID to character
-CRU_GSOD$stations.STNID <- as.character(CRU_GSOD$stations.STNID)
-GSOD_clim$STNID <- as.character(GSOD_clim$STNID)
-
-# Left join GSOD_clim data with the new CRU data
-GSOD_clim <- dplyr::left_join(GSOD_clim, CRU_GSOD, by = c("STNID" = "stations.STNID"))
+CRU <- data.frame(as.data.frame(stations$STNID), CRU_GSOD)
 ```
 
 ## Save new data to disk for distribution with R package
 ```{r save}
-devtools::use_data(GSOD_clim, overwrite = TRUE, compress = "bzip2")
+devtools::use_data(CRU, overwrite = TRUE, compress = "bzip2")
 ```
 
 
