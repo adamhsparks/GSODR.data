@@ -62,7 +62,7 @@ library("GSOD_data")
 
 ### Using GSOD.data
 
-See the GSODR vignette, [Working with spatial and climate data](https://github.com/adamhsparks/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.md),
+See the GSODR vignette, [Working with spatial and climate data](https://github.com/adamhsparks/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd),
 for use and examples.
 
 -----
