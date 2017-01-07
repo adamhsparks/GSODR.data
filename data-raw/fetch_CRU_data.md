@@ -233,11 +233,11 @@ CRU_stack_names <- c(
 
 # Create one stack object from list of stacks
 CRU_stack <-  raster::stack(unlist(CRU_stack))
-names(CRU_stack) <- CRU_stack_names
 
 # Extract CRU data at GSOD station locations
 CRU_GSOD <- raster::extract(CRU_stack, stations)
-CRU <- data.frame(as.data.frame(stations$STNID), CRU_GSOD)
+CRU <- data.frame(stations$STNID, stations$LON, stations$LAT, CRU_GSOD)
+names(CRU) <- c("STNID", "LON", "LAT", CRU_stack_names)
 ```
 
 Save new data to disk for distribution with R package
