@@ -16,7 +16,7 @@ Description: This data-only package was created for distributing data useful for
     documentation.
 Depends:
     R (>= 3.2.0),
-    GSODR (>= 1.0.0)
+    GSODR
 Suggests:
     knitr,
     rmarkdown,
