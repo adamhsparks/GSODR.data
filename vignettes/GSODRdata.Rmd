@@ -1,10 +1,10 @@
 ---
-title: "GSODR.data"
+title: "GSODRdata"
 author: "Adam H. Sparks"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{GSODR.data}
+  %\VignetteIndexEntry{GSODRdata}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

@@ -1,7 +1,7 @@
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/GSODR.data.svg?branch=master)](https://travis-ci.org/adamhsparks/GSODR.data)
-[![Build status](https://ci.appveyor.com/api/projects/status/8daqtllo2sg6me07/branch/master?svg=true)](https://ci.appveyor.com/project/adamhsparks/GSODR.data/branch/master?svg=true)
+[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/GSODRdata.svg?branch=master)](https://travis-ci.org/adamhsparks/GSODRdata)
+[![Build status](https://ci.appveyor.com/api/projects/status/8daqtllo2sg6me07/branch/master?svg=true)](https://ci.appveyor.com/project/adamhsparks/GSODRdata/branch/master?svg=true)
 
-# GSODR.data
+# GSODRdata
 
 ## Climate Data for the GSODR Package
 
@@ -13,8 +13,8 @@ Due to the installed package, 5.5Mb, this package is only available from GitHub.
 Version: 1.0  
 Authors: Adam Sparks, Tomislav Hengl, and Andrew Nelson  
 Maintainer: Adam Sparks <adamhsparks@gmail.com>  
-URL: https://github.com/adamhsparks/GSODR.data  
-BugReports: https://github.com/adamhsparks/GSODR.data/issues  
+URL: https://github.com/adamhsparks/GSODRdata  
+BugReports: https://github.com/adamhsparks/GSODRdata/issues  
 Depends: R (>= 3.2.0)  
 Suggests: [GSODR](https://cran.r-project.org/package=GSODR)
 

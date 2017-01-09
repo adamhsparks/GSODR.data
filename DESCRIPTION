@@ -1,4 +1,4 @@
-Package: GSODR.data
+Package: GSODRdata
 Type: Package
 Title: Climate Data for the GSODR Package
 Version: 1.0
@@ -9,8 +9,8 @@ Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
     person("Andrew", "Nelson", role = "aut",
     email = "dr.andy.nelson@gmail.com"))
 Maintainer: Adam Sparks <adamhsparks@gmail.com>
-URL: https://github.com/adamhsparks/GSODR.data
-BugReports: https://github.com/adamhsparks/GSODR.data/issues
+URL: https://github.com/adamhsparks/GSODRdata
+BugReports: https://github.com/adamhsparks/GSODRdata/issues
 Description: This data-only package was created for distributing data useful for
     the GSODR package and illustrated in examples given in the GSODR
     documentation.
