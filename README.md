@@ -70,7 +70,7 @@ for use and examples.
 
 ## References
 
-Karger, d. N., Conrad, O., Bohner, J., Kawohl, T., Kreft, H., Soria-Auza, R. W.,
+Karger, D. N., Conrad, O., Bohner, J., Kawohl, T., Kreft, H., Soria-Auza, R. W.,
 et al. (2016) Climatologies at high resolution for the Earth land surface
 areas. arXiv preprint [arXiv:1607.00217](https://www.arxiv.org/abs/1607.00217).
 
