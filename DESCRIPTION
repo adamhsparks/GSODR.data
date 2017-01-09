@@ -17,10 +17,13 @@ Description: This data-only package was created for distributing data useful for
 Depends:
     R (>= 3.2.0)
 Suggests:
-    GSODR
+    GSODR,
+    knitr,
+    rmarkdown
 License: GPL (>= 3)
 RoxygenNote: 5.0.1
 Encoding: UTF-8
 NeedsCompilation: no
 Repository: CRAN
 LazyData: TRUE
+VignetteBuilder: knitr
