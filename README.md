@@ -11,7 +11,7 @@ package and used in examples for the GSODR package.
 
 Due to the installed package, 5.5Mb, this package is only available from GitHub.
 
-Version: 1.0  
+Version: 0.1.0  
 Authors: Adam Sparks, Tomislav Hengl, and Andrew Nelson  
 Maintainer: Adam Sparks <adamhsparks@gmail.com>  
 URL: https://github.com/adamhsparks/GSODRdata  
