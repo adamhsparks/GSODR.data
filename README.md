@@ -56,8 +56,8 @@ demonstrated with examples in the GSODR documentation.
 
 ```r
 install.packages("devtools")
-devtools::install_github("adamhsparks/GSOD_data")
-library("GSOD_data")
+devtools::install_github("adamhsparks/GSOD.data")
+library("GSOD.data")
 ````
 
 ### Using GSOD.data
