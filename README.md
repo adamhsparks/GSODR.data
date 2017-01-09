@@ -50,7 +50,7 @@ If you find bugs, please file a report as an issue.
 
 ### Install
 
-This package is only available from from GitHub due to its large size. It 
+This package is only available from GitHub due to its large size. It 
 provides optional data for use with the GSODR package, some of which are
 demonstrated with examples in the GSODR documentation.
 
