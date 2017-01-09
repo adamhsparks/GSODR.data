@@ -19,7 +19,8 @@ Depends:
     GSODR (>= 1.0.0)
 Suggests:
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 License: GPL (>= 3)
 RoxygenNote: 5.0.1
 Encoding: UTF-8
