@@ -1,10 +1,8 @@
-language: c
-sudo: required
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-notifications:
-  email:
-    on_success: change
-    on_failure: change
+language: R
+sudo: false
+cache: packages
 
 env:
   matrix:
@@ -18,5 +16,3 @@ r_github_packages:
 after_success:
   - Rscript -e 'covr::codecov()'
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
