@@ -17,7 +17,7 @@ Maintainer: Adam Sparks <adamhsparks@gmail.com>
 URL: https://github.com/adamhsparks/GSODRdata  
 BugReports: https://github.com/adamhsparks/GSODRdata/issues  
 Depends: R (>= 3.2.0)  
-Suggests: [GSODR](https://cran.r-project.org/package=GSODR)
+Depends: [GSODR](https://cran.r-project.org/package=GSODR)
 
 Four data frames of climate data are provided from various sources for GSOD
 station locations.
