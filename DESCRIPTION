@@ -1,7 +1,7 @@
 Package: GSODRdata
 Type: Package
 Title: Climate Data for the GSODR Package
-Version: 1.0
+Version: 0.1.0
 Authors@R: as.person(c("Adam Sparks <adamhsparks@gmail.com> [aut, cre]",
             "Tomislav Hengl <tom.hengl@isric.org> [aut]",
             "Andrew Nelson <dr.andy.nelson@gmail.com> [aut]"))
@@ -11,7 +11,8 @@ Description: This data-only package was created for distributing data useful for
     the GSODR package and illustrated in examples given in the GSODR
     documentation.
 Depends:
-    R (>= 3.2.0)
+    R (>= 3.2.0),
+    GSODR
 Suggests:
     knitr,
     rmarkdown,

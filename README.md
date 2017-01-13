@@ -1,5 +1,6 @@
 [![Travis-CI Build Status](https://travis-ci.org/adamhsparks/GSODRdata.svg?branch=master)](https://travis-ci.org/adamhsparks/GSODRdata)
 [![Build status](https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true)](https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/GSODRdata)]
 
 # GSODRdata
 
