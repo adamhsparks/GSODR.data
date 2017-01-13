@@ -57,14 +57,14 @@ provides optional data for use with the GSODR package, some of which are
 demonstrated with examples in the GSODR documentation.
 
 ```r
-install.packages("devtools")
+#install.packages("devtools")
 devtools::install_github("adamhsparks/GSOD.data")
-library("GSOD.data")
+library("GSODdata")
 ````
 
 ### Using GSOD.data
 
-See the GSODR vignette, [Working with spatial and climate data](https://github.com/adamhsparks/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd),
+See the GSODR vignette, [Working with spatial and climate data](http://adamhsparks.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html),
 for use and examples.
 
 -----
