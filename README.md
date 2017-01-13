@@ -58,11 +58,11 @@ demonstrated with examples in the GSODR documentation.
 
 ```r
 #install.packages("devtools")
-devtools::install_github("adamhsparks/GSOD.data")
-library("GSODdata")
+devtools::install_github("adamhsparks/GSODRdata")
+library("GSODRdata")
 ````
 
-### Using GSOD.data
+### Using GSODRdata
 
 See the GSODR vignette, [Working with spatial and climate data](http://adamhsparks.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html),
 for use and examples.
