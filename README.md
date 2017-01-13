@@ -58,6 +58,10 @@ See the GSODR vignette, [Working with spatial and climate data](http://adamhspar
 
 -----
 
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+
 ## References
 
 Karger, D. N., Conrad, O., Bohner, J., Kawohl, T., Kreft, H., Soria-Auza, R. W., et al. (2016) Climatologies at high resolution for the Earth land surface areas. arXiv preprint [arXiv:1607.00217](https://www.arxiv.org/abs/1607.00217).
