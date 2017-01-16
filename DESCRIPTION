@@ -2,9 +2,12 @@ Package: GSODRdata
 Type: Package
 Title: Climate Data for the GSODR Package
 Version: 0.1.0
-Authors@R: as.person(c("Adam Sparks <adamhsparks@gmail.com> [aut, cre]",
-            "Tomislav Hengl <tom.hengl@isric.org> [aut]",
-            "Andrew Nelson <dr.andy.nelson@gmail.com> [aut]"))
+Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
+    email = "adamhsparks@gmail.com"),
+    person("Tomislav", "Hengl", role = "aut",
+    email = "tom.hengl@isric.org"),
+    person("Andrew", "Nelson", role = "aut",
+    email = "dr.andy.nelson@gmail.com"))
 URL: https://github.com/adamhsparks/GSODRdata
 BugReports: https://github.com/adamhsparks/GSODRdata/issues
 Description: This data-only package was created for distributing data useful for
@@ -15,8 +18,7 @@ Depends:
     GSODR
 Suggests:
     knitr,
-    rmarkdown,
-    covr
+    rmarkdown
 License: GPL (>= 3)
 RoxygenNote: 5.0.1
 Encoding: UTF-8
