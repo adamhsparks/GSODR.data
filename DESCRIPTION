@@ -19,7 +19,7 @@ Depends:
 Suggests:
     knitr,
     rmarkdown
-License: GPL (>= 3)
+License: MIT + file LICENSE
 RoxygenNote: 5.0.1
 Encoding: UTF-8
 NeedsCompilation: no
