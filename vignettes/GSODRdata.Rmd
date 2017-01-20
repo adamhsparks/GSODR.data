@@ -213,7 +213,7 @@ https://crudata.uea.ac.uk/cru/data/hrg/tmc/
 
 ### Reference
   
- New, M., Lister, D., Hulme, M. and Makin, I. (2002) A high-resolution data
+ New, M., Lister, D., Hulme, M., Makin, I. (2002) A high-resolution data
  set of surface climate over global land areas. *Climate Research* **21**:1--25
  ([abstract](https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt),
  [paper](http://www.int-res.com/articles/cr2002/21/c021p001.pdf))
@@ -281,7 +281,7 @@ EarthEnv MODIS cloud fraction (http://www.earthenv.org/cloud)
 
 ### Reference
 
-Wilson A.M., Jetz W. (2016) Remotely Sensed High-Resolution Global Cloud Dynamics
+Wilson, A. M., Jetz, W. (2016) Remotely Sensed High-Resolution Global Cloud Dynamics
 for Predicting Ecosystem and Biodiversity Distributions. *PLoS Biol* **14(3)**:
 e1002415.
 
