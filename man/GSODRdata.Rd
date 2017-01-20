@@ -5,6 +5,11 @@
 \alias{GSODRdata}
 \alias{GSODRdata-package}
 \title{GSODRdata: Extra Climate Data for the GSODR Package}
+\source{
+\url{http://chelsa-climate.org/}
+\url{http://maps.elie.ucl.ac.be/CCI/viewer/index.php}
+\url{http://www.earthenv.org/cloud}
+}
 \description{
 This data-only package was created for distributing data useful to the GSODR
 package and used in examples.
@@ -13,21 +18,17 @@ package and used in examples.
 Adam H Sparks, Tomislav Hengl and Andrew Nelson
 }
 \references{
-(\url{http://chelsa-climate.org/}) / Karger, D. N., Conrad, O., Bohner, J.,
-Kawohl, T., Kreft, H., Soria-Auza, R. W., et al. (2016). Climatologies at
-high resolution for the Earth land surface areas. arXiv preprint
-arXiv:1607.00217
+Karger, D. N., Conrad, O., Bohner, J., Kawohl, T., Kreft, H., Soria-Auza,
+R. W., \emph{et al}. (2016) Climatologies at high resolution for the Earth
+land surface areas. \emph{arXiv preprint} \bold{arXiv:1607.00217}
 
-New, M., Lister, D., Hulme, M. and Makin, I., 2002: A high-resolution data
-set of surface climate over global land areas. Climate Research 21:1-25
-(\href{http://www.int-res.com/abstracts/cr/v21/n1/p1-25.html}{abstract},
-\href{http://www.int-res.com/articles/cr2002/21/c021p001.pdf}{paper})
+New, M., Lister, D., Hulme, M. and Makin, I., (2002) A high-resolution data
+set of surface climate over global land areas. \emph{Climate Research}
+\bold{21}:1--25
 
-(\url{http://maps.elie.ucl.ac.be/CCI/viewer/index.php})
-
-(\url{http://www.earthenv.org/cloud}) / Wilson AM, Jetz W (2016).
-Remotely Sensed High-Resolution Global Cloud Dynamics for Predicting
-Ecosystem and Biodiversity Distributions. PLoS Biol 14(3): e1002415.
+Wilson A.M., Jetz W. (2016) Remotely Sensed High-Resolution Global Cloud
+Dynamics for Predicting Ecosystem and Biodiversity Distributions.
+\emph{PLoS Biol} \bold{14(3)}: e1002415. doi:10.1371/journal. pbio.1002415
 }
 \seealso{
 \code{\link{CHELSA}} Data from CHELSA climate layers for GSOD
