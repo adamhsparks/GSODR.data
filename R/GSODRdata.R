@@ -2,7 +2,6 @@
 #'
 #' This data-only package was created for distributing data useful to the GSODR
 #' package and used in examples.
-#' @import GSODR
 #'
 #' @docType package
 #'
