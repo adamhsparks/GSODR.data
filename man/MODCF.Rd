@@ -40,4 +40,3 @@ Cloud Dynamics for Predicting Ecosystem and Biodiversity Distributions. PLoS
 Biol 14(3): e1002415.
 }
 \keyword{datasets}
-

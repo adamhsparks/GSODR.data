@@ -20,7 +20,7 @@ Suggests:
     knitr,
     rmarkdown
 License: MIT + file LICENSE
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.0
 Encoding: UTF-8
 NeedsCompilation: no
 Repository: CRAN

@@ -114,9 +114,9 @@ CRU
 }
 \references{
 New, M., Lister, D., Hulme, M. and Makin, I., 2002: A high-resolution data
-set of surface climate over global land areas. Climate Research 21:1-25
-(\href{http://www.int-res.com/abstracts/cr/v21/n1/p1-25.html}{abstract},
+set of surface climate over global land areas. \emph{Climate Research}
+\bold{21}:1-25
+(\href{https://crudata.uea.ac.uk/cru/data/hrg/tmc/}{abstract},
 \href{http://www.int-res.com/articles/cr2002/21/c021p001.pdf}{paper})
 }
 \keyword{datasets}
-

@@ -83,4 +83,3 @@ R. W., et al. (2016). Climatologies at high resolution for the Earth land
 surface areas. arXiv preprint arXiv:1607.00217.
 }
 \keyword{datasets}
-

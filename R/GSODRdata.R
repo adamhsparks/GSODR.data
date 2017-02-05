@@ -29,9 +29,11 @@
 #' R. W., \emph{et al}. (2016) Climatologies at high resolution for the Earth
 #' land surface areas. \emph{arXiv preprint} \bold{arXiv:1607.00217}
 #'
-#' New, M., Lister, D., Hulme, M. and Makin, I., (2002) A high-resolution data
+#' New, M., Lister, D., Hulme, M. and Makin, I., 2002: A high-resolution data
 #' set of surface climate over global land areas. \emph{Climate Research}
-#' \bold{21}:1--25
+#' \bold{21}:1-25
+#' (\href{https://crudata.uea.ac.uk/cru/data/hrg/tmc/}{abstract},
+#' \href{http://www.int-res.com/articles/cr2002/21/c021p001.pdf}{paper})
 #'
 #' Wilson A.M., Jetz W. (2016) Remotely Sensed High-Resolution Global Cloud
 #' Dynamics for Predicting Ecosystem and Biodiversity Distributions.
