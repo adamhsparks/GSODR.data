@@ -1,7 +1,7 @@
-CRU CL2.0 Data
+CRU CL 2.0 Data for GSOD Station Locations
 ================
 
-CRU CL2.0 data are a gridded climatology of 1961-1990 monthly means released in 2002 and cover all land areas (excluding Antarctica) at 10-minute resolution. For more information see the description of the data provided by the University of East Anglia Climate Research Unit (CRU), <http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
+CRU CL 2.0 data are a gridded climatology of 1961-1990 monthly means released in 2002 and cover all land areas (excluding Antarctica) at 10-minute (0.1666667 degree) resolution. For more information see the description of the data provided by the University of East Anglia Climate Research Unit (CRU), <http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
 
 Download, extract and merge CRU data with provided GSOD climate data
 ====================================================================
@@ -13,8 +13,8 @@ Setup the R session
 library(getCRUCLdata)
 ```
 
-Get CRU CL2.0 data
-------------------
+Get CRU CL 2.0 data
+-------------------
 
 ``` r
 CRU_stack <- create_CRU_stack(pre = TRUE,
@@ -78,7 +78,7 @@ sp::proj4string(stations) <- sp::CRS(crs)
 # create a vector of names for the raster layers in new stack
 CRU_stack_names <- c(
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[1]),
     "_",
     c(
@@ -97,7 +97,7 @@ CRU_stack_names <- c(
     )
   ),
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[2]),
     "_",
     c(
@@ -116,7 +116,7 @@ CRU_stack_names <- c(
     )
   ),
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[3]),
     "_",
     c(
@@ -135,7 +135,7 @@ CRU_stack_names <- c(
     )
   ),
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[4]),
     "_",
     c(
@@ -154,7 +154,7 @@ CRU_stack_names <- c(
     )
   ),
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[5]),
     "_",
     c(
@@ -173,7 +173,7 @@ CRU_stack_names <- c(
     )
   ),
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[6]),
     "_",
     c(
@@ -192,7 +192,7 @@ CRU_stack_names <- c(
     )
   ),
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[7]),
     "_",
     c(
@@ -211,7 +211,7 @@ CRU_stack_names <- c(
     )
   ),
   paste0(
-    "CRU_CL2_0_",
+    "CRU_CL_2_0_",
     names(CRU_stack[8]),
     "_",
     c(
@@ -236,25 +236,30 @@ CRU_stack <-  raster::stack(unlist(CRU_stack))
 
 # Extract CRU data at GSOD station locations
 CRU_GSOD <- raster::extract(CRU_stack, stations)
-CRU <- data.frame(stations$STNID, stations$LON, stations$LAT, CRU_GSOD)
-names(CRU) <- c("STNID", "LON", "LAT", CRU_stack_names)
+
+# Merge station ID and location with CRU data using na.omit to save space
+CRU_CL_2 <- na.omit(data.frame(stations$STNID, 
+                               stations$LON, 
+                               stations$LAT, 
+                               CRU_GSOD))
+names(CRU_CL_2) <- c("STNID", "LON", "LAT", CRU_stack_names)
 ```
 
 Save new data to disk for distribution with R package
 -----------------------------------------------------
 
 ``` r
-devtools::use_data(CRU, overwrite = TRUE, compress = "bzip2")
+devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving CRU as CRU.rda to /Users/asparks/Development/GSODR.data/data
+    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/asparks/Development/GSODR.data/data
 
 R System Information
 --------------------
 
-    ## R version 3.3.2 (2016-10-31)
-    ## Platform: x86_64-apple-darwin16.1.0 (64-bit)
-    ## Running under: macOS Sierra 10.12.2
+    ## R version 3.3.3 (2017-03-06)
+    ## Platform: x86_64-apple-darwin16.4.0 (64-bit)
+    ## Running under: macOS Sierra 10.12.3
     ## 
     ## locale:
     ## [1] en_AU.UTF-8/en_AU.UTF-8/en_AU.UTF-8/C/en_AU.UTF-8/en_AU.UTF-8
@@ -263,17 +268,20 @@ R System Information
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ## [1] getCRUCLdata_0.1.1
+    ## [1] getCRUCLdata_0.1.4
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] Rcpp_0.12.8     knitr_1.15.1    raster_2.5-8    magrittr_1.5   
-    ##  [5] devtools_1.12.0 lattice_0.20-34 R6_2.2.0        stringr_1.1.0  
-    ##  [9] plyr_1.8.4      dplyr_0.5.0     tools_3.3.2     rgdal_1.2-5    
-    ## [13] grid_3.3.2      DBI_0.5-1       withr_1.0.2     htmltools_0.3.5
-    ## [17] yaml_2.1.14     assertthat_0.1  rprojroot_1.1   digest_0.6.11  
-    ## [21] tibble_1.2      purrr_0.2.2     readr_1.0.0     curl_2.3       
-    ## [25] memoise_1.0.0   evaluate_0.10   rmarkdown_1.3   sp_1.2-4       
-    ## [29] stringi_1.1.2   backports_1.0.4
+    ##  [1] Rcpp_0.12.9          knitr_1.15.1         raster_2.5-8        
+    ##  [4] magrittr_1.5         devtools_1.12.0.9000 pkgload_0.0.0.9000  
+    ##  [7] lattice_0.20-34      R6_2.2.0             stringr_1.2.0       
+    ## [10] plyr_1.8.4           dplyr_0.5.0          tools_3.3.3         
+    ## [13] pkgbuild_0.0.0.9000  rgdal_1.2-5          grid_3.3.3          
+    ## [16] DBI_0.6              withr_1.0.2          htmltools_0.3.5     
+    ## [19] yaml_2.1.14          assertthat_0.1       rprojroot_1.2       
+    ## [22] digest_0.6.12        tibble_1.2           purrr_0.2.2         
+    ## [25] readr_1.0.0          curl_2.3             memoise_1.0.0       
+    ## [28] evaluate_0.10        rmarkdown_1.3.9004   sp_1.2-4            
+    ## [31] stringi_1.1.2        backports_1.0.5
 
 Data reference and abstract
 ===========================

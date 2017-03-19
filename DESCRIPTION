@@ -12,7 +12,7 @@ URL: https://github.com/adamhsparks/GSODRdata
 BugReports: https://github.com/adamhsparks/GSODRdata/issues
 Description: This data-only package was created for distributing data useful for
     the GSODR package and illustrated in examples given in the GSODR
-    documentation.
+    vignettes and other online documentation.
 Depends:
     R (>= 3.2.0)
 Suggests:
