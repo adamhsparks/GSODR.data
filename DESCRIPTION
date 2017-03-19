@@ -1,7 +1,7 @@
 Package: GSODRdata
 Type: Package
 Title: Climate Data for the GSODR Package
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
     email = "adamhsparks@gmail.com"),
     person("Tomislav", "Hengl", role = "aut",
@@ -20,7 +20,7 @@ Suggests:
     knitr,
     rmarkdown
 License: MIT + file LICENSE
-RoxygenNote: 6.0.0
+RoxygenNote: 6.0.1
 Encoding: UTF-8
 NeedsCompilation: no
 Repository: CRAN

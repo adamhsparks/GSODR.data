@@ -1,9 +1,7 @@
 #' CHELSA
-#' @format A data frame with 23927 observations of 48 variables:
+#' @format A data frame with 23927 observations of 46 variables:
 #' \describe{
-#' \item{STNID}{Unique station ID}
-#' \item{LON}{Longitude in WGS84 system}
-#' \item{LAT}{Latitude in WGS84 system}
+#' \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 #' \item{CHELSA_bio1_1979-2013_V1_1}{Annual mean temperature [degree C]}
 #' \item{CHELSA_bio2_1979-2013_V1_1}{Mean diurnal range [degree C]}
 #' \item{CHELSA_bio3_1979-2013_V1_1}{Isothermality}

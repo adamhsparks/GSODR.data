@@ -238,11 +238,9 @@ CRU_stack <-  raster::stack(unlist(CRU_stack))
 CRU_GSOD <- raster::extract(CRU_stack, stations)
 
 # Merge station ID and location with CRU data using na.omit to save space
-CRU_CL_2 <- na.omit(data.frame(stations$STNID, 
-                               stations$LON, 
-                               stations$LAT, 
+CRU_CL_2 <- na.omit(data.frame(stations$STNID,
                                CRU_GSOD))
-names(CRU_CL_2) <- c("STNID", "LON", "LAT", CRU_stack_names)
+names(CRU_CL_2) <- c("STNID", CRU_stack_names)
 ```
 
 Save new data to disk for distribution with R package
@@ -252,7 +250,7 @@ Save new data to disk for distribution with R package
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/asparks/Development/GSODR.data/data
+    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/asparks/Development/GSODRdata/data
 
 R System Information
 --------------------

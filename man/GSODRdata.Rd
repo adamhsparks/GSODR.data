@@ -7,8 +7,10 @@
 \title{GSODRdata: Extra Climate Data for the GSODR Package}
 \source{
 \url{http://chelsa-climate.org/}
+\url{https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html}
 \url{http://maps.elie.ucl.ac.be/CCI/viewer/index.php}
 \url{http://www.earthenv.org/cloud}
+\url{http://www.worldclim.org}
 }
 \description{
 This data-only package was created for distributing data useful to the GSODR
@@ -33,7 +35,7 @@ Dynamics for Predicting Ecosystem and Biodiversity Distributions.
 \code{\link{CHELSA}} Data from CHELSA climate layers for GSOD
 station locations.
 
-\code{\link{CRU}} Data from CRU CL2.0 climate elements for GSOD
+\code{\link{CRU_CL_2}} Data from CRU CL2.0 climate elements for GSOD
 station locations.
 
 \code{\link{ESACCI}} Data from ESA's CCI-LC snow cover probability
@@ -41,6 +43,14 @@ for GSOD station locations.
 
 \code{\link{MODCF}} Data from EarthEnv MODIS cloud fraction data for
 GSOD station locations.
+
+\code{link{WorldClim_Bio}} WorlClim Global Climate Data - Free
+climate data for ecological modeling and GIS
+\url{http://www.worldclim.org/bioclim}
+
+\code{link{WorldClim_Clim}} WorlClim Global Climate Data - Free
+climate data for ecological modeling and GIS
+\url{http://www.worldclim.org/current}
 }
 \author{
 Adam H Sparks, Tomislav Hengl and Andrew Nelson

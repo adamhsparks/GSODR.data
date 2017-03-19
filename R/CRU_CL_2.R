@@ -1,0 +1,108 @@
+#' CRU_CL_2.0
+#' @format A data frame with 23927 observations of 97 variables:
+#' \describe{
+#' \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
+#' \item{CRU_CL_2_0_dtr_01}{Mean January diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_02}{Mean February diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_03}{Mean March diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_04}{Mean April diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_05}{Mean May diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_06}{Mean June diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_07}{Mean July diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_08}{Mean August diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_09}{Mean September diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_10}{Mean October diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_11}{Mean November diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_dtr_12}{Mean December diurnal temperature range [degrees Celsius]}
+#' \item{CRU_CL_2_0_frs_01}{January ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_02}{February ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_03}{March ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_04}{April ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_05}{May ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_06}{June ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_07}{July ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_08}{August ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_09}{September ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_10}{October ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_11}{November ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_frs_12}{December ground-frost [number of days with ground-frost per month]}
+#' \item{CRU_CL_2_0_pre_01}{January precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_02}{February precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_03}{March precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_04}{April precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_05}{May precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_06}{June precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_07}{July precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_08}{August precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_09}{September precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_10}{October precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_11}{November precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_pre_12}{December precipitation [millimetres per month]}
+#' \item{CRU_CL_2_0_rd0_01}{January wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_02}{February wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_03}{March wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_04}{April wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_05}{May wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_06}{June wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_07}{July wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_08}{August wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_09}{September wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_10}{October wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_11}{November wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_rd0_12}{December wet-days [no days with >0.1mm rain per month]}
+#' \item{CRU_CL_2_0_reh_01}{Mean January relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_02}{Mean February relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_03}{Mean March relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_04}{Mean April relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_05}{Mean May relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_06}{Mean June relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_07}{Mean July relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_08}{Mean August relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_09}{Mean September relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_10}{Mean October relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_11}{Mean November relative humidity [percent]}
+#' \item{CRU_CL_2_0_reh_12}{Mean December relative humidity [percent]}
+#' \item{CRU_CL_2_0_sun_01}{Mean January sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_02}{Mean February sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_03}{Mean March sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_04}{Mean April sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_05}{Mean May sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_06}{Mean June sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_07}{Mean July sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_08}{Mean August sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_09}{Mean September sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_10}{Mean October sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_11}{Mean November sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_sun_12}{Mean December sunshine [percent of maximum possible (percent of day length)]}
+#' \item{CRU_CL_2_0_tmp_01}{Mean January temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_02}{Mean February temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_03}{Mean March temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_04}{Mean April temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_05}{Mean May temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_06}{Mean June temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_07}{Mean July temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_08}{Mean August temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_09}{Mean September temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_10}{Mean October temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_11}{Mean November temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_tmp_12}{Mean December temperature [degrees Celsius]}
+#' \item{CRU_CL_2_0_wnd_01}{Mean January 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_02}{Mean February 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_03}{Mean March 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_04}{Mean April 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_05}{Mean May 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_06}{Mean June 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_07}{Mean July 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_08}{Mean August 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_09}{Mean September 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_10}{Mean October 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_11}{Mean November 10 metre wind speed [metres per second]}
+#' \item{CRU_CL_2_0_wnd_12}{Mean December 10 metre wind speed [metres per second]}
+#' }
+#'@references
+#' New, M., Lister, D., Hulme, M. and Makin, I., 2002: A high-resolution data
+#' set of surface climate over global land areas. \emph{Climate Research}
+#' \bold{21}:1-25
+#' (\href{https://crudata.uea.ac.uk/cru/data/hrg/tmc/}{abstract},
+#' \href{http://www.int-res.com/articles/cr2002/21/c021p001.pdf}{paper})
+"CRU_CL_2"

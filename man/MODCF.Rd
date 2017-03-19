@@ -4,11 +4,9 @@
 \name{MODCF}
 \alias{MODCF}
 \title{MODCF}
-\format{A data frame with 23927 observations of 17 variables:
+\format{A data frame with 23927 observations of 15 variables:
 \describe{
-\item{STNID}{Unique station ID}
-\item{LON}{Longitude in WGS84 system}
-\item{LAT}{Latitude in WGS84 system}
+\item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 \item{MODCF_meanannual}{Mean annual cloud fraction}
 \item{MODCF_monthlymean_01}{Mean January cloud fraction}
 \item{MODCF_monthlymean_02}{Mean February fraction}

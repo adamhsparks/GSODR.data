@@ -6,7 +6,7 @@ WorldClim are freely available, average monthly climate data. Current conditions
 Download, extract and merge WorldClim data with provided GSOD climate data
 ==========================================================================
 
-The R package, [`raster`](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 acrminute (0.041666 degrees) resolution.
+The R package, [`raster`](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution.
 
 Setup the R session
 -------------------
@@ -64,21 +64,17 @@ WorldClim_prec <- raster::extract(prec, stations)
 WorldClim_Bio_GSOD <- raster::extract(bioc, stations)
 
 # Climate data data frame
-WorldClim_Clim <- na.omit(data.frame(stations$STNID, 
-                                     stations$LON, 
-                                     stations$LAT, 
-                                     WorldClim_tmin, 
-                                     WorldClim_tmax, 
-                                     WorldClim_tavg, 
+WorldClim_Clim <- na.omit(data.frame(stations$STNID,
+                                     WorldClim_tmin,
+                                     WorldClim_tmax,
+                                     WorldClim_tavg,
                                      WorldClim_prec))
-names(WorldClim_Clim)[1:3] <- c("STNID", "LON", "LAT")
+names(WorldClim_Clim)[1] <- c("STNID")
 
 # Bioclimatic variables data frame
 WorldClim_Bio <- na.omit(data.frame(stations$STNID,
-                                    stations$LON,
-                                    stations$LAT,
                                     WorldClim_Bio_GSOD))
-names(WorldClim_Bio)[1:3] <- c("STNID", "LON", "LAT")
+names(WorldClim_Bio)[1] <- c("STNID")
 ```
 
 Save new data frames to disk for distribution with R package

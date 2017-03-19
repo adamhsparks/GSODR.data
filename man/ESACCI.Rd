@@ -4,11 +4,9 @@
 \name{ESACCI}
 \alias{ESACCI}
 \title{ESACCI}
-\format{A data frame with 23927 observations of 15 variables:
+\format{A data frame with 23927 observations of 13 variables:
 \describe{
-\item{STNID}{Unique station ID}
-\item{LON}{Longitude in WGS84 system}
-\item{LAT}{Latitude in WGS84 system}
+\item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 \item{ESACCI_snow_prob_Apr_500m}{Mean April snow cover probability}
 \item{ESACCI_snow_prob_Aug_500m}{Mean August snow cover probability}
 \item{ESACCI_snow_prob_Dec_500m}{Mean December snow cover probability}
