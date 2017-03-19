@@ -43,8 +43,6 @@ are freely available for download from http://www.worldclim.org/version1.
 conditions (interpolations of observed data, representative of 1960-1990)
 are freely available for download from http://www.worldclim.org/version1.
 
-### `WorldClim_Clim()` A data frame with 26231 observations of 49 variables:
-
 -----
 
 ## Quick Start
