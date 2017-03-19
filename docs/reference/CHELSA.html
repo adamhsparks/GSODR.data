@@ -31,6 +31,8 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -85,63 +87,60 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 23927 observations of 48 variables:
-<dl class='dl-horizontal'>
-<dt>STNID</dt><dd>Unique station ID</dd>
-<dt>LON</dt><dd>Longitude in WGS84 system</dd>
-<dt>LAT</dt><dd>Latitude in WGS84 system</dd>
-<dt>CHELSA_bio1_1979-2013_V1_1</dt><dd>Annual mean temperature [degree C]</dd>
-<dt>CHELSA_bio2_1979-2013_V1_1</dt><dd>Mean diurnal range [degree C]</dd>
-<dt>CHELSA_bio3_1979-2013_V1_1</dt><dd>Isothermality</dd>
-<dt>CHELSA_bio4_1979-2013_V1_1</dt><dd>Temperature seasonality</dd>
-<dt>CHELSA_bio5_1979-2013_V1_1</dt><dd>Maximum Temperature of warmest month
-[degree C]</dd>
-<dt>CHELSA_bio6_1979-2013_V1_1</dt><dd>Minimum Temperature of coldest month
-[degree C]</dd>
-<dt>CHELSA_bio7_1979-2013_V1_1</dt><dd>Temperature Annual Range [degree C]</dd>
-<dt>CHELSA_bio8_1979-2013_V1_1</dt><dd>Mean Temperature of wettest quarter
-[degree C]</dd>
-<dt>CHELSA_bio9_1979-2013_V1_1</dt><dd>Mean Temperature of driest quarter
-[degree C]</dd>
-<dt>CHELSA_bio10_1979-2013_V1_1</dt><dd>Mean Temperature of warmest quarter
-[degree C]</dd>
-<dt>CHELSA_bio11_1979-2013_V1_1</dt><dd>Mean Temperature of coldest quarter
-[degree C]</dd>
-<dt>CHELSA_bio12_1979-2013_V1_1</dt><dd>Annual precipitation amount [mm]</dd>
-<dt>CHELSA_bio13_1979-2013_V1_1</dt><dd>Precipitation of wettest month [mm]</dd>
-<dt>CHELSA_bio14_1979-2013_V1_1</dt><dd>Precipitation of driest month [mm]</dd>
-<dt>CHELSA_bio15_1979-2013_V1_1</dt><dd>Precipitation Seasonality</dd>
-<dt>CHELSA_bio16_1979-2013_V1_1</dt><dd>Precipitation of wettest quarter [mm]</dd>
-<dt>CHELSA_bio17_1979-2013_V1_1</dt><dd>Precipitation of driest quarter [mm]</dd>
-<dt>CHELSA_bio18_1979-2013_V1_1</dt><dd>Precipitation of warmest quarter [mm]</dd>
-<dt>CHELSA_bio19_1979-2013_V1_1</dt><dd>Precipitation of coldest quarter [mm]</dd>
-<dt>CHELSA_prec_1_1979-2013</dt><dd>Mean January precipitation</dd>
-<dt>CHELSA_prec_2_1979-2013</dt><dd>Mean February precipitation</dd>
-<dt>CHELSA_prec_3_1979-2013</dt><dd>Mean March precipitation</dd>
-<dt>CHELSA_prec_4_1979-2013</dt><dd>Mean April precipitation</dd>
-<dt>CHELSA_prec_5_1979-2013</dt><dd>Mean May precipitation</dd>
-<dt>CHELSA_prec_6_1979-2013</dt><dd>Mean June precipitation</dd>
-<dt>CHELSA_prec_7_1979-2013</dt><dd>Mean July precipitation</dd>
-<dt>CHELSA_prec_8_1979-2013</dt><dd>Mean August precipitation</dd>
-<dt>CHELSA_prec_9_1979-2013</dt><dd>Mean September precipitation</dd>
-<dt>CHELSA_prec_10_1979-2013</dt><dd>Mean October precipitation</dd>
-<dt>CHELSA_prec_11_1979-2013</dt><dd>Mean November precipitation</dd>
-<dt>CHELSA_prec_12_1979-2013</dt><dd>Mean December precipitation</dd>
-<dt>CHELSA_prec_1979-2013_land</dt><dd>Mean annual precipitation</dd>
-<dt>CHELSA_temp_1_1979-2013</dt><dd>Mean January temperature</dd>
-<dt>CHELSA_temp_2_1979-2013</dt><dd>Mean February temperature</dd>
-<dt>CHELSA_temp_3_1979-2013</dt><dd>Mean March temperature</dd>
-<dt>CHELSA_temp_4_1979-2013</dt><dd>Mean April temperature</dd>
-<dt>CHELSA_temp_5_1979-2013</dt><dd>Mean May temperature</dd>
-<dt>CHELSA_temp_6_1979-2013</dt><dd>Mean June temperature</dd>
-<dt>CHELSA_temp_7_1979-2013</dt><dd>Mean July temperature</dd>
-<dt>CHELSA_temp_8_1979-2013</dt><dd>Mean August temperature</dd>
-<dt>CHELSA_temp_9_1979-2013</dt><dd>Mean September temperature</dd>
-<dt>CHELSA_temp_10_1979-2013</dt><dd>Mean October temperature</dd>
-<dt>CHELSA_temp_11_1979-2013</dt><dd>Mean November temperature</dd>
-<dt>CHELSA_temp_12_1979-2013</dt><dd>Mean December temperature</dd>
-<dt>CHELSA_temp_1979-2013_land</dt><dd>Mean annual temperature</dd>
-</dl></p>
+    <p>A data frame with 23927 observations of 46 variables:</p><dl class='dl-horizontal'>
+<dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
+<dt>CHELSA_bio1_1979-2013_V1_1</dt><dd><p>Annual mean temperature [degree C]</p></dd>
+<dt>CHELSA_bio2_1979-2013_V1_1</dt><dd><p>Mean diurnal range [degree C]</p></dd>
+<dt>CHELSA_bio3_1979-2013_V1_1</dt><dd><p>Isothermality</p></dd>
+<dt>CHELSA_bio4_1979-2013_V1_1</dt><dd><p>Temperature seasonality</p></dd>
+<dt>CHELSA_bio5_1979-2013_V1_1</dt><dd><p>Maximum Temperature of warmest month
+[degree C]</p></dd>
+<dt>CHELSA_bio6_1979-2013_V1_1</dt><dd><p>Minimum Temperature of coldest month
+[degree C]</p></dd>
+<dt>CHELSA_bio7_1979-2013_V1_1</dt><dd><p>Temperature Annual Range [degree C]</p></dd>
+<dt>CHELSA_bio8_1979-2013_V1_1</dt><dd><p>Mean Temperature of wettest quarter
+[degree C]</p></dd>
+<dt>CHELSA_bio9_1979-2013_V1_1</dt><dd><p>Mean Temperature of driest quarter
+[degree C]</p></dd>
+<dt>CHELSA_bio10_1979-2013_V1_1</dt><dd><p>Mean Temperature of warmest quarter
+[degree C]</p></dd>
+<dt>CHELSA_bio11_1979-2013_V1_1</dt><dd><p>Mean Temperature of coldest quarter
+[degree C]</p></dd>
+<dt>CHELSA_bio12_1979-2013_V1_1</dt><dd><p>Annual precipitation amount [mm]</p></dd>
+<dt>CHELSA_bio13_1979-2013_V1_1</dt><dd><p>Precipitation of wettest month [mm]</p></dd>
+<dt>CHELSA_bio14_1979-2013_V1_1</dt><dd><p>Precipitation of driest month [mm]</p></dd>
+<dt>CHELSA_bio15_1979-2013_V1_1</dt><dd><p>Precipitation Seasonality</p></dd>
+<dt>CHELSA_bio16_1979-2013_V1_1</dt><dd><p>Precipitation of wettest quarter [mm]</p></dd>
+<dt>CHELSA_bio17_1979-2013_V1_1</dt><dd><p>Precipitation of driest quarter [mm]</p></dd>
+<dt>CHELSA_bio18_1979-2013_V1_1</dt><dd><p>Precipitation of warmest quarter [mm]</p></dd>
+<dt>CHELSA_bio19_1979-2013_V1_1</dt><dd><p>Precipitation of coldest quarter [mm]</p></dd>
+<dt>CHELSA_prec_1_1979-2013</dt><dd><p>Mean January precipitation</p></dd>
+<dt>CHELSA_prec_2_1979-2013</dt><dd><p>Mean February precipitation</p></dd>
+<dt>CHELSA_prec_3_1979-2013</dt><dd><p>Mean March precipitation</p></dd>
+<dt>CHELSA_prec_4_1979-2013</dt><dd><p>Mean April precipitation</p></dd>
+<dt>CHELSA_prec_5_1979-2013</dt><dd><p>Mean May precipitation</p></dd>
+<dt>CHELSA_prec_6_1979-2013</dt><dd><p>Mean June precipitation</p></dd>
+<dt>CHELSA_prec_7_1979-2013</dt><dd><p>Mean July precipitation</p></dd>
+<dt>CHELSA_prec_8_1979-2013</dt><dd><p>Mean August precipitation</p></dd>
+<dt>CHELSA_prec_9_1979-2013</dt><dd><p>Mean September precipitation</p></dd>
+<dt>CHELSA_prec_10_1979-2013</dt><dd><p>Mean October precipitation</p></dd>
+<dt>CHELSA_prec_11_1979-2013</dt><dd><p>Mean November precipitation</p></dd>
+<dt>CHELSA_prec_12_1979-2013</dt><dd><p>Mean December precipitation</p></dd>
+<dt>CHELSA_prec_1979-2013_land</dt><dd><p>Mean annual precipitation</p></dd>
+<dt>CHELSA_temp_1_1979-2013</dt><dd><p>Mean January temperature</p></dd>
+<dt>CHELSA_temp_2_1979-2013</dt><dd><p>Mean February temperature</p></dd>
+<dt>CHELSA_temp_3_1979-2013</dt><dd><p>Mean March temperature</p></dd>
+<dt>CHELSA_temp_4_1979-2013</dt><dd><p>Mean April temperature</p></dd>
+<dt>CHELSA_temp_5_1979-2013</dt><dd><p>Mean May temperature</p></dd>
+<dt>CHELSA_temp_6_1979-2013</dt><dd><p>Mean June temperature</p></dd>
+<dt>CHELSA_temp_7_1979-2013</dt><dd><p>Mean July temperature</p></dd>
+<dt>CHELSA_temp_8_1979-2013</dt><dd><p>Mean August temperature</p></dd>
+<dt>CHELSA_temp_9_1979-2013</dt><dd><p>Mean September temperature</p></dd>
+<dt>CHELSA_temp_10_1979-2013</dt><dd><p>Mean October temperature</p></dd>
+<dt>CHELSA_temp_11_1979-2013</dt><dd><p>Mean November temperature</p></dd>
+<dt>CHELSA_temp_12_1979-2013</dt><dd><p>Mean December temperature</p></dd>
+<dt>CHELSA_temp_1979-2013_land</dt><dd><p>Mean annual temperature</p></dd>
+</dl>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
@@ -151,7 +150,7 @@
 
     <p>CHELSA (climatic surfaces at 1 km resolution) is based on a
 quasi-mechanistic statistical downscaling of the ERA interim global
-circulation model (Karger et al. 2016). ESA&#39;s CCI-LC cloud
+circulation model (Karger et al. 2016). ESA's CCI-LC cloud
 probability monthly averages are based on the MODIS snow products
 (MOD10A2).</p>
     

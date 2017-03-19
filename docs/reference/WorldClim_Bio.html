@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MODCF — MODCF • GSODRdata</title>
+<title>WorldClim_Bio — WorldClim_Bio • GSODRdata</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -76,45 +76,58 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>MODCF</h1>
+    <h1>WorldClim_Bio</h1>
     </div>
 
     
-    <p>MODCF</p>
+    <p>WorldClim_Bio</p>
     
 
-    <pre><span class='no'>MODCF</span></pre>
+    <pre><span class='no'>WorldClim_Bio</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 23927 observations of 15 variables:</p><dl class='dl-horizontal'>
+    <p>A data frame with 26231 observations of 20 variables:</p><dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
-<dt>MODCF_meanannual</dt><dd><p>Mean annual cloud fraction</p></dd>
-<dt>MODCF_monthlymean_01</dt><dd><p>Mean January cloud fraction</p></dd>
-<dt>MODCF_monthlymean_02</dt><dd><p>Mean February fraction</p></dd>
-<dt>MODCF_monthlymean_03</dt><dd><p>Mean March cloud fraction</p></dd>
-<dt>MODCF_monthlymean_04</dt><dd><p>Mean April cloud fraction</p></dd>
-<dt>MODCF_monthlymean_05</dt><dd><p>Mean May cloud fraction</p></dd>
-<dt>MODCF_monthlymean_06</dt><dd><p>Mean June cloud fraction</p></dd>
-<dt>MODCF_monthlymean_07</dt><dd><p>Mean July cloud fraction</p></dd>
-<dt>MODCF_monthlymean_08</dt><dd><p>Mean August cloud fraction</p></dd>
-<dt>MODCF_monthlymean_09</dt><dd><p>Mean September cloud fraction</p></dd>
-<dt>MODCF_monthlymean_10</dt><dd><p>Mean October cloud fraction</p></dd>
-<dt>MODCF_monthlymean_11</dt><dd><p>Mean November cloud fraction</p></dd>
-<dt>MODCF_monthlymean_12</dt><dd><p>Mean December cloud fraction</p></dd>
-<dt>MODCF_seasonality_concentration</dt><dd><p>Cloud fraction seasonality
-concentration</p></dd>
+<dt>bio1</dt><dd><p>Annual Mean Temperature</p></dd>
+<dt>bio2</dt><dd><p>Mean Diurnal Range (Mean of monthly (max temp - min temp))</p></dd>
+<dt>bio3</dt><dd><p>Isothermality (bio2 / bio7) (* 100)</p></dd>
+<dt>bio4</dt><dd><p>Temperature Seasonality (standard deviation * 100)</p></dd>
+<dt>bio5</dt><dd><p>Max Temperature of Warmest Month</p></dd>
+<dt>bio6</dt><dd><p>Min Temperature of Coldest Month</p></dd>
+<dt>bio7</dt><dd><p>Temperature Annual Range (bio5 - bio6)</p></dd>
+<dt>bio8</dt><dd><p>Mean Temperature of Wettest Quarter</p></dd>
+<dt>bio9</dt><dd><p>Mean Temperature of Driest Quarter</p></dd>
+<dt>bio10</dt><dd><p>Mean Temperature of Warmest Quarter</p></dd>
+<dt>bio11</dt><dd><p>Mean Temperature of Coldest Quarter</p></dd>
+<dt>bio12</dt><dd><p>Annual Precipitation</p></dd>
+<dt>bio13</dt><dd><p>Precipitation of Wettest Month</p></dd>
+<dt>bio14</dt><dd><p>Precipitation of Driest Month</p></dd>
+<dt>bio15</dt><dd><p>Precipitation Seasonality (Coefficient of Variation)</p></dd>
+<dt>bio16</dt><dd><p>Precipitation of Wettest Quarter</p></dd>
+<dt>bio17</dt><dd><p>Precipitation of Driest Quarter</p></dd>
+<dt>bio18</dt><dd><p>Precipitation of Warmest Quarter</p></dd>
+<dt>bio19</dt><dd><p>Precipitation of Coldest Quarter</p></dd>
 </dl>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>EarthEnv MODIS cloud fraction (<a href = 'http://www.earthenv.org/cloud'>http://www.earthenv.org/cloud</a>)</p>
+    <p>WorlClim Global Climate Data - Free climate data for ecological
+modeling and GIS <a href = 'http://www.worldclim.org/bioclim'>http://www.worldclim.org/bioclim</a>.</p>
+<p>WorldClim are freely available, average monthly climate data. Current
+conditions (interpolations of observed data, representative of 1960-1990)
+are freely available for download from <a href = 'http://www.worldclim.org/version1'>http://www.worldclim.org/version1</a>.
+Climatic elements include minimum, mean and Mean Maximum temperature and
+precipitation along with derived bioclimatic variables. WorldClim 1.4
+(current conditions) are released under a Creative Commons
+Attribution-ShareAlike 4.0 International License
+<a href = 'http://creativecommons.org/licenses/by-sa/4.0/'>http://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
-    <p>Wilson AM, Jetz W (2016). Remotely Sensed High-Resolution Global
-Cloud Dynamics for Predicting Ecosystem and Biodiversity Distributions. PLoS
-Biol 14(3): e1002415.</p>
+    <p>Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A.
+Jarvis, 2005. Very high resolution interpolated climate surfaces for global
+land areas. International Journal of Climatology 25: 1965-1978.</p>
     
 
   </div>
