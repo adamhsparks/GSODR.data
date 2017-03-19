@@ -53,13 +53,13 @@ crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 sp::proj4string(stations) <- sp::CRS(crs)
 ```
 
-Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit` to remove NA values to save space.
+Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit` to remove NA values to save space. Note that temperature variables are automatically converted back to ˚C from [˚C \* 10](http://www.worldclim.org/current) in the GSODRdata package.
 
 ``` r
 # Extract WorldClim data at GSOD station locations
-WorldClim_tmin <- raster::extract(tmin, stations)
-WorldClim_tmax <- raster::extract(tmax, stations)
-WorldClim_tavg <- raster::extract(tavg, stations)
+WorldClim_tmin <- raster::extract(tmin, stations)/10
+WorldClim_tmax <- raster::extract(tmax, stations)/10
+WorldClim_tavg <- raster::extract(tavg, stations)/10
 WorldClim_prec <- raster::extract(prec, stations)
 WorldClim_Bio_GSOD <- raster::extract(bioc, stations)
 
@@ -88,13 +88,13 @@ Save new data frames to disk for distribution with R package
 devtools::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving WorldClim_Clim as WorldClim_Clim.rda to /Users/asparks/Development/GSODR.data/data
+    ## Saving WorldClim_Clim as WorldClim_Clim.rda to /Users/asparks/Development/GSODRdata/data
 
 ``` r
 devtools::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving WorldClim_Bio as WorldClim_Bio.rda to /Users/asparks/Development/GSODR.data/data
+    ## Saving WorldClim_Bio as WorldClim_Bio.rda to /Users/asparks/Development/GSODRdata/data
 
 R System Information
 --------------------
