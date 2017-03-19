@@ -9,9 +9,8 @@
 This data-only package was created for distributing data useful for the GSODR
 package and used in examples for the GSODR package.
 
-Due to the installed package, 5.5Mb, this package is only available from GitHub.
+Due to the installed package, >9Mb, this package is only available from GitHub.
 
-Version: 0.1.0  
 Authors: Adam Sparks, Tomislav Hengl, and Andrew Nelson  
 Maintainer: Adam Sparks <adamhsparks@gmail.com>  
 URL: https://github.com/adamhsparks/GSODRdata  
@@ -19,7 +18,7 @@ BugReports: https://github.com/adamhsparks/GSODRdata/issues
 Depends: R (>= 3.2.0)  
 Depends: [GSODR](https://cran.r-project.org/package=GSODR)
 
-Four data frames of climate data are provided from various sources for GSOD station locations.
+Six data frames of climate data are provided from various sources for GSOD station locations.
 
   * **CHELSA** - [Climatic surfaces at 1 km resolution](http://chelsa-climate.org)
   is based on a quasi-mechanistic statistical downscaling of the ERA-Interim global circulation model (Karger et al. 2016). ESA's CCI-LC cloud probability monthly averages are based on the MODIS snow products (MOD10A2).
@@ -32,6 +31,18 @@ Four data frames of climate data are provided from various sources for GSOD stat
 
   * **MODCF** - [Remotely sensed high-resolution global cloud dynamics for predicting ecosystem and biodiversity distributions](https://github.com/adammwilson/Cloud)
   (Wilson et al. 2016) provides new near-global, fine-grain (≈1km) monthly cloud frequencies from 15 years of twice-daily MODIS satellite images.
+  
+  * **WorlClim_Bio** - [WorlClim Global Climate Data - Free climate data for ecological modeling and GIS](http://www.worldclim.org/version1)
+  (Hijmans et al. 2004) provides freely available, average monthly climate data. Current
+conditions (interpolations of observed data, representative of 1960-1990)
+are freely available for download from http://www.worldclim.org/version1.
+
+  * **WorlClim_Clim** - [WorlClim Global Climate Data - Free climate data for ecological modeling and GIS](http://www.worldclim.org/version1)
+  (Hijmans et al. 2004) provides freely available, average monthly climate data. Current
+conditions (interpolations of observed data, representative of 1960-1990)
+are freely available for download from http://www.worldclim.org/version1.
+
+### `WorldClim_Clim()` A data frame with 26231 observations of 49 variables:
 
 -----
 
@@ -68,3 +79,7 @@ New, M., Lister, D., Hulme, M., Makin, I. (2002) A high-resolution data set of s
 ([abstract](https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt), [paper](http://www.int-res.com/articles/cr2002/21/c021p001.pdf))
 
 Wilson, A. M., Jetz, W. (2016) Remotely Sensed High-Resolution Global Cloud Dynamics for Predicting Ecosystem and Biodiversity Distributions. [*PLoS Biol* **14(3)**: e1002415. doi:10.1371/journal. pbio.1002415](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002415)
+
+Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very 
+high resolution interpolated climate surfaces for global land areas. 
+*International Journal of Climatology* **25**: 1965-1978.

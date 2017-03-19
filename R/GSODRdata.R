@@ -49,9 +49,9 @@
 #' Dynamics for Predicting Ecosystem and Biodiversity Distributions.
 #' \emph{PLoS Biol} \bold{14(3)}: e1002415. doi:10.1371/journal. pbio.1002415
 #'
-#'Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A.
-#'Jarvis, 2005. Very high resolution interpolated climate surfaces for global
-#'land areas. \emph{International Journal of Climatology} \bold{25}: 1965-1978.
+#' Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A.
+#' Jarvis, 2005. Very high resolution interpolated climate surfaces for global
+#' land areas. \emph{International Journal of Climatology} \bold{25}: 1965-1978.
 #'
 #'@author Adam H Sparks, Tomislav Hengl and Andrew Nelson
 NULL
