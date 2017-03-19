@@ -30,6 +30,10 @@ set of surface climate over global land areas. \emph{Climate Research}
 Wilson A.M., Jetz W. (2016) Remotely Sensed High-Resolution Global Cloud
 Dynamics for Predicting Ecosystem and Biodiversity Distributions.
 \emph{PLoS Biol} \bold{14(3)}: e1002415. doi:10.1371/journal. pbio.1002415
+
+Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A.
+Jarvis, 2005. Very high resolution interpolated climate surfaces for global
+land areas. \emph{International Journal of Climatology} \bold{25}: 1965-1978.
 }
 \seealso{
 \code{\link{CHELSA}} Data from CHELSA climate layers for GSOD
