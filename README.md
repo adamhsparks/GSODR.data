@@ -8,7 +8,7 @@
 ## Climate Data for the `GSODR` Package
 
 This data-only package was created for distributing data useful for the `GSODR`
-package and used in examples for the GSODR package.
+package and used in examples for the [`GSODR` package vignettes](https://github.com/ropensci/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd).
 
 Due to the installed package, >9Mb, this package is only available from 
 [GitHub](https://github.com/adamhsparks/GSODRdata/).
