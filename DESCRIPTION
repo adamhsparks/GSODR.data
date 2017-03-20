@@ -1,6 +1,6 @@
 Package: GSODRdata
 Type: Package
-Title: Climate Data for the GSODR Package
+Title: Climate and Ecological Data for the GSODR Package
 Version: 0.2.0
 Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
     email = "adamhsparks@gmail.com"),
