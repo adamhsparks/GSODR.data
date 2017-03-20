@@ -64,7 +64,7 @@ See the `GSODR` vignette, [Working with spatial and climate data](http://ropensc
 -----
 
 # Meta 
-If you find bugs, please [file a report as an issue](https://github.com/adamhsparks/GSODRdata/issues).
+If you find bugs or have an idea to make this package better, please [file a report with us](https://github.com/adamhsparks/GSODRdata/issues).
 
 ## Code of Conduct
 
