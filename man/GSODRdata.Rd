@@ -4,7 +4,7 @@
 \name{GSODRdata}
 \alias{GSODRdata}
 \alias{GSODRdata-package}
-\title{GSODRdata: Extra Climate Data for the GSODR Package}
+\title{GSODRdata: Climate and Ecological Data for the GSODR Package}
 \source{
 \url{http://chelsa-climate.org/}
 \url{https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html}
