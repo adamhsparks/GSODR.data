@@ -1,5 +1,5 @@
 ---
-title: "CRU CL 2.0 Data for GSOD Station Locations"
+title: "CRU CL v. 2.0 Data for GSOD Station Locations"
 output: github_document
 ---
 
@@ -7,7 +7,7 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-CRU CL 2.0 data are a gridded climatology of 1961-1990 monthly means released in 2002 and cover all land areas (excluding Antarctica) at 10-minute (0.1666667 degree) resolution. For more information see the description of the data provided by the University of East Anglia Climate Research Unit (CRU), http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt.
+CRU CL v. 2.0 data are a gridded climatology of 1961-1990 monthly means released in 2002 and cover all land areas (excluding Antarctica) at 10-minute (0.1666667 degree) resolution. For more information see the description of the data provided by the University of East Anglia Climate Research Unit (CRU), http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt.
 
 # Download, extract and merge CRU data with provided GSOD climate data
 
@@ -17,7 +17,7 @@ CRU CL 2.0 data are a gridded climatology of 1961-1990 monthly means released in
 library(getCRUCLdata)
 
 ```
-## Get CRU CL 2.0 data
+## Get CRU v. CL 2.0 data
 ```{r get_data}
 CRU_stack <- create_CRU_stack(pre = TRUE,
                               rd0 = TRUE,

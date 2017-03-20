@@ -1,7 +1,7 @@
-CRU CL 2.0 Data for GSOD Station Locations
+CRU CL v. 2.0 Data for GSOD Station Locations
 ================
 
-CRU CL 2.0 data are a gridded climatology of 1961-1990 monthly means released in 2002 and cover all land areas (excluding Antarctica) at 10-minute (0.1666667 degree) resolution. For more information see the description of the data provided by the University of East Anglia Climate Research Unit (CRU), <http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
+CRU CL v. 2.0 data are a gridded climatology of 1961-1990 monthly means released in 2002 and cover all land areas (excluding Antarctica) at 10-minute (0.1666667 degree) resolution. For more information see the description of the data provided by the University of East Anglia Climate Research Unit (CRU), <http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
 
 Download, extract and merge CRU data with provided GSOD climate data
 ====================================================================
@@ -13,8 +13,8 @@ Setup the R session
 library(getCRUCLdata)
 ```
 
-Get CRU CL 2.0 data
--------------------
+Get CRU v. CL 2.0 data
+----------------------
 
 ``` r
 CRU_stack <- create_CRU_stack(pre = TRUE,
@@ -250,14 +250,14 @@ Save new data to disk for distribution with R package
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/asparks/Development/GSODRdata/data
+    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/U8004755/Development/GSODRdata/data
 
 R System Information
 --------------------
 
     ## R version 3.3.3 (2017-03-06)
-    ## Platform: x86_64-apple-darwin16.4.0 (64-bit)
-    ## Running under: macOS Sierra 10.12.3
+    ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+    ## Running under: OS X El Capitan 10.11.6
     ## 
     ## locale:
     ## [1] en_AU.UTF-8/en_AU.UTF-8/en_AU.UTF-8/C/en_AU.UTF-8/en_AU.UTF-8
@@ -269,7 +269,7 @@ R System Information
     ## [1] getCRUCLdata_0.1.4
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] Rcpp_0.12.9          knitr_1.15.1         raster_2.5-8        
+    ##  [1] Rcpp_0.12.10         knitr_1.15.1         raster_2.5-8        
     ##  [4] magrittr_1.5         devtools_1.12.0.9000 pkgload_0.0.0.9000  
     ##  [7] lattice_0.20-34      R6_2.2.0             stringr_1.2.0       
     ## [10] plyr_1.8.4           dplyr_0.5.0          tools_3.3.3         

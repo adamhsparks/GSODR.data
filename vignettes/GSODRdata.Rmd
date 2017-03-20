@@ -97,9 +97,9 @@ surface areas. *arXiv preprint* **arXiv:1607.00217**.
 
 ## CRU_CL_2
 
-[CRU CL 2.0 data-set](https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html)
+[CRU CL v. 2.0 data-set](https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html)
 
-The CRU CL 2.0 data set (New *et al.* 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be deduced from mean temperature and diurnal temperature range (see [FAQ](https://crudata.uea.ac.uk/~timm/grid/faq.html)).
+The CRU CL v. 2.0 data set (New *et al.* 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be deduced from mean temperature and diurnal temperature range (see [FAQ](https://crudata.uea.ac.uk/~timm/grid/faq.html)).
  
 ### `CRU_CL_2()`: A data frame with 23927 observations of 99 variables
 

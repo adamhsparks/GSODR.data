@@ -26,7 +26,7 @@ Six data frames of climate data are provided from various sources for GSOD stati
   * **CHELSA** - [Climatic surfaces at 1 km resolution](http://chelsa-climate.org)
   is based on a quasi-mechanistic statistical downscaling of the ERA interim global circulation model (Karger *et al.* 2016). ESA's CCI-LC cloud probability monthly averages are based on the MODIS snow products (MOD10A2).
 
-  * **CRU_CL_2** - The [CRU CL 2.0 data-set](https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html) 
+  * **CRU_CL_2** - The [CRU CL v. 2.0 data-set](https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html) 
   (New *et al.* 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial
   resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean
   temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be

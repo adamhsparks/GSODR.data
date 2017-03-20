@@ -39,8 +39,8 @@ land areas. \emph{International Journal of Climatology} \bold{25}: 1965-1978.
 \code{\link{CHELSA}} Data from CHELSA climate layers for GSOD
 station locations.
 
-\code{\link{CRU_CL_2}} Data from CRU CL2.0 climate elements for GSOD
-station locations.
+\code{\link{CRU_CL_2}} Data from CRU CL v. 2.0 climate elements for
+GSOD station locations.
 
 \code{\link{ESACCI}} Data from ESA's CCI-LC snow cover probability
 for GSOD station locations.
