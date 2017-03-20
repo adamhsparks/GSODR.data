@@ -4,7 +4,7 @@
 \name{CRU_CL_2}
 \alias{CRU_CL_2}
 \title{CRU_CL_2.0}
-\format{A data frame with 23927 observations of 97 variables:
+\format{A data frame with 24830 observations of 97 variables:
 \describe{
 \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 \item{CRU_CL_2_0_dtr_01}{Mean January diurnal temperature range [degrees Celsius]}

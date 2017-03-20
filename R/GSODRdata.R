@@ -1,7 +1,7 @@
 #' GSODRdata: Extra Climate Data for the GSODR Package
 #'
-#' This data-only package was created for distributing data useful to the GSODR
-#' package and used in examples.
+#' This data-only package was created for distributing data useful to the
+#' \code{GSODR} package and used in examples.
 #'
 #' @docType package
 #'

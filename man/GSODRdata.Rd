@@ -13,8 +13,8 @@
 \url{http://www.worldclim.org}
 }
 \description{
-This data-only package was created for distributing data useful to the GSODR
-package and used in examples.
+This data-only package was created for distributing data useful to the
+\code{GSODR} package and used in examples.
 }
 \references{
 Karger, D. N., Conrad, O., Bohner, J., Kawohl, T., Kreft, H., Soria-Auza,
