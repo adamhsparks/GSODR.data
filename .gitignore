@@ -8,3 +8,5 @@ inst/doc
 *.bil
 
 *.hdr
+
+.DS_Store
