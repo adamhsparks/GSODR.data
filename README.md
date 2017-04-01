@@ -51,7 +51,7 @@ are freely available for download from http://www.worldclim.org/version1.
 
 ### Install
 
-This package is only available from GitHub due to its large size. It provides optional data for use with the [GSODR package](http://adamhsparks.github.io/GSODR/), some of which are demonstrated with examples in the [GSODR documentation](http://adamhsparks.github.io/GSODR/articles/index.html).
+This package is only available from GitHub due to its large size. It provides optional data for use with the [_GSODR_ package](http://adamhsparks.github.io/GSODR/), some of which are demonstrated with examples in the [_GSODR_ documentation](http://adamhsparks.github.io/GSODR/articles/index.html).
 
 ```r
 #install.packages("devtools")
