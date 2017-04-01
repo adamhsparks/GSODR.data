@@ -51,7 +51,7 @@
 #' \item{prec11}{Mean Precipitation for November}
 #' \item{prec12}{Mean Precipitation for December}
 #'}
-#' @source WorlClim Global Climate Data - Free climate data for ecological
+#' @source WorlcClim Global Climate Data - Free climate data for ecological
 #' modeling and GIS \url{http://www.worldclim.org/current}.
 #'
 #' WorldClim are freely available, average monthly climate data. Current

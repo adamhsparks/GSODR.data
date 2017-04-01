@@ -11,7 +11,7 @@ WorldClim are freely available, average monthly climate data. Current conditions
 
 # Download, extract and merge WorldClim data with provided GSOD climate data
 
-The R package, [`raster`](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution. 
+The R package, [_raster_](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution. 
 
 ## Setup the R session
 
@@ -51,7 +51,7 @@ crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 sp::proj4string(stations) <- sp::CRS(crs)
 ```
 
-Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit` to remove NA values to save space. Note that temperature variables are automatically converted back to ˚C from [˚C * 10](http://www.worldclim.org/current) in the GSODRdata package.
+Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit()` to remove NA values to save space. Note that temperature variables are automatically converted back to ˚C from [˚C * 10](http://www.worldclim.org/current) in the GSODRdata package.
 
 ```{r extract}
 # Extract WorldClim data at GSOD station locations

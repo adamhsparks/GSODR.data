@@ -19,7 +19,7 @@
 #' @seealso \code{\link{MODCF}} Data from EarthEnv MODIS cloud fraction data for
 #' GSOD station locations.
 #'
-#' @seealso \code{link{WorldClim_Bio}} WorlClim Global Climate Data - Free
+#' @seealso \code{link{WorldClim_Bio}} WorldClim Global Climate Data - Free
 #' climate data for ecological modeling and GIS
 #' \url{http://www.worldclim.org/bioclim}
 #'

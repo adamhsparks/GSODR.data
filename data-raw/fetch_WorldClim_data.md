@@ -6,7 +6,7 @@ WorldClim are freely available, average monthly climate data. Current conditions
 Download, extract and merge WorldClim data with provided GSOD climate data
 ==========================================================================
 
-The R package, [`raster`](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution.
+The R package, [_raster_](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution.
 
 Setup the R session
 -------------------
@@ -53,7 +53,7 @@ crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 sp::proj4string(stations) <- sp::CRS(crs)
 ```
 
-Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit` to remove NA values to save space. Note that temperature variables are automatically converted back to ˚C from [˚C \* 10](http://www.worldclim.org/current) in the GSODRdata package.
+Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit()` to remove NA values to save space. Note that temperature variables are automatically converted back to ˚C from [˚C \* 10](http://www.worldclim.org/current) in the GSODRdata package.
 
 ``` r
 # Extract WorldClim data at GSOD station locations
@@ -97,7 +97,7 @@ R System Information
 
     ## R version 3.3.3 (2017-03-06)
     ## Platform: x86_64-apple-darwin16.4.0 (64-bit)
-    ## Running under: macOS Sierra 10.12.3
+    ## Running under: macOS Sierra 10.12.4
     ## 
     ## locale:
     ## [1] en_AU.UTF-8/en_AU.UTF-8/en_AU.UTF-8/C/en_AU.UTF-8/en_AU.UTF-8
@@ -109,15 +109,15 @@ R System Information
     ## [1] raster_2.5-8 sp_1.2-4    
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] Rcpp_0.12.9          knitr_1.15.1         magrittr_1.5        
-    ##  [4] devtools_1.12.0.9000 pkgload_0.0.0.9000   lattice_0.20-34     
-    ##  [7] stringr_1.2.0        tools_3.3.3          pkgbuild_0.0.0.9000 
-    ## [10] rgdal_1.2-5          grid_3.3.3           withr_1.0.2         
-    ## [13] htmltools_0.3.5      yaml_2.1.14          rprojroot_1.2       
-    ## [16] digest_0.6.12        assertthat_0.1       tibble_1.2          
-    ## [19] readr_1.0.0          curl_2.3             memoise_1.0.0       
-    ## [22] evaluate_0.10        rmarkdown_1.3.9004   stringi_1.1.2       
-    ## [25] backports_1.0.5
+    ##  [1] Rcpp_0.12.10         knitr_1.15.1         magrittr_1.5        
+    ##  [4] hms_0.3              devtools_1.12.0.9000 pkgload_0.0.0.9000  
+    ##  [7] lattice_0.20-34      R6_2.2.0             stringr_1.2.0       
+    ## [10] tools_3.3.3          pkgbuild_0.0.0.9000  rgdal_1.2-5         
+    ## [13] grid_3.3.3           withr_1.0.2          htmltools_0.3.5     
+    ## [16] yaml_2.1.14          rprojroot_1.2        digest_0.6.12       
+    ## [19] tibble_1.3.0         readr_1.1.0          curl_2.4            
+    ## [22] memoise_1.0.0        evaluate_0.10        rmarkdown_1.4.0.9000
+    ## [25] stringi_1.1.3        backports_1.0.5
 
 Reference
 =========

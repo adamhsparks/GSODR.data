@@ -3,12 +3,12 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/GSODRdata)]()
 [![DOI](https://zenodo.org/badge/78181238.svg)](https://zenodo.org/badge/latestdoi/78181238)
 
-# `GSODRdata`
+# _GSODRdata_
 
-## Climate Data for the `GSODR` Package
+## Climate Data for the _GSODRdata_ Package
 
-This data-only package was created for distributing data useful for the `GSODR`
-package and used in examples for the [`GSODR` package vignettes](https://github.com/ropensci/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd).
+This data-only package was created for distributing data useful for the _GSODRdata_
+package and used in examples for the [_GSODRdata_ package vignettes](https://github.com/ropensci/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd).
 
 Due to the installed package, >9Mb, this package is only available from 
 [GitHub](https://github.com/adamhsparks/GSODRdata/).
@@ -20,16 +20,14 @@ BugReports: https://github.com/adamhsparks/GSODRdata/issues
 Depends: R (>= 3.2.0)  
 Depends: [GSODR](https://cran.r-project.org/package=GSODR)
 
-Six data frames of climate data are provided from various sources for GSOD station locations and can be joined with data provided by the `GSODR` package using the `STNID` column.
+Six data frames of climate data are provided from various sources for GSOD station locations and can be joined with data provided by the _GSODRdata_ package using the `STNID` column.
 
 
   * **CHELSA** - [Climatic surfaces at 1 km resolution](http://chelsa-climate.org)
-  is based on a quasi-mechanistic statistical downscaling of the ERA interim global circulation model (Karger *et al.* 2016). ESA's CCI-LC cloud probability monthly averages are based on the MODIS snow products (MOD10A2).
+  is based on a quasi-mechanistic statistical down scaling of the ERA interim global circulation model (Karger *et al.* 2016). ESA's CCI-LC cloud probability monthly averages are based on the MODIS snow products (MOD10A2).
 
   * **CRU_CL_2** - The [CRU CL v. 2.0 data-set](https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html) 
-  (New *et al.* 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial
-  resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean
-  temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be
+  (New *et al.* 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be
   deduced from mean temperature and diurnal temperature range (see [FAQ](https://crudata.uea.ac.uk/~timm/grid/faq.html)).
 
   * **ESACCI** - ESA's CCI-LC snow cover probability 
@@ -61,9 +59,9 @@ devtools::install_github("adamhsparks/GSODRdata")
 library("GSODRdata")
 ````
 
-### Using `GSODRdata`
+### Using _GSODRdata_
 
-See the `GSODR` vignette, [Working with spatial and climate data](http://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html), for use and examples.
+See the _GSODRdata_ vignette, [Working with spatial and climate data](http://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html), for use and examples.
 
 -----
 

@@ -17,19 +17,43 @@ Get CRU v. CL 2.0 data
 ----------------------
 
 ``` r
-CRU_stack <- create_CRU_stack(pre = TRUE,
-                              rd0 = TRUE,
-                              tmp = TRUE,
-                              dtr = TRUE,
-                              reh = TRUE,
-                              sunp = TRUE,
-                              frs = TRUE,
-                              wnd = TRUE)
+CRU_stack <- get_CRU_stack(pre = TRUE,
+                           rd0 = TRUE,
+                           tmp = TRUE,
+                           dtr = TRUE,
+                           reh = TRUE,
+                           sunp = TRUE,
+                           frs = TRUE,
+                           wnd = TRUE,
+                           cache = TRUE)
 ```
 
     ##  
     ## Downloading requested data files.
     ## 
+
+    ## 
+      |                                                                       
+      |                                                                 |   0%
+      |                                                                       
+      |========                                                         |  12%
+      |                                                                       
+      |================                                                 |  25%
+      |                                                                       
+      |========================                                         |  38%
+      |                                                                       
+      |================================                                 |  50%
+      |                                                                       
+      |=========================================                        |  62%
+      |                                                                       
+      |=================================================                |  75%
+      |                                                                       
+      |=========================================================        |  88%
+      |                                                                       
+      |=================================================================| 100%
+
+    ## 
+    ## Creating raster stack now.
 
     ## 
       |                                                                       
@@ -250,14 +274,14 @@ Save new data to disk for distribution with R package
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/U8004755/Development/GSODRdata/data
+    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/asparks/Development/GSODRdata/data
 
 R System Information
 --------------------
 
     ## R version 3.3.3 (2017-03-06)
-    ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-    ## Running under: OS X El Capitan 10.11.6
+    ## Platform: x86_64-apple-darwin16.4.0 (64-bit)
+    ## Running under: macOS Sierra 10.12.4
     ## 
     ## locale:
     ## [1] en_AU.UTF-8/en_AU.UTF-8/en_AU.UTF-8/C/en_AU.UTF-8/en_AU.UTF-8
@@ -266,20 +290,21 @@ R System Information
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ## [1] getCRUCLdata_0.1.4
+    ## [1] getCRUCLdata_0.1.5
     ## 
     ## loaded via a namespace (and not attached):
     ##  [1] Rcpp_0.12.10         knitr_1.15.1         raster_2.5-8        
-    ##  [4] magrittr_1.5         devtools_1.12.0.9000 pkgload_0.0.0.9000  
-    ##  [7] lattice_0.20-34      R6_2.2.0             stringr_1.2.0       
-    ## [10] plyr_1.8.4           dplyr_0.5.0          tools_3.3.3         
-    ## [13] pkgbuild_0.0.0.9000  rgdal_1.2-5          grid_3.3.3          
-    ## [16] DBI_0.6              withr_1.0.2          htmltools_0.3.5     
-    ## [19] yaml_2.1.14          assertthat_0.1       rprojroot_1.2       
-    ## [22] digest_0.6.12        tibble_1.2           purrr_0.2.2         
-    ## [25] readr_1.0.0          curl_2.3             memoise_1.0.0       
-    ## [28] evaluate_0.10        rmarkdown_1.3.9004   sp_1.2-4            
-    ## [31] stringi_1.1.2        backports_1.0.5
+    ##  [4] magrittr_1.5         devtools_1.12.0.9000 hms_0.3             
+    ##  [7] rappdirs_0.3.1       pkgload_0.0.0.9000   lattice_0.20-34     
+    ## [10] R6_2.2.0             stringr_1.2.0        httr_1.2.1.9000     
+    ## [13] plyr_1.8.4           dplyr_0.5.0          tools_3.3.3         
+    ## [16] pkgbuild_0.0.0.9000  rgdal_1.2-5          grid_3.3.3          
+    ## [19] data.table_1.10.4    DBI_0.6              withr_1.0.2         
+    ## [22] htmltools_0.3.5      yaml_2.1.14          assertthat_0.1      
+    ## [25] rprojroot_1.2        digest_0.6.12        tibble_1.3.0        
+    ## [28] readr_1.1.0          curl_2.4             memoise_1.0.0       
+    ## [31] evaluate_0.10        rmarkdown_1.4.0.9000 sp_1.2-4            
+    ## [34] stringi_1.1.3        backports_1.0.5
 
 Data reference and abstract
 ===========================

@@ -19,14 +19,15 @@ library(getCRUCLdata)
 ```
 ## Get CRU v. CL 2.0 data
 ```{r get_data}
-CRU_stack <- create_CRU_stack(pre = TRUE,
-                              rd0 = TRUE,
-                              tmp = TRUE,
-                              dtr = TRUE,
-                              reh = TRUE,
-                              sunp = TRUE,
-                              frs = TRUE,
-                              wnd = TRUE)
+CRU_stack <- get_CRU_stack(pre = TRUE,
+                           rd0 = TRUE,
+                           tmp = TRUE,
+                           dtr = TRUE,
+                           reh = TRUE,
+                           sunp = TRUE,
+                           frs = TRUE,
+                           wnd = TRUE,
+                           cache = TRUE)
 ```
 
 ## Extract data for station locations
