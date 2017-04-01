@@ -68,6 +68,8 @@ See the _GSODRdata_ vignette, [Working with spatial and climate data](http://rop
 # Meta 
 If you find bugs or have an idea to make this package better, please [file a report with us](https://github.com/adamhsparks/GSODRdata/issues).
 
+License: MIT
+
 ## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
