@@ -61,7 +61,7 @@ library("GSODRdata")
 
 ### Using _GSODRdata_
 
-See the _GSODRdata_ vignette, [Working with spatial and climate data](http://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html), for use and examples.
+See the _GSODR_ vignette, [Working with spatial and climate data](http://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html), for use and examples.
 
 -----
 

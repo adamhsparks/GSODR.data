@@ -18,7 +18,8 @@ Depends:
 Suggests:
     GSODR,
     knitr,
-    rmarkdown
+    rmarkdown,
+    roxygen2 (>= 6.0.1)
 License: MIT + file LICENSE
 RoxygenNote: 6.0.1
 Encoding: UTF-8
