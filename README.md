@@ -5,10 +5,10 @@
 
 # _GSODRdata_
 
-## Climate Data for the _GSODRdata_ Package
+## Climate and Ecological Data for the _GSODR_ Package
 
-This data-only package was created for distributing data useful for the _GSODRdata_
-package and used in examples for the [_GSODRdata_ package vignettes](https://github.com/ropensci/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd).
+This data-only package was created for distributing data useful for the _GSODR_
+package and used in examples for the [_GSODR_ package vignettes](https://github.com/ropensci/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd).
 
 Due to the installed package, >9Mb, this package is only available from 
 [GitHub](https://github.com/adamhsparks/GSODRdata/).
@@ -18,9 +18,9 @@ Maintainer: Adam Sparks <adamhsparks@gmail.com>
 URL: https://github.com/adamhsparks/GSODRdata  
 BugReports: https://github.com/adamhsparks/GSODRdata/issues  
 Depends: R (>= 3.2.0)  
-Depends: [GSODR](https://cran.r-project.org/package=GSODR)
+Suggests: [GSODR](https://cran.r-project.org/package=GSODR)
 
-Six data frames of climate data are provided from various sources for GSOD station locations and can be joined with data provided by the _GSODRdata_ package using the `STNID` column.
+Six data frames of climate data are provided from various sources for GSOD station locations and can be joined with data formatted by the _GSODR_ package using the `STNID` column.
 
 
   * **CHELSA** - [Climatic surfaces at 1 km resolution](http://chelsa-climate.org)
@@ -31,10 +31,9 @@ Six data frames of climate data are provided from various sources for GSOD stati
   deduced from mean temperature and diurnal temperature range (see [FAQ](https://crudata.uea.ac.uk/~timm/grid/faq.html)).
 
   * **ESACCI** - ESA's CCI-LC snow cover probability 
-  <http://maps.elie.ucl.ac.be/CCI/viewer/index.php>
+  <http://maps.elie.ucl.ac.be/CCI/viewer/index.php>.
 
-  * **MODCF** - [Remotely sensed high-resolution global cloud dynamics for predicting ecosystem and biodiversity distributions](https://github.com/adammwilson/Cloud)
-  (Wilson *et al.* 2016) provides new near-global, fine-grain (≈1km) monthly cloud frequencies from 15 years of twice-daily MODIS satellite images.
+  * **MODCF** - [Remotely sensed high-resolution global cloud dynamics for predicting ecosystem and biodiversity distributions](https://github.com/adammwilson/Cloud) (Wilson *et al.* 2016) provides new near-global, fine-grain (≈1km) monthly cloud frequencies from 15 years of twice-daily MODIS satellite images.
   
   * **WorldClim_Bio** - [WorldClim Global Climate Data - Free climate data for ecological modeling and GIS](http://www.worldclim.org/version1)
   (Hijmans et al. 2004) provides freely available [bioclimatic variables](http://worldclim.org/bioclim).
@@ -78,8 +77,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 Karger, D. N., Conrad, O., Bohner, J., Kawohl, T., Kreft, H., Soria-Auza, R. W., *et al*. (2016) Climatologies at high resolution for the Earth land surface areas. *arXiv preprint* [**arXiv:1607.00217**](https://www.arxiv.org/abs/1607.00217).
 
-New, M., Lister, D., Hulme, M., Makin, I. (2002) A high-resolution data set of surface climate over global land areas. *Climate Research* **21**:1-25
-([abstract](https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt), [paper](http://www.int-res.com/articles/cr2002/21/c021p001.pdf))
+New, M., Lister, D., Hulme, M., Makin, I. (2002) A high-resolution data set of surface climate over global land areas. *Climate Research* **21**:1-25 ([abstract](https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt), [paper](http://www.int-res.com/articles/cr2002/21/c021p001.pdf))
 
 Wilson, A. M., Jetz, W. (2016) Remotely Sensed High-Resolution Global Cloud Dynamics for Predicting Ecosystem and Biodiversity Distributions. [*PLoS Biol* **14(3)**: e1002415. doi:10.1371/journal. pbio.1002415](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002415)
 
