@@ -4,9 +4,9 @@ author: "Adam H. Sparks"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteEngine{knitr::knitr
-  %\VignetteIndexEntry{GSODRdata
-  %\VignetteEncoding{UTF-8
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{GSODRdata}
+  %\VignetteEncoding{UTF-8}
 ---
 
 # GSODRdata: Climate and Ecological Data for the GSODR Package
@@ -79,7 +79,7 @@ CHELSA data is based on a quasi-mechanistic statistical down scaling of the ERA 
  
  CHELSA (climatic surfaces at 1 km resolution) is based on a
  quasi-mechanistic statistical down scaling of the ERA interim global
- circulation model (Karger et al. 2016). ESA's CCI-LC cloud
+ circulation model (Karger _et al._ 2016). ESA's CCI-LC cloud
  probability monthly averages are based on the MODIS snow products
  (MOD10A2).
 
