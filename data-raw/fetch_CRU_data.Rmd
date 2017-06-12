@@ -18,7 +18,7 @@ library(getCRUCLdata)
 
 ```
 ## Get CRU v. CL 2.0 data
-```{r get_data}
+```{r get_data, message=FALSE, output=FALSE, echo=TRUE}
 CRU_stack <- get_CRU_stack(pre = TRUE,
                            rd0 = TRUE,
                            tmp = TRUE,
@@ -31,7 +31,7 @@ CRU_stack <- get_CRU_stack(pre = TRUE,
 ```
 
 ## Extract data for station locations
-```{r extract_data}
+```{r extract_data, message=FALSE, output=FALSE, echo=TRUE}
 stations <- readr::read_csv(
   "ftp://ftp.ncdc.noaa.gov/pub/data/noaa/isd-history.csv",
   col_types = "ccccccddddd",
@@ -225,13 +225,6 @@ names(CRU_CL_2) <- c("STNID", CRU_stack_names)
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-
-## R System Information
-
-```{r system information, echo=FALSE}
-sessionInfo()
-```
-
 # Data reference and abstract
 
 > Mark New (1,*), David Lister (2), Mike Hulme (3), Ian Makin (4)  
@@ -259,3 +252,9 @@ meteorology and are available through the School of Geography Oxford
 (http://www.geog.ox.ac.uk), the International Water Management Institute
 "World Water and Climate Atlas" (http://www.iwmi.org) and the Climatic
 Research Unit (http://www.cru.uea.ac.uk).
+
+## R System Information
+
+```{r system information, echo=FALSE}
+devtools::session_info()
+```

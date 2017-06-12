@@ -6,7 +6,7 @@ WorldClim are freely available, average monthly climate data. Current conditions
 Download, extract and merge WorldClim data with provided GSOD climate data
 ==========================================================================
 
-The R package, [_raster_](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution.
+The R package, [*raster*](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution.
 
 Setup the R session
 -------------------
@@ -84,42 +84,68 @@ Save new data frames to disk for distribution with R package
 devtools::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving WorldClim_Clim as WorldClim_Clim.rda to /Users/asparks/Development/GSODRdata/data
+    ## Saving WorldClim_Clim as WorldClim_Clim.rda to /Users/U8004755/Development/GSODRdata/data
 
 ``` r
 devtools::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving WorldClim_Bio as WorldClim_Bio.rda to /Users/asparks/Development/GSODRdata/data
-
-R System Information
---------------------
-
-    ## R version 3.3.3 (2017-03-06)
-    ## Platform: x86_64-apple-darwin16.4.0 (64-bit)
-    ## Running under: macOS Sierra 10.12.4
-    ## 
-    ## locale:
-    ## [1] en_AU.UTF-8/en_AU.UTF-8/en_AU.UTF-8/C/en_AU.UTF-8/en_AU.UTF-8
-    ## 
-    ## attached base packages:
-    ## [1] stats     graphics  grDevices utils     datasets  methods   base     
-    ## 
-    ## other attached packages:
-    ## [1] raster_2.5-8 sp_1.2-4    
-    ## 
-    ## loaded via a namespace (and not attached):
-    ##  [1] Rcpp_0.12.10         knitr_1.15.1         magrittr_1.5        
-    ##  [4] hms_0.3              devtools_1.12.0.9000 pkgload_0.0.0.9000  
-    ##  [7] lattice_0.20-34      R6_2.2.0             stringr_1.2.0       
-    ## [10] tools_3.3.3          pkgbuild_0.0.0.9000  rgdal_1.2-5         
-    ## [13] grid_3.3.3           withr_1.0.2          htmltools_0.3.5     
-    ## [16] yaml_2.1.14          rprojroot_1.2        digest_0.6.12       
-    ## [19] tibble_1.3.0         readr_1.1.0          curl_2.4            
-    ## [22] memoise_1.0.0        evaluate_0.10        rmarkdown_1.4.0.9000
-    ## [25] stringi_1.1.3        backports_1.0.5
+    ## Saving WorldClim_Bio as WorldClim_Bio.rda to /Users/U8004755/Development/GSODRdata/data
 
 Reference
 =========
 
 Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology 25: 1965-1978.
+
+R System Information
+--------------------
+
+    ## Session info -------------------------------------------------------------
+
+    ##  setting  value                       
+    ##  version  R version 3.4.0 (2017-04-21)
+    ##  system   x86_64, darwin15.6.0        
+    ##  ui       unknown                     
+    ##  language (EN)                        
+    ##  collate  en_AU.UTF-8                 
+    ##  tz       Australia/Brisbane          
+    ##  date     2017-06-12
+
+    ## Packages -----------------------------------------------------------------
+
+    ##  package   * version    date       source                       
+    ##  backports   1.1.0      2017-05-22 cran (@1.1.0)                
+    ##  base      * 3.4.0      2017-05-11 local                        
+    ##  compiler    3.4.0      2017-05-11 local                        
+    ##  curl        2.6        2017-04-27 CRAN (R 3.4.0)               
+    ##  datasets  * 3.4.0      2017-05-11 local                        
+    ##  devtools    1.13.2     2017-06-02 cran (@1.13.2)               
+    ##  digest      0.6.12     2017-01-27 CRAN (R 3.4.0)               
+    ##  evaluate    0.10       2016-10-11 CRAN (R 3.4.0)               
+    ##  graphics  * 3.4.0      2017-05-11 local                        
+    ##  grDevices * 3.4.0      2017-05-11 local                        
+    ##  grid        3.4.0      2017-05-11 local                        
+    ##  hms         0.3        2016-11-22 CRAN (R 3.4.0)               
+    ##  htmltools   0.3.6      2017-04-28 CRAN (R 3.4.0)               
+    ##  knitr       1.16       2017-05-18 cran (@1.16)                 
+    ##  lattice     0.20-35    2017-03-25 CRAN (R 3.4.0)               
+    ##  magrittr    1.5        2014-11-22 CRAN (R 3.4.0)               
+    ##  memoise     1.1.0      2017-04-21 CRAN (R 3.4.0)               
+    ##  methods   * 3.4.0      2017-05-11 local                        
+    ##  R6          2.2.1      2017-05-10 cran (@2.2.1)                
+    ##  raster    * 2.5-8      2016-06-02 CRAN (R 3.4.0)               
+    ##  Rcpp        0.12.11    2017-05-22 cran (@0.12.11)              
+    ##  readr       1.1.1      2017-05-16 cran (@1.1.1)                
+    ##  rgdal       1.2-7      2017-04-25 CRAN (R 3.4.0)               
+    ##  rlang       0.1.1.9000 2017-06-07 Github (hadley/rlang@7f53e56)
+    ##  rmarkdown   1.5        2017-04-26 CRAN (R 3.4.0)               
+    ##  rprojroot   1.2        2017-01-16 CRAN (R 3.4.0)               
+    ##  sp        * 1.2-4      2016-12-22 CRAN (R 3.4.0)               
+    ##  stats     * 3.4.0      2017-05-11 local                        
+    ##  stringi     1.1.5      2017-04-07 CRAN (R 3.4.0)               
+    ##  stringr     1.2.0      2017-02-18 CRAN (R 3.4.0)               
+    ##  tibble      1.3.3      2017-05-28 cran (@1.3.3)                
+    ##  tools       3.4.0      2017-05-11 local                        
+    ##  utils     * 3.4.0      2017-05-11 local                        
+    ##  withr       1.0.2      2016-06-20 CRAN (R 3.4.0)               
+    ##  yaml        2.1.14     2016-11-12 CRAN (R 3.4.0)

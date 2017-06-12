@@ -1,5 +1,4 @@
 #' MODCF
-#' @format A data frame with 23927 observations of 15 variables:
 #' \describe{
 #' \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 #' \item{MODCF_meanannual}{Mean annual cloud fraction}

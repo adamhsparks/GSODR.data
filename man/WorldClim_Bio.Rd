@@ -3,8 +3,7 @@
 \docType{data}
 \name{WorldClim_Bio}
 \alias{WorldClim_Bio}
-\title{WorldClim_Bio}
-\format{A data frame with 26231 observations of 20 variables:
+\title{WorldClim_Bio
 \describe{
 \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 \item{bio1}{Annual Mean Temperature}
@@ -27,6 +26,7 @@
 \item{bio18}{Precipitation of Warmest Quarter}
 \item{bio19}{Precipitation of Coldest Quarter}
 }}
+\format{An object of class \code{data.frame} with 26276 rows and 20 columns.}
 \source{
 WorlClim Global Climate Data - Free climate data for ecological
 modeling and GIS \url{http://www.worldclim.org/bioclim}.
@@ -45,6 +45,28 @@ WorldClim_Bio
 }
 \description{
 WorldClim_Bio
+\describe{
+\item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
+\item{bio1}{Annual Mean Temperature}
+\item{bio2}{Mean Diurnal Range (Mean of monthly (max temp - min temp))}
+\item{bio3}{Isothermality (bio2 / bio7) (* 100)}
+\item{bio4}{Temperature Seasonality (standard deviation * 100)}
+\item{bio5}{Max Temperature of Warmest Month}
+\item{bio6}{Min Temperature of Coldest Month}
+\item{bio7}{Temperature Annual Range (bio5 - bio6)}
+\item{bio8}{Mean Temperature of Wettest Quarter}
+\item{bio9}{Mean Temperature of Driest Quarter}
+\item{bio10}{Mean Temperature of Warmest Quarter}
+\item{bio11}{Mean Temperature of Coldest Quarter}
+\item{bio12}{Annual Precipitation}
+\item{bio13}{Precipitation of Wettest Month}
+\item{bio14}{Precipitation of Driest Month}
+\item{bio15}{Precipitation Seasonality (Coefficient of Variation)}
+\item{bio16}{Precipitation of Wettest Quarter}
+\item{bio17}{Precipitation of Driest Quarter}
+\item{bio18}{Precipitation of Warmest Quarter}
+\item{bio19}{Precipitation of Coldest Quarter}
+}
 }
 \references{
 Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A.

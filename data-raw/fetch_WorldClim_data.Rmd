@@ -20,7 +20,7 @@ library(raster)
 
 ```
 ## Get WorlClim Bio Data
-```{r get_data}
+```{r get_data, message=FALSE, output=FALSE, echo=TRUE}
 bioc <- raster::getData("worldclim", var = "bio", res = 2.5)
 tmin <- raster::getData("worldclim", var = "tmin", res = 2.5)
 tmax <- raster::getData("worldclim", var = "tmax", res = 2.5)
@@ -29,7 +29,7 @@ prec <- raster::getData("worldclim", var = "prec", res = 2.5)
 ```
 
 ## Extract data for station locations
-```{r extract_data}
+```{r extract_data, message=FALSE, output=FALSE, echo=TRUE}
 stations <- readr::read_csv(
   "ftp://ftp.ncdc.noaa.gov/pub/data/noaa/isd-history.csv",
   col_types = "ccccccddddd",
@@ -53,7 +53,7 @@ sp::proj4string(stations) <- sp::CRS(crs)
 
 Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit()` to remove NA values to save space. Note that temperature variables are automatically converted back to ˚C from [˚C * 10](http://www.worldclim.org/current) in the GSODRdata package.
 
-```{r extract}
+```{r extract, message=FALSE, output=FALSE, echo=TRUE}
 # Extract WorldClim data at GSOD station locations
 WorldClim_tmin <- raster::extract(tmin, stations)/10
 WorldClim_tmax <- raster::extract(tmax, stations)/10
@@ -81,13 +81,13 @@ devtools::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
 
 devtools::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
 ```
+# Reference
+
+Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology 25: 1965-1978. 
+
 
 ## R System Information
 
 ```{r system information, echo=FALSE}
-sessionInfo()
+devtools::session_info()
 ```
-
-# Reference
-
-Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology 25: 1965-1978. 

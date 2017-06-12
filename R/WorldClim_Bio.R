@@ -1,5 +1,4 @@
 #' WorldClim_Bio
-#' @format A data frame with 26231 observations of 20 variables:
 #' \describe{
 #' \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 #' \item{bio1}{Annual Mean Temperature}

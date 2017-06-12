@@ -1,13 +1,18 @@
 Package: GSODRdata
 Type: Package
 Title: Climate and Ecological Data for the GSODR Package
+Date: 2017-06-12
 Version: 0.2.1
+Date: 2017-06-04
 Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
-    email = "adamhsparks@gmail.com"),
+    email = "adamhsparks@gmail.com",
+    comment = "http://orcid.org/0000-0002-0061-8359"),
     person("Tomislav", "Hengl", role = "aut",
-    email = "tom.hengl@isric.org"),
+    email = "tom.hengl@isric.org",
+    comment = "http://orcid.org/0000-0002-9921-5129"),
     person("Andrew", "Nelson", role = "aut",
-    email = "dr.andy.nelson@gmail.com"))
+    email = "dr.andy.nelson@gmail.com",
+    comment = "http://orcid.org/0000-0002-7249-3778"))
 URL: https://github.com/adamhsparks/GSODRdata
 BugReports: https://github.com/adamhsparks/GSODRdata/issues
 Description: This data-only package was created for distributing data useful for

@@ -1,5 +1,4 @@
 #' WorldClim_Clim
-#' @format A data frame with 26231 observations of 49 variables:
 #' \describe{
 #' \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 #' \item{tmin1}{Mean Minimum Temperature for January}
