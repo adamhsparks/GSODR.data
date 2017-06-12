@@ -6,7 +6,29 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WorldClim_Bio — WorldClim_Bio • GSODRdata</title>
+<title>WorldClim_Bio
+<dl class='dl-horizontal'>
+<dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
+<dt>bio1</dt><dd><p>Annual Mean Temperature</p></dd>
+<dt>bio2</dt><dd><p>Mean Diurnal Range (Mean of monthly (max temp - min temp))</p></dd>
+<dt>bio3</dt><dd><p>Isothermality (bio2 / bio7) (* 100)</p></dd>
+<dt>bio4</dt><dd><p>Temperature Seasonality (standard deviation * 100)</p></dd>
+<dt>bio5</dt><dd><p>Max Temperature of Warmest Month</p></dd>
+<dt>bio6</dt><dd><p>Min Temperature of Coldest Month</p></dd>
+<dt>bio7</dt><dd><p>Temperature Annual Range (bio5 - bio6)</p></dd>
+<dt>bio8</dt><dd><p>Mean Temperature of Wettest Quarter</p></dd>
+<dt>bio9</dt><dd><p>Mean Temperature of Driest Quarter</p></dd>
+<dt>bio10</dt><dd><p>Mean Temperature of Warmest Quarter</p></dd>
+<dt>bio11</dt><dd><p>Mean Temperature of Coldest Quarter</p></dd>
+<dt>bio12</dt><dd><p>Annual Precipitation</p></dd>
+<dt>bio13</dt><dd><p>Precipitation of Wettest Month</p></dd>
+<dt>bio14</dt><dd><p>Precipitation of Driest Month</p></dd>
+<dt>bio15</dt><dd><p>Precipitation Seasonality (Coefficient of Variation)</p></dd>
+<dt>bio16</dt><dd><p>Precipitation of Wettest Quarter</p></dd>
+<dt>bio17</dt><dd><p>Precipitation of Driest Quarter</p></dd>
+<dt>bio18</dt><dd><p>Precipitation of Warmest Quarter</p></dd>
+<dt>bio19</dt><dd><p>Precipitation of Coldest Quarter</p></dd>
+</dl> — WorldClim_Bio • GSODRdata</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,7 +47,7 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -76,18 +98,33 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>WorldClim_Bio</h1>
+    <h1>WorldClim_Bio
+<dl class='dl-horizontal'>
+<dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
+<dt>bio1</dt><dd><p>Annual Mean Temperature</p></dd>
+<dt>bio2</dt><dd><p>Mean Diurnal Range (Mean of monthly (max temp - min temp))</p></dd>
+<dt>bio3</dt><dd><p>Isothermality (bio2 / bio7) (* 100)</p></dd>
+<dt>bio4</dt><dd><p>Temperature Seasonality (standard deviation * 100)</p></dd>
+<dt>bio5</dt><dd><p>Max Temperature of Warmest Month</p></dd>
+<dt>bio6</dt><dd><p>Min Temperature of Coldest Month</p></dd>
+<dt>bio7</dt><dd><p>Temperature Annual Range (bio5 - bio6)</p></dd>
+<dt>bio8</dt><dd><p>Mean Temperature of Wettest Quarter</p></dd>
+<dt>bio9</dt><dd><p>Mean Temperature of Driest Quarter</p></dd>
+<dt>bio10</dt><dd><p>Mean Temperature of Warmest Quarter</p></dd>
+<dt>bio11</dt><dd><p>Mean Temperature of Coldest Quarter</p></dd>
+<dt>bio12</dt><dd><p>Annual Precipitation</p></dd>
+<dt>bio13</dt><dd><p>Precipitation of Wettest Month</p></dd>
+<dt>bio14</dt><dd><p>Precipitation of Driest Month</p></dd>
+<dt>bio15</dt><dd><p>Precipitation Seasonality (Coefficient of Variation)</p></dd>
+<dt>bio16</dt><dd><p>Precipitation of Wettest Quarter</p></dd>
+<dt>bio17</dt><dd><p>Precipitation of Driest Quarter</p></dd>
+<dt>bio18</dt><dd><p>Precipitation of Warmest Quarter</p></dd>
+<dt>bio19</dt><dd><p>Precipitation of Coldest Quarter</p></dd>
+</dl></h1>
     </div>
 
     
-    <p>WorldClim_Bio</p>
-    
-
-    <pre><span class='no'>WorldClim_Bio</span></pre>
-        
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
-
-    <p>A data frame with 26231 observations of 20 variables:</p><dl class='dl-horizontal'>
+    <p>WorldClim_Bio</p><dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
 <dt>bio1</dt><dd><p>Annual Mean Temperature</p></dd>
 <dt>bio2</dt><dd><p>Mean Diurnal Range (Mean of monthly (max temp - min temp))</p></dd>
@@ -109,6 +146,13 @@
 <dt>bio18</dt><dd><p>Precipitation of Warmest Quarter</p></dd>
 <dt>bio19</dt><dd><p>Precipitation of Coldest Quarter</p></dd>
 </dl>
+    
+
+    <pre class="usage"><span class='no'>WorldClim_Bio</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>An object of class <code>data.frame</code> with 26276 rows and 20 columns.</p>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
