@@ -1,9 +1,7 @@
 Package: GSODRdata
 Type: Package
 Title: Climate and Ecological Data for the GSODR Package
-Date: 2017-06-12
-Version: 0.2.2
-Date: 2017-06-04
+Version: 0.2.3
 Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
     email = "adamhsparks@gmail.com",
     comment = "http://orcid.org/0000-0002-0061-8359"),

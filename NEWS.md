@@ -1,7 +1,18 @@
+# GSODRData v0.2.3
+
+## Minor changes
+
+- Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
+locations as of 23/07/2017
+
+- Corrections in DESCRIPTION file
 
 # GSODRData v0.2.2
 
 ## Minor changes
-* Updates for WorldClim and RU CL 2.0 data to correspond with new GSOD locations  
-* Updates to documentation  
+
+- Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
+locations
+
+- Updates to documentation
 

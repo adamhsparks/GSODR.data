@@ -7,11 +7,21 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-WorldClim are freely available, average monthly climate data. Current conditions (interpolations of observed data, representative of 1960-1990) are freely available for download from http://www.worldclim.org/version1. Climatic elements include minimum, mean and maximum temperature and precipitation along with derived bioclimatic variables. WorldClim 1.4 (current conditions) are released under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+WorldClim are freely available, average monthly climate data. Current conditions
+(interpolations of observed data, representative of 1960-1990) are freely
+available for download from http://www.worldclim.org/version1. Climatic elements
+include minimum, mean and maximum temperature and precipitation along with
+derived bioclimatic variables. WorldClim 1.4 (current conditions) are released
+under a
+[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 # Download, extract and merge WorldClim data with provided GSOD climate data
 
-The R package, [_raster_](https://cran.r-project.org/package=raster) offers facilities for downloading WorldClim data using the `getData()` function. The WorldClim data are available at several resolutions, for our purposes and ease of extracting the data we'll use the 2.5 arcminute (0.041666 degrees) resolution. 
+The R package, [_raster_](https://cran.r-project.org/package=raster) offers
+facilities for downloading WorldClim data using the `getData()` function. The
+WorldClim data are available at several resolutions, for our purposes and ease
+of extracting the data we'll use the 2.5 arcminute (0.041666 degrees)
+resolution. 
 
 ## Setup the R session
 
@@ -20,6 +30,7 @@ library(raster)
 
 ```
 ## Get WorlClim Bio Data
+
 ```{r get_data, message=FALSE, output=FALSE, echo=TRUE}
 bioc <- raster::getData("worldclim", var = "bio", res = 2.5)
 tmin <- raster::getData("worldclim", var = "tmin", res = 2.5)
@@ -28,7 +39,8 @@ tavg <- raster::getData("worldclim", var = "tmean", res = 2.5)
 prec <- raster::getData("worldclim", var = "prec", res = 2.5)
 ```
 
-## Extract data for station locations
+## Extract Data for Station Locations
+
 ```{r extract_data, message=FALSE, output=FALSE, echo=TRUE}
 stations <- readr::read_csv(
   "ftp://ftp.ncdc.noaa.gov/pub/data/noaa/isd-history.csv",
@@ -51,7 +63,10 @@ crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 sp::proj4string(stations) <- sp::CRS(crs)
 ```
 
-Now we will extract the data from the WorldClim data at the GSOD station locations and merge them into data frames using `na.omit()` to remove NA values to save space. Note that temperature variables are automatically converted back to ˚C from [˚C * 10](http://www.worldclim.org/current) in the GSODRdata package.
+Now we will extract the data from the WorldClim data at the GSOD station
+locations and merge them into data frames using `na.omit()` to remove NA values
+to save space. Note that temperature variables are automatically converted back
+to ˚C from [˚C * 10](http://www.worldclim.org/current) in the GSODRdata package.
 
 ```{r extract, message=FALSE, output=FALSE, echo=TRUE}
 # Extract WorldClim data at GSOD station locations
@@ -76,6 +91,7 @@ names(WorldClim_Bio)[1] <- c("STNID")
 ```
 
 ## Save new data frames to disk for distribution with R package
+
 ```{r save}
 devtools::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
 
@@ -83,7 +99,9 @@ devtools::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
 ```
 # Reference
 
-Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology 25: 1965-1978. 
+Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very
+high resolution interpolated climate surfaces for global land areas.
+International Journal of Climatology 25: 1965-1978. 
 
 
 ## R System Information

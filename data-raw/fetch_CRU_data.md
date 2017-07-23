@@ -28,6 +28,26 @@ CRU_stack <- get_CRU_stack(pre = TRUE,
                            cache = TRUE)
 ```
 
+    ## 
+      |                                                                       
+      |                                                                 |   0%
+      |                                                                       
+      |========                                                         |  12%
+      |                                                                       
+      |================                                                 |  25%
+      |                                                                       
+      |========================                                         |  38%
+      |                                                                       
+      |================================                                 |  50%
+      |                                                                       
+      |=========================================                        |  62%
+      |                                                                       
+      |=================================================                |  75%
+      |                                                                       
+      |=========================================================        |  88%
+      |                                                                       
+      |=================================================================| 100%
+
 Extract data for station locations
 ----------------------------------
 
@@ -246,53 +266,54 @@ R System Information
     ## Session info -------------------------------------------------------------
 
     ##  setting  value                       
-    ##  version  R version 3.4.0 (2017-04-21)
-    ##  system   x86_64, darwin15.6.0        
+    ##  version  R version 3.4.1 (2017-06-30)
+    ##  system   x86_64, darwin16.6.0        
     ##  ui       unknown                     
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2017-06-12
+    ##  date     2017-07-23
 
     ## Packages -----------------------------------------------------------------
 
     ##  package      * version    date       source                       
     ##  backports      1.1.0      2017-05-22 cran (@1.1.0)                
-    ##  base         * 3.4.0      2017-05-11 local                        
-    ##  compiler       3.4.0      2017-05-11 local                        
-    ##  curl           2.6        2017-04-27 CRAN (R 3.4.0)               
+    ##  base         * 3.4.1      2017-07-07 local                        
+    ##  compiler       3.4.1      2017-07-07 local                        
+    ##  curl           2.8.1      2017-07-21 cran (@2.8.1)                
     ##  data.table     1.10.4     2017-02-01 CRAN (R 3.4.0)               
-    ##  datasets     * 3.4.0      2017-05-11 local                        
+    ##  datasets     * 3.4.1      2017-07-07 local                        
     ##  devtools       1.13.2     2017-06-02 cran (@1.13.2)               
     ##  digest         0.6.12     2017-01-27 CRAN (R 3.4.0)               
-    ##  evaluate       0.10       2016-10-11 CRAN (R 3.4.0)               
-    ##  getCRUCLdata * 0.1.6      2017-06-12 local                        
-    ##  graphics     * 3.4.0      2017-05-11 local                        
-    ##  grDevices    * 3.4.0      2017-05-11 local                        
-    ##  grid           3.4.0      2017-05-11 local                        
+    ##  evaluate       0.10.1     2017-06-24 cran (@0.10.1)               
+    ##  getCRUCLdata * 0.1.8      2017-06-27 local                        
+    ##  graphics     * 3.4.1      2017-07-07 local                        
+    ##  grDevices    * 3.4.1      2017-07-07 local                        
+    ##  grid           3.4.1      2017-07-07 local                        
     ##  hms            0.3        2016-11-22 CRAN (R 3.4.0)               
     ##  htmltools      0.3.6      2017-04-28 CRAN (R 3.4.0)               
+    ##  httr           1.2.1      2016-07-03 CRAN (R 3.4.0)               
     ##  knitr          1.16       2017-05-18 cran (@1.16)                 
-    ##  lattice        0.20-35    2017-03-25 CRAN (R 3.4.0)               
+    ##  lattice        0.20-35    2017-03-25 CRAN (R 3.4.1)               
     ##  magrittr       1.5        2014-11-22 CRAN (R 3.4.0)               
     ##  memoise        1.1.0      2017-04-21 CRAN (R 3.4.0)               
-    ##  methods      * 3.4.0      2017-05-11 local                        
+    ##  methods      * 3.4.1      2017-07-07 local                        
     ##  purrr          0.2.2.2    2017-05-11 cran (@0.2.2.2)              
-    ##  R6             2.2.1      2017-05-10 cran (@2.2.1)                
+    ##  R6             2.2.2      2017-06-17 cran (@2.2.2)                
     ##  rappdirs       0.3.1      2016-03-28 CRAN (R 3.4.0)               
     ##  raster         2.5-8      2016-06-02 CRAN (R 3.4.0)               
-    ##  Rcpp           0.12.11    2017-05-22 cran (@0.12.11)              
+    ##  Rcpp           0.12.12    2017-07-15 cran (@0.12.12)              
     ##  readr          1.1.1      2017-05-16 cran (@1.1.1)                
-    ##  rgdal          1.2-7      2017-04-25 CRAN (R 3.4.0)               
-    ##  rlang          0.1.1.9000 2017-06-07 Github (hadley/rlang@7f53e56)
-    ##  rmarkdown      1.5        2017-04-26 CRAN (R 3.4.0)               
+    ##  rgdal          1.2-8      2017-07-01 cran (@1.2-8)                
+    ##  rlang          0.1.1.9000 2017-07-02 Github (hadley/rlang@ff87439)
+    ##  rmarkdown      1.6        2017-06-15 cran (@1.6)                  
     ##  rprojroot      1.2        2017-01-16 CRAN (R 3.4.0)               
-    ##  sp             1.2-4      2016-12-22 CRAN (R 3.4.0)               
-    ##  stats        * 3.4.0      2017-05-11 local                        
+    ##  sp             1.2-5      2017-06-29 cran (@1.2-5)                
+    ##  stats        * 3.4.1      2017-07-07 local                        
     ##  stringi        1.1.5      2017-04-07 CRAN (R 3.4.0)               
     ##  stringr        1.2.0      2017-02-18 CRAN (R 3.4.0)               
     ##  tibble         1.3.3      2017-05-28 cran (@1.3.3)                
-    ##  tools          3.4.0      2017-05-11 local                        
-    ##  utils        * 3.4.0      2017-05-11 local                        
+    ##  tools          3.4.1      2017-07-07 local                        
+    ##  utils        * 3.4.1      2017-07-07 local                        
     ##  withr          1.0.2      2016-06-20 CRAN (R 3.4.0)               
     ##  yaml           2.1.14     2016-11-12 CRAN (R 3.4.0)
