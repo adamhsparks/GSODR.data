@@ -10,7 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 CRU CL v. 2.0 data are a gridded climatology of 1961-1990 monthly means released
 in 2002 and cover all land areas (excluding Antarctica) at 10-minute
 (0.1666667 degree) resolution. For more information see the description of the
-data provided by the University of East Anglia Climate Research Unit (CRU), http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt.
+data provided by the University of East Anglia Climate Research Unit (CRU),
+http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt.
 
 # Download, extract and merge CRU data with provided GSOD climate data
 
@@ -18,8 +19,8 @@ data provided by the University of East Anglia Climate Research Unit (CRU), http
 
 ```{r session_setup}
 library(getCRUCLdata)
-
 ```
+
 ## Get CRU v. CL 2.0 data
 
 ```{r get_data, message=FALSE, output=FALSE, echo=TRUE}
@@ -226,6 +227,7 @@ names(CRU_CL_2) <- c("STNID", CRU_stack_names)
 ```
 
 ## Save new data to disk for distribution with R package
+
 ```{r save}
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
