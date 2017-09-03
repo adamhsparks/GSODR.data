@@ -7,3 +7,4 @@
 ^codecov\.yml$
 ^docs$
 ^CONDUCT\.md$
+^codemeta\.json$
