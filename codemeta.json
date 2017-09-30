@@ -1,5 +1,8 @@
 {
-  "@context": ["https://doi.org/doi:10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@context": [
+    "https://doi.org/doi:10.5063/schema/codemeta-2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
   "identifier": "GSODRdata",
   "description": "This data-only package was created for distributing data useful for\n    the GSODR package and illustrated in examples given in the GSODR\n    vignettes and other online documentation.",
@@ -7,14 +10,14 @@
   "codeRepository": "https://github.com/adamhsparks/GSODRdata.git",
   "issueTracker": "https://github.com/adamhsparks/GSODRdata/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.4.1",
+    "version": "3.4.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.4.1 (2017-06-30)",
+  "runtimePlatform": "R version 3.4.2 (2017-09-28)",
   "author": [
     {
       "@type": "Person",
@@ -103,7 +106,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata.git/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata.git/blob/master/README.md",
-  "fileSize": "6458.372KB",
+  "fileSize": "6456.533KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",

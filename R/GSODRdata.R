@@ -5,7 +5,7 @@
 #'
 #' @docType package
 #'
-#' @name GSODRdata
+#' @name GSODRdata-package
 #'
 #' @seealso \code{\link{CHELSA}} Data from CHELSA climate layers for GSOD
 #' station locations.
