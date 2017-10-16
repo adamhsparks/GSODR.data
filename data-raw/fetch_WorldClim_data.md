@@ -103,49 +103,49 @@ R System Information
     ## Session info -------------------------------------------------------------
 
     ##  setting  value                       
-    ##  version  R version 3.4.1 (2017-06-30)
+    ##  version  R version 3.4.2 (2017-09-28)
     ##  system   x86_64, darwin16.7.0        
     ##  ui       unknown                     
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2017-09-19
+    ##  date     2017-10-16
 
     ## Packages -----------------------------------------------------------------
 
     ##  package   * version    date       source                          
-    ##  backports   1.1.0      2017-05-22 CRAN (R 3.4.1)                  
-    ##  base      * 3.4.1      2017-08-20 local                           
-    ##  compiler    3.4.1      2017-08-20 local                           
-    ##  curl        2.8.1      2017-07-21 CRAN (R 3.4.1)                  
-    ##  datasets  * 3.4.1      2017-08-20 local                           
+    ##  backports   1.1.1      2017-09-25 cran (@1.1.1)                   
+    ##  base      * 3.4.2      2017-10-03 local                           
+    ##  compiler    3.4.2      2017-10-03 local                           
+    ##  curl        3.0        2017-10-06 cran (@3.0)                     
+    ##  datasets  * 3.4.2      2017-10-03 local                           
     ##  devtools    1.13.3     2017-08-02 CRAN (R 3.4.1)                  
     ##  digest      0.6.12     2017-01-27 CRAN (R 3.4.1)                  
     ##  evaluate    0.10.1     2017-06-24 CRAN (R 3.4.1)                  
-    ##  graphics  * 3.4.1      2017-08-20 local                           
-    ##  grDevices * 3.4.1      2017-08-20 local                           
-    ##  grid        3.4.1      2017-08-20 local                           
+    ##  graphics  * 3.4.2      2017-10-03 local                           
+    ##  grDevices * 3.4.2      2017-10-03 local                           
+    ##  grid        3.4.2      2017-10-03 local                           
     ##  hms         0.3        2016-11-22 CRAN (R 3.4.1)                  
     ##  htmltools   0.3.6      2017-04-28 CRAN (R 3.4.1)                  
     ##  knitr       1.17       2017-08-10 CRAN (R 3.4.1)                  
-    ##  lattice     0.20-35    2017-03-25 CRAN (R 3.4.1)                  
+    ##  lattice     0.20-35    2017-03-25 CRAN (R 3.4.2)                  
     ##  magrittr    1.5        2014-11-22 CRAN (R 3.4.1)                  
     ##  memoise     1.1.0      2017-04-21 CRAN (R 3.4.1)                  
-    ##  methods   * 3.4.1      2017-08-20 local                           
+    ##  methods   * 3.4.2      2017-10-03 local                           
     ##  R6          2.2.2      2017-06-17 CRAN (R 3.4.1)                  
     ##  raster    * 2.5-8      2016-06-02 CRAN (R 3.4.1)                  
-    ##  Rcpp        0.12.12    2017-07-15 CRAN (R 3.4.1)                  
+    ##  Rcpp        0.12.13    2017-09-28 cran (@0.12.13)                 
     ##  readr       1.1.1      2017-05-16 CRAN (R 3.4.1)                  
-    ##  rgdal       1.2-10     2017-09-15 cran (@1.2-10)                  
-    ##  rlang       0.1.2.9000 2017-09-13 Github (tidyverse/rlang@ff02f2a)
+    ##  rgdal       1.2-13     2017-10-07 cran (@1.2-13)                  
+    ##  rlang       0.1.2.9000 2017-10-16 Github (tidyverse/rlang@2aacc28)
     ##  rmarkdown   1.6        2017-06-15 CRAN (R 3.4.1)                  
     ##  rprojroot   1.2        2017-01-16 CRAN (R 3.4.1)                  
     ##  sp        * 1.2-5      2017-06-29 CRAN (R 3.4.1)                  
-    ##  stats     * 3.4.1      2017-08-20 local                           
+    ##  stats     * 3.4.2      2017-10-03 local                           
     ##  stringi     1.1.5      2017-04-07 CRAN (R 3.4.1)                  
     ##  stringr     1.2.0      2017-02-18 CRAN (R 3.4.1)                  
     ##  tibble      1.3.4      2017-08-22 cran (@1.3.4)                   
-    ##  tools       3.4.1      2017-08-20 local                           
-    ##  utils     * 3.4.1      2017-08-20 local                           
+    ##  tools       3.4.2      2017-10-03 local                           
+    ##  utils     * 3.4.2      2017-10-03 local                           
     ##  withr       2.0.0      2017-09-17 Github (jimhester/withr@d1f0957)
     ##  yaml        2.1.14     2016-11-12 CRAN (R 3.4.1)
