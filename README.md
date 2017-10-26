@@ -54,13 +54,13 @@ This package is only available from GitHub due to its large size. It provides op
 
 ```r
 #install.packages("devtools")
-devtools::install_github("adamhsparks/GSODRdata")
+devtools::install_github("adamhsparks/GSODRdata", build_vignettes = TRUE)
 library("GSODRdata")
 ````
 
 ### Using _GSODRdata_
 
-See the _GSODR_ vignette, [Working with spatial and climate data](http://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html), for use and examples.
+See the _GSODR_ vignette, [Working with spatial and climate data from GSODR and GSODRdata](https://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html), for use and examples.
 
 -----
 
