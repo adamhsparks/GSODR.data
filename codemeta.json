@@ -106,7 +106,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata.git/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata.git/blob/master/README.md",
-  "fileSize": "6461.601KB",
+  "fileSize": "6461.626KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
