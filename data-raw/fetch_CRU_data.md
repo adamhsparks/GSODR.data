@@ -10,23 +10,48 @@ Setup the R session
 -------------------
 
 ``` r
-library(getCRUCLdata)
+# check for presence of countrycode package and install if needed
+if (!require("getCRUCLdata")) {
+  install.packages("getCRUCLdata", repos = "https://cran.rstudio.com/")
+}
 ```
+
+    ## Loading required package: getCRUCLdata
 
 Get CRU v. CL 2.0 data
 ----------------------
 
 ``` r
-CRU_stack <- get_CRU_stack(pre = TRUE,
-                           rd0 = TRUE,
-                           tmp = TRUE,
-                           dtr = TRUE,
-                           reh = TRUE,
-                           sunp = TRUE,
-                           frs = TRUE,
-                           wnd = TRUE,
-                           cache = TRUE)
+CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
+                                         rd0 = TRUE,
+                                         tmp = TRUE,
+                                         dtr = TRUE,
+                                         reh = TRUE,
+                                         sunp = TRUE,
+                                         frs = TRUE,
+                                         wnd = TRUE,
+                                         cache = TRUE)
 ```
+
+    ## 
+      |                                                                       
+      |                                                                 |   0%
+      |                                                                       
+      |========                                                         |  12%
+      |                                                                       
+      |================                                                 |  25%
+      |                                                                       
+      |========================                                         |  38%
+      |                                                                       
+      |================================                                 |  50%
+      |                                                                       
+      |=========================================                        |  62%
+      |                                                                       
+      |=================================================                |  75%
+      |                                                                       
+      |=========================================================        |  88%
+      |                                                                       
+      |=================================================================| 100%
 
 Extract data for station locations
 ----------------------------------
@@ -227,7 +252,7 @@ Save new data to disk for distribution with R package
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/U8004755/Development/GSODRdata/data
+    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/adamsparks/Development/GSODRdata/data
 
 Data reference and abstract
 ===========================
@@ -246,53 +271,54 @@ R System Information
     ## Session info -------------------------------------------------------------
 
     ##  setting  value                       
-    ##  version  R version 3.4.1 (2017-06-30)
-    ##  system   x86_64, darwin16.7.0        
+    ##  version  R version 3.4.2 (2017-09-28)
+    ##  system   x86_64, darwin17.0.0        
     ##  ui       unknown                     
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2017-09-19
+    ##  date     2017-10-26
 
     ## Packages -----------------------------------------------------------------
 
     ##  package      * version    date       source                          
-    ##  backports      1.1.0      2017-05-22 CRAN (R 3.4.1)                  
-    ##  base         * 3.4.1      2017-08-20 local                           
-    ##  compiler       3.4.1      2017-08-20 local                           
-    ##  curl           2.8.1      2017-07-21 CRAN (R 3.4.1)                  
-    ##  data.table     1.10.4     2017-02-01 CRAN (R 3.4.1)                  
-    ##  datasets     * 3.4.1      2017-08-20 local                           
-    ##  devtools       1.13.3     2017-08-02 CRAN (R 3.4.1)                  
-    ##  digest         0.6.12     2017-01-27 CRAN (R 3.4.1)                  
-    ##  evaluate       0.10.1     2017-06-24 CRAN (R 3.4.1)                  
-    ##  getCRUCLdata * 0.1.9      2017-08-19 CRAN (R 3.4.1)                  
-    ##  graphics     * 3.4.1      2017-08-20 local                           
-    ##  grDevices    * 3.4.1      2017-08-20 local                           
-    ##  grid           3.4.1      2017-08-20 local                           
-    ##  hms            0.3        2016-11-22 CRAN (R 3.4.1)                  
-    ##  htmltools      0.3.6      2017-04-28 CRAN (R 3.4.1)                  
-    ##  knitr          1.17       2017-08-10 CRAN (R 3.4.1)                  
-    ##  lattice        0.20-35    2017-03-25 CRAN (R 3.4.1)                  
-    ##  magrittr       1.5        2014-11-22 CRAN (R 3.4.1)                  
-    ##  memoise        1.1.0      2017-04-21 CRAN (R 3.4.1)                  
-    ##  methods      * 3.4.1      2017-08-20 local                           
-    ##  purrr          0.2.3      2017-08-02 CRAN (R 3.4.1)                  
-    ##  R6             2.2.2      2017-06-17 CRAN (R 3.4.1)                  
-    ##  rappdirs       0.3.1      2016-03-28 CRAN (R 3.4.1)                  
-    ##  raster         2.5-8      2016-06-02 CRAN (R 3.4.1)                  
-    ##  Rcpp           0.12.12    2017-07-15 CRAN (R 3.4.1)                  
-    ##  readr          1.1.1      2017-05-16 CRAN (R 3.4.1)                  
-    ##  rgdal          1.2-10     2017-09-15 cran (@1.2-10)                  
-    ##  rlang          0.1.2.9000 2017-09-13 Github (tidyverse/rlang@ff02f2a)
-    ##  rmarkdown      1.6        2017-06-15 CRAN (R 3.4.1)                  
-    ##  rprojroot      1.2        2017-01-16 CRAN (R 3.4.1)                  
-    ##  sp             1.2-5      2017-06-29 CRAN (R 3.4.1)                  
-    ##  stats        * 3.4.1      2017-08-20 local                           
-    ##  stringi        1.1.5      2017-04-07 CRAN (R 3.4.1)                  
-    ##  stringr        1.2.0      2017-02-18 CRAN (R 3.4.1)                  
-    ##  tibble         1.3.4      2017-08-22 cran (@1.3.4)                   
-    ##  tools          3.4.1      2017-08-20 local                           
-    ##  utils        * 3.4.1      2017-08-20 local                           
-    ##  withr          2.0.0      2017-09-17 Github (jimhester/withr@d1f0957)
-    ##  yaml           2.1.14     2016-11-12 CRAN (R 3.4.1)
+    ##  backports      1.1.1      2017-09-25 cran (@1.1.1)                   
+    ##  base         * 3.4.2      2017-09-30 local                           
+    ##  compiler       3.4.2      2017-09-30 local                           
+    ##  curl           3.0        2017-10-06 cran (@3.0)                     
+    ##  data.table     1.10.4-2   2017-10-12 cran (@1.10.4-)                 
+    ##  datasets     * 3.4.2      2017-09-30 local                           
+    ##  devtools       1.13.3     2017-08-02 CRAN (R 3.4.2)                  
+    ##  digest         0.6.12     2017-01-27 CRAN (R 3.4.2)                  
+    ##  evaluate       0.10.1     2017-06-24 cran (@0.10.1)                  
+    ##  getCRUCLdata * 0.1.9      2017-08-19 CRAN (R 3.4.2)                  
+    ##  graphics     * 3.4.2      2017-09-30 local                           
+    ##  grDevices    * 3.4.2      2017-09-30 local                           
+    ##  grid           3.4.2      2017-09-30 local                           
+    ##  hms            0.3        2016-11-22 CRAN (R 3.4.2)                  
+    ##  htmltools      0.3.6      2017-04-28 cran (@0.3.6)                   
+    ##  httr           1.3.1      2017-08-20 CRAN (R 3.4.2)                  
+    ##  knitr          1.17       2017-08-10 cran (@1.17)                    
+    ##  lattice        0.20-35    2017-03-25 CRAN (R 3.4.2)                  
+    ##  magrittr       1.5        2014-11-22 CRAN (R 3.4.2)                  
+    ##  memoise        1.1.0      2017-04-21 CRAN (R 3.4.2)                  
+    ##  methods      * 3.4.2      2017-09-30 local                           
+    ##  purrr          0.2.4      2017-10-18 cran (@0.2.4)                   
+    ##  R6             2.2.2      2017-06-17 CRAN (R 3.4.2)                  
+    ##  rappdirs       0.3.1      2016-03-28 CRAN (R 3.4.2)                  
+    ##  raster         2.5-8      2016-06-02 CRAN (R 3.4.2)                  
+    ##  Rcpp           0.12.13    2017-09-28 CRAN (R 3.4.2)                  
+    ##  readr          1.1.1      2017-05-16 CRAN (R 3.4.2)                  
+    ##  rgdal          1.2-13     2017-10-07 cran (@1.2-13)                  
+    ##  rlang          0.1.2.9000 2017-10-25 Github (tidyverse/rlang@cbdc3f3)
+    ##  rmarkdown      1.6        2017-06-15 cran (@1.6)                     
+    ##  rprojroot      1.2        2017-01-16 cran (@1.2)                     
+    ##  sp             1.2-5      2017-06-29 CRAN (R 3.4.2)                  
+    ##  stats        * 3.4.2      2017-09-30 local                           
+    ##  stringi        1.1.5      2017-04-07 CRAN (R 3.4.2)                  
+    ##  stringr        1.2.0      2017-02-18 CRAN (R 3.4.2)                  
+    ##  tibble         1.3.4      2017-08-22 CRAN (R 3.4.2)                  
+    ##  tools          3.4.2      2017-09-30 local                           
+    ##  utils        * 3.4.2      2017-09-30 local                           
+    ##  withr          2.0.0      2017-07-28 CRAN (R 3.4.2)                  
+    ##  yaml           2.1.14     2016-11-12 cran (@2.1.14)

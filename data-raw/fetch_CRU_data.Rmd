@@ -18,21 +18,24 @@ http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt.
 ## Setup the R session
 
 ```{r session_setup}
-library(getCRUCLdata)
+# check for presence of countrycode package and install if needed
+if (!require("getCRUCLdata")) {
+  install.packages("getCRUCLdata", repos = "https://cran.rstudio.com/")
+}
 ```
 
 ## Get CRU v. CL 2.0 data
 
 ```{r get_data, message=FALSE, output=FALSE, echo=TRUE}
-CRU_stack <- get_CRU_stack(pre = TRUE,
-                           rd0 = TRUE,
-                           tmp = TRUE,
-                           dtr = TRUE,
-                           reh = TRUE,
-                           sunp = TRUE,
-                           frs = TRUE,
-                           wnd = TRUE,
-                           cache = TRUE)
+CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
+                                         rd0 = TRUE,
+                                         tmp = TRUE,
+                                         dtr = TRUE,
+                                         reh = TRUE,
+                                         sunp = TRUE,
+                                         frs = TRUE,
+                                         wnd = TRUE,
+                                         cache = TRUE)
 ```
 
 ## Extract data for station locations
