@@ -35,11 +35,11 @@ Six data frames of climate data are provided from various sources for GSOD stati
 
   * **MODCF** - [Remotely sensed high-resolution global cloud dynamics for predicting ecosystem and biodiversity distributions](https://github.com/adammwilson/Cloud) (Wilson *et al.* 2016) provides new near-global, fine-grain (≈1km) monthly cloud frequencies from 15 years of twice-daily MODIS satellite images.
   
-  * **WorldClim_Bio** - [WorldClim Global Climate Data - Free climate data for ecological modeling and GIS](http://www.worldclim.org/version1)
+  * **WorldClim_Bio 1.4** - [WorldClim Global Climate Data - Free climate data for ecological modeling and GIS](http://www.worldclim.org/version1)
   (Hijmans et al. 2004) provides freely available [bioclimatic variables](http://worldclim.org/bioclim).
 These data are freely available for download from http://www.worldclim.org/version1.
 
-  * **WorldClim_Clim** - [WorldClim Global Climate Data - Free climate data for ecological modeling and GIS](http://www.worldclim.org/version1)
+  * **WorldClim_Clim 1.4** - [WorldClim Global Climate Data - Free climate data for ecological modeling and GIS](http://www.worldclim.org/version1)
   (Hijmans et al. 2004) provides freely available, average monthly climate data. Current
 conditions (interpolations of observed data, representative of 1960-1990)
 are freely available for download from http://www.worldclim.org/version1.

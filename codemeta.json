@@ -10,7 +10,7 @@
   "codeRepository": "https://github.com/adamhsparks/GSODRdata.git",
   "issueTracker": "https://github.com/adamhsparks/GSODRdata/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.2.5",
+  "version": "0.2.7",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -24,21 +24,21 @@
       "givenName": "Adam",
       "familyName": "Sparks",
       "email": "adamhsparks@gmail.com",
-      "@id": "http://orcid.org/0000-0002-0061-8359"
+      "@id": "https://orcid.org/0000-0002-0061-8359"
     },
     {
       "@type": "Person",
       "givenName": "Tomislav",
       "familyName": "Hengl",
       "email": "tom.hengl@isric.org",
-      "@id": "http://orcid.org/0000-0002-9921-5129"
+      "@id": "https://orcid.org/0000-0002-9921-5129"
     },
     {
       "@type": "Person",
       "givenName": "Andrew",
       "familyName": "Nelson",
       "email": "dr.andy.nelson@gmail.com",
-      "@id": "http://orcid.org/0000-0002-7249-3778"
+      "@id": "https://orcid.org/0000-0002-7249-3778"
     }
   ],
   "maintainer": {
@@ -46,7 +46,7 @@
     "givenName": "Adam",
     "familyName": "Sparks",
     "email": "adamhsparks@gmail.com",
-    "@id": "http://orcid.org/0000-0002-0061-8359"
+    "@id": "https://orcid.org/0000-0002-0061-8359"
   },
   "softwareSuggestions": [
     {
@@ -106,7 +106,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata.git/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata.git/blob/master/README.md",
-  "fileSize": "6456.533KB",
+  "fileSize": "6461.601KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
