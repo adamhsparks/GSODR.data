@@ -103,7 +103,7 @@
 \item{CRU_CL_2_0_wnd_11}{Mean November 10 metre wind speed [metres per second]}
 \item{CRU_CL_2_0_wnd_12}{Mean December 10 metre wind speed [metres per second]}
 }}
-\format{An object of class \code{data.frame} with 24916 rows and 97 columns.}
+\format{An object of class \code{data.frame} with 24931 rows and 97 columns.}
 \usage{
 CRU_CL_2
 }
