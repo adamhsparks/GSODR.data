@@ -266,5 +266,5 @@ Research Unit (http://www.cru.uea.ac.uk).
 ## R System Information
 
 ```{r system information, echo=FALSE}
-devtools::session_info()
+sessioninfo::session_info()
 ```

@@ -1,13 +1,16 @@
 CRU CL v. 2.0 Data for GSOD Station Locations
 ================
 
-CRU CL v. 2.0 data are a gridded climatology of 1961-1990 monthly means released in 2002 and cover all land areas (excluding Antarctica) at 10-minute (0.1666667 degree) resolution. For more information see the description of the data provided by the University of East Anglia Climate Research Unit (CRU), <http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
+CRU CL v. 2.0 data are a gridded climatology of 1961-1990 monthly means
+released in 2002 and cover all land areas (excluding Antarctica) at
+10-minute (0.1666667 degree) resolution. For more information see the
+description of the data provided by the University of East Anglia
+Climate Research Unit (CRU),
+<http://www.cru.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
 
-Download, extract and merge CRU data with provided GSOD climate data
-====================================================================
+# Download, extract and merge CRU data with provided GSOD climate data
 
-Setup the R session
--------------------
+## Setup the R session
 
 ``` r
 # check for presence of countrycode package and install if needed
@@ -18,8 +21,24 @@ if (!require("getCRUCLdata")) {
 
     ## Loading required package: getCRUCLdata
 
-Get CRU v. CL 2.0 data
-----------------------
+    ## 
+    ## CRU CL 2.0 data are provided by the Climate Research Unit
+    ## at the University of East Anglia. This data-set is owned by
+    ## its author, Mark New. It is being distributed, where
+    ## necessary by Tim Mitchell.
+    ## 
+    ## Users should refer to the published literature for details
+    ## of it.
+    ## 
+    ## The data set may be freely used for non-commerical
+    ## scientific and educational purposes, provided it is
+    ## described as CRU CL 2.0 and attributed to:
+    ## 
+    ## New, M., Lister, D., Hulme, M. and Makin, I., 2002: A
+    ## high-resolution data set of surface climate over global
+    ## land areas. Climate Research 21:1-25
+
+## Get CRU v. CL 2.0 data
 
 ``` r
 CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
@@ -33,8 +52,27 @@ CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
                                          cache = TRUE)
 ```
 
-Extract data for station locations
-----------------------------------
+    ## 
+      |                                                                       
+      |                                                                 |   0%
+      |                                                                       
+      |========                                                         |  12%
+      |                                                                       
+      |================                                                 |  25%
+      |                                                                       
+      |========================                                         |  38%
+      |                                                                       
+      |================================                                 |  50%
+      |                                                                       
+      |=========================================                        |  62%
+      |                                                                       
+      |=================================================                |  75%
+      |                                                                       
+      |=========================================================        |  88%
+      |                                                                       
+      |=================================================================| 100%
+
+## Extract data for station locations
 
 ``` r
 stations <- readr::read_csv(
@@ -225,79 +263,125 @@ CRU_CL_2 <- na.omit(data.frame(stations$STNID,
 names(CRU_CL_2) <- c("STNID", CRU_stack_names)
 ```
 
-Save new data to disk for distribution with R package
------------------------------------------------------
+## Save new data to disk for distribution with R package
 
 ``` r
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/adamsparks/Development/GSODRdata/data
+    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/U8004755/Development/GSODRdata/data
 
-Data reference and abstract
-===========================
+# Data reference and abstract
 
-> Mark New (1,\*), David Lister (2), Mike Hulme (3), Ian Makin (4)
-> A high-resolution data set of surface climate over global land areas Climate Research, 2000, Vol 21, pg 1-25
-> (1) School of Geography and the Environment, University of Oxford, Mansfield Road, Oxford OX1 3TB, United Kingdom
-> (2) Climatic Research Unit, and (3) Tyndall Centre for Climate Change Research, both at School of Environmental Sciences, University of East Anglia, Norwich NR4 7TJ, United Kingdom
-> (4) International Water Management Institute, PO Box 2"07"5, Colombo, Sri Lanka
+> Mark New (1,\*), David Lister (2), Mike Hulme (3), Ian Makin (4)  
+> A high-resolution data set of surface climate over global land areas
+> Climate Research, 2000, Vol 21, pg 1-25  
+> (1) School of Geography and the Environment, University of Oxford,
+> Mansfield Road, Oxford OX1 3TB, United Kingdom  
+> (2) Climatic Research Unit, and (3) Tyndall Centre for Climate Change
+> Research, both at School of Environmental Sciences, University of East
+> Anglia, Norwich NR4 7TJ, United Kingdom  
+> (4) International Water Management Institute, PO Box 2“07”5, Colombo,
+> Sri Lanka
 
-> **ABSTRACT:** We describe the construction of a 10-minute latitude/longitude data set of mean monthly surface climate over global land areas, excluding Antarctica. The climatology includes 8 climate elements - precipitation, wet-day frequency, temperature, diurnal temperature range, relative humidity,sunshine duration, ground frost frequency and windspeed - and was interpolated from a data set of station means for the period centred on 1961 to 1990. Precipitation was first defined in terms of the parameters of the Gamma distribution, enabling the calculation of monthly precipitation at any given return period. The data are compared to an earlier data set at 0.5 degrees latitude/longitude resolution and show added value over most regions. The data will have many applications in applied climatology, biogeochemical modelling, hydrology and agricultural meteorology and are available through the School of Geography Oxford (<http://www.geog.ox.ac.uk>), the International Water Management Institute "World Water and Climate Atlas" (<http://www.iwmi.org>) and the Climatic Research Unit (<http://www.cru.uea.ac.uk>).
+> **ABSTRACT:** We describe the construction of a 10-minute
+> latitude/longitude data set of mean monthly surface climate over
+> global land areas, excluding Antarctica. The climatology includes 8
+> climate elements - precipitation, wet-day frequency, temperature,
+> diurnal temperature range, relative humidity,sunshine duration, ground
+> frost frequency and windspeed - and was interpolated from a data set
+> of station means for the period centred on 1961 to 1990. Precipitation
+> was first defined in terms of the parameters of the Gamma
+> distribution, enabling the calculation of monthly precipitation at any
+> given return period. The data are compared to an earlier data set at
+> 0.5 degrees latitude/longitude resolution and show added value over
+> most regions. The data will have many applications in applied
+> climatology, biogeochemical modelling, hydrology and agricultural
+> meteorology and are available through the School of Geography Oxford
+> (<http://www.geog.ox.ac.uk>), the International Water Management
+> Institute “World Water and Climate Atlas” (<http://www.iwmi.org>) and
+> the Climatic Research Unit
+    (<http://www.cru.uea.ac.uk>).
 
-R System Information
---------------------
+## R System Information
 
-    ## Session info -------------------------------------------------------------
-
+    ## ─ Session info ──────────────────────────────────────────────────────────
     ##  setting  value                       
     ##  version  R version 3.4.2 (2017-09-28)
-    ##  system   x86_64, darwin17.0.0        
+    ##  os       macOS Sierra 10.12.6        
+    ##  system   x86_64, darwin16.7.0        
     ##  ui       unknown                     
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2017-10-26
-
-    ## Packages -----------------------------------------------------------------
-
-    ##  package      * version    date       source                          
-    ##  backports      1.1.1      2017-09-25 cran (@1.1.1)                   
-    ##  base         * 3.4.2      2017-09-30 local                           
-    ##  compiler       3.4.2      2017-09-30 local                           
-    ##  curl           3.0        2017-10-06 cran (@3.0)                     
-    ##  data.table     1.10.4-2   2017-10-12 cran (@1.10.4-)                 
-    ##  datasets     * 3.4.2      2017-09-30 local                           
-    ##  devtools       1.13.3     2017-08-02 CRAN (R 3.4.2)                  
-    ##  digest         0.6.12     2017-01-27 CRAN (R 3.4.2)                  
-    ##  evaluate       0.10.1     2017-06-24 cran (@0.10.1)                  
-    ##  getCRUCLdata * 0.1.9      2017-08-19 CRAN (R 3.4.2)                  
-    ##  graphics     * 3.4.2      2017-09-30 local                           
-    ##  grDevices    * 3.4.2      2017-09-30 local                           
-    ##  grid           3.4.2      2017-09-30 local                           
-    ##  hms            0.3        2016-11-22 CRAN (R 3.4.2)                  
-    ##  htmltools      0.3.6      2017-04-28 cran (@0.3.6)                   
-    ##  knitr          1.17       2017-08-10 cran (@1.17)                    
-    ##  lattice        0.20-35    2017-03-25 CRAN (R 3.4.2)                  
-    ##  magrittr       1.5        2014-11-22 CRAN (R 3.4.2)                  
-    ##  memoise        1.1.0      2017-04-21 CRAN (R 3.4.2)                  
-    ##  methods      * 3.4.2      2017-09-30 local                           
-    ##  purrr          0.2.4      2017-10-18 cran (@0.2.4)                   
-    ##  R6             2.2.2      2017-06-17 CRAN (R 3.4.2)                  
-    ##  rappdirs       0.3.1      2016-03-28 CRAN (R 3.4.2)                  
-    ##  raster         2.5-8      2016-06-02 CRAN (R 3.4.2)                  
-    ##  Rcpp           0.12.13    2017-09-28 CRAN (R 3.4.2)                  
-    ##  readr          1.1.1      2017-05-16 CRAN (R 3.4.2)                  
-    ##  rgdal          1.2-13     2017-10-07 cran (@1.2-13)                  
-    ##  rlang          0.1.2.9000 2017-10-25 Github (tidyverse/rlang@cbdc3f3)
-    ##  rmarkdown      1.6        2017-06-15 cran (@1.6)                     
-    ##  rprojroot      1.2        2017-01-16 cran (@1.2)                     
-    ##  sp             1.2-5      2017-06-29 CRAN (R 3.4.2)                  
-    ##  stats        * 3.4.2      2017-09-30 local                           
-    ##  stringi        1.1.5      2017-04-07 CRAN (R 3.4.2)                  
-    ##  stringr        1.2.0      2017-02-18 CRAN (R 3.4.2)                  
-    ##  tibble         1.3.4      2017-08-22 CRAN (R 3.4.2)                  
-    ##  tools          3.4.2      2017-09-30 local                           
-    ##  utils        * 3.4.2      2017-09-30 local                           
-    ##  withr          2.0.0      2017-07-28 CRAN (R 3.4.2)                  
-    ##  yaml           2.1.14     2016-11-12 cran (@2.1.14)
+    ##  date     2017-11-27                  
+    ## 
+    ## ─ Packages ──────────────────────────────────────────────────────────────
+    ##  package      * version    date      
+    ##  backports      1.1.1      2017-09-25
+    ##  clisymbols     1.2.0      2017-11-07
+    ##  curl           3.0        2017-10-06
+    ##  data.table     1.10.4-3   2017-10-27
+    ##  devtools       1.13.4     2017-11-09
+    ##  digest         0.6.12     2017-01-27
+    ##  evaluate       0.10.1     2017-06-24
+    ##  getCRUCLdata * 0.2.0      2017-11-16
+    ##  hms            0.4.0      2017-11-23
+    ##  hoardr         0.2.0      2017-05-10
+    ##  htmltools      0.3.6      2017-04-28
+    ##  httr           1.3.1      2017-08-20
+    ##  knitr          1.17       2017-08-10
+    ##  lattice        0.20-35    2017-03-25
+    ##  magrittr       1.5        2014-11-22
+    ##  memoise        1.1.0      2017-04-21
+    ##  pkgconfig      2.0.1      2017-03-21
+    ##  R6             2.2.2      2017-06-17
+    ##  rappdirs       0.3.1      2016-03-28
+    ##  raster         2.6-7      2017-11-13
+    ##  Rcpp           0.12.14    2017-11-23
+    ##  readr          1.1.1      2017-05-16
+    ##  rgdal          1.2-16     2017-11-21
+    ##  rlang          0.1.4.9000 2017-11-26
+    ##  rmarkdown      1.8.3      2017-11-26
+    ##  rprojroot      1.2        2017-01-16
+    ##  sessioninfo    1.0.0      2017-06-21
+    ##  sp             1.2-5      2017-06-29
+    ##  stringi        1.1.6      2017-11-17
+    ##  stringr        1.2.0      2017-02-18
+    ##  tibble         1.3.4      2017-08-22
+    ##  withr          2.1.0.9000 2017-11-26
+    ##  yaml           2.1.14     2016-11-12
+    ##  source                                 
+    ##  cran (@1.1.1)                          
+    ##  Github (gaborcsardi/clisymbols@e49b4f5)
+    ##  cran (@3.0)                            
+    ##  cran (@1.10.4-)                        
+    ##  cran (@1.13.4)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  cran (@0.2.0)                          
+    ##  cran (@0.4.0)                          
+    ##  CRAN (R 3.4.2)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.2)                         
+    ##  CRAN (R 3.4.2)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  cran (@2.6-7)                          
+    ##  cran (@0.12.14)                        
+    ##  CRAN (R 3.4.1)                         
+    ##  cran (@1.2-16)                         
+    ##  Github (tidyverse/rlang@bd83400)       
+    ##  Github (rstudio/rmarkdown@07f7d8e)     
+    ##  CRAN (R 3.4.1)                         
+    ##  CRAN (R 3.4.2)                         
+    ##  CRAN (R 3.4.1)                         
+    ##  cran (@1.1.6)                          
+    ##  CRAN (R 3.4.1)                         
+    ##  cran (@1.3.4)                          
+    ##  Github (jimhester/withr@fe81c00)       
+    ##  CRAN (R 3.4.1)
