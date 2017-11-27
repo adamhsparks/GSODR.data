@@ -1,3 +1,8 @@
+
+# GSODRData v0.2.8
+- Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
+locations as of 27/11/2017
+
 # GSODRData v0.2.7
 - Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
 locations as of 26/10/2017
