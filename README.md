@@ -62,6 +62,15 @@ library("GSODRdata")
 
 See the _GSODR_ vignette, [Working with spatial and climate data from GSODR and GSODRdata](https://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html), for use and examples.
 
+### Keeping _GSODRdata_ updated
+
+With each new release of _GSODR_, the _GSODRdata_ package is also updated. To
+keep your local installation up-to-date, please use:
+
+```r
+devtools::update_packages("GSODRdata")
+```
+
 -----
 
 # Meta 
