@@ -30,3 +30,5 @@ NeedsCompilation: no
 Repository: GitHub
 LazyData: TRUE
 VignetteBuilder: knitr
+X-schema.org-applicationCategory: Tools
+X-schema.org-keywords: ecological-modelling, meteorological-data, global-weather, weather, weather-data, meteorology, station-data, surface-weather, climate-data
