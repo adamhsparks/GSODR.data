@@ -114,50 +114,50 @@ areas. International Journal of Climatology 25:
     ## Session info -------------------------------------------------------------
 
     ##  setting  value                       
-    ##  version  R version 3.4.2 (2017-09-28)
+    ##  version  R version 3.4.3 (2017-11-30)
     ##  system   x86_64, darwin16.7.0        
     ##  ui       unknown                     
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2017-11-27
+    ##  date     2017-12-15
 
     ## Packages -----------------------------------------------------------------
 
     ##  package   * version    date       source                            
-    ##  backports   1.1.1      2017-09-25 cran (@1.1.1)                     
-    ##  base      * 3.4.2      2017-10-03 local                             
-    ##  compiler    3.4.2      2017-10-03 local                             
-    ##  curl        3.0        2017-10-06 cran (@3.0)                       
-    ##  datasets  * 3.4.2      2017-10-03 local                             
+    ##  backports   1.1.2      2017-12-13 cran (@1.1.2)                     
+    ##  base      * 3.4.3      2017-12-03 local                             
+    ##  compiler    3.4.3      2017-12-03 local                             
+    ##  curl        3.1        2017-12-12 cran (@3.1)                       
+    ##  datasets  * 3.4.3      2017-12-03 local                             
     ##  devtools    1.13.4     2017-11-09 cran (@1.13.4)                    
-    ##  digest      0.6.12     2017-01-27 CRAN (R 3.4.1)                    
+    ##  digest      0.6.13     2017-12-14 cran (@0.6.13)                    
     ##  evaluate    0.10.1     2017-06-24 CRAN (R 3.4.1)                    
-    ##  graphics  * 3.4.2      2017-10-03 local                             
-    ##  grDevices * 3.4.2      2017-10-03 local                             
-    ##  grid        3.4.2      2017-10-03 local                             
+    ##  graphics  * 3.4.3      2017-12-03 local                             
+    ##  grDevices * 3.4.3      2017-12-03 local                             
+    ##  grid        3.4.3      2017-12-03 local                             
     ##  hms         0.4.0      2017-11-23 cran (@0.4.0)                     
     ##  htmltools   0.3.6      2017-04-28 CRAN (R 3.4.1)                    
     ##  knitr       1.17       2017-08-10 CRAN (R 3.4.2)                    
-    ##  lattice     0.20-35    2017-03-25 CRAN (R 3.4.2)                    
+    ##  lattice     0.20-35    2017-03-25 CRAN (R 3.4.3)                    
     ##  magrittr    1.5        2014-11-22 CRAN (R 3.4.1)                    
     ##  memoise     1.1.0      2017-04-21 CRAN (R 3.4.1)                    
-    ##  methods   * 3.4.2      2017-10-03 local                             
+    ##  methods   * 3.4.3      2017-12-03 local                             
     ##  pkgconfig   2.0.1      2017-03-21 CRAN (R 3.4.1)                    
     ##  R6          2.2.2      2017-06-17 CRAN (R 3.4.1)                    
     ##  raster    * 2.6-7      2017-11-13 cran (@2.6-7)                     
     ##  Rcpp        0.12.14    2017-11-23 cran (@0.12.14)                   
     ##  readr       1.1.1      2017-05-16 CRAN (R 3.4.1)                    
     ##  rgdal       1.2-16     2017-11-21 cran (@1.2-16)                    
-    ##  rlang       0.1.4.9000 2017-11-26 Github (tidyverse/rlang@bd83400)  
-    ##  rmarkdown   1.8.3      2017-11-26 Github (rstudio/rmarkdown@07f7d8e)
+    ##  rlang       0.1.4.9000 2017-12-07 Github (tidyverse/rlang@5ebcf24)  
+    ##  rmarkdown   1.8.5      2017-12-13 Github (rstudio/rmarkdown@08c7567)
     ##  rprojroot   1.2        2017-01-16 CRAN (R 3.4.1)                    
     ##  sp        * 1.2-5      2017-06-29 CRAN (R 3.4.1)                    
-    ##  stats     * 3.4.2      2017-10-03 local                             
+    ##  stats     * 3.4.3      2017-12-03 local                             
     ##  stringi     1.1.6      2017-11-17 cran (@1.1.6)                     
     ##  stringr     1.2.0      2017-02-18 CRAN (R 3.4.1)                    
     ##  tibble      1.3.4      2017-08-22 cran (@1.3.4)                     
-    ##  tools       3.4.2      2017-10-03 local                             
-    ##  utils     * 3.4.2      2017-10-03 local                             
+    ##  tools       3.4.3      2017-12-03 local                             
+    ##  utils     * 3.4.3      2017-12-03 local                             
     ##  withr       2.1.0.9000 2017-11-26 Github (jimhester/withr@fe81c00)  
-    ##  yaml        2.1.14     2016-11-12 CRAN (R 3.4.1)
+    ##  yaml        2.1.16     2017-12-12 cran (@2.1.16)
