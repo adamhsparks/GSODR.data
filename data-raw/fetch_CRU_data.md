@@ -52,26 +52,6 @@ CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
                                          cache = TRUE)
 ```
 
-    ## 
-      |                                                                       
-      |                                                                 |   0%
-      |                                                                       
-      |========                                                         |  12%
-      |                                                                       
-      |================                                                 |  25%
-      |                                                                       
-      |========================                                         |  38%
-      |                                                                       
-      |================================                                 |  50%
-      |                                                                       
-      |=========================================                        |  62%
-      |                                                                       
-      |=================================================                |  75%
-      |                                                                       
-      |=========================================================        |  88%
-      |                                                                       
-      |=================================================================| 100%
-
 ## Extract data for station locations
 
 ``` r
@@ -307,29 +287,28 @@ devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 
     ## ─ Session info ──────────────────────────────────────────────────────────
     ##  setting  value                       
-    ##  version  R version 3.4.2 (2017-09-28)
+    ##  version  R version 3.4.3 (2017-11-30)
     ##  os       macOS Sierra 10.12.6        
     ##  system   x86_64, darwin16.7.0        
     ##  ui       unknown                     
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2017-11-27                  
+    ##  date     2017-12-15                  
     ## 
     ## ─ Packages ──────────────────────────────────────────────────────────────
     ##  package      * version    date      
-    ##  backports      1.1.1      2017-09-25
+    ##  backports      1.1.2      2017-12-13
     ##  clisymbols     1.2.0      2017-11-07
-    ##  curl           3.0        2017-10-06
+    ##  curl           3.1        2017-12-12
     ##  data.table     1.10.4-3   2017-10-27
     ##  devtools       1.13.4     2017-11-09
-    ##  digest         0.6.12     2017-01-27
+    ##  digest         0.6.13     2017-12-14
     ##  evaluate       0.10.1     2017-06-24
     ##  getCRUCLdata * 0.2.0      2017-11-16
     ##  hms            0.4.0      2017-11-23
     ##  hoardr         0.2.0      2017-05-10
     ##  htmltools      0.3.6      2017-04-28
-    ##  httr           1.3.1      2017-08-20
     ##  knitr          1.17       2017-08-10
     ##  lattice        0.20-35    2017-03-25
     ##  magrittr       1.5        2014-11-22
@@ -341,8 +320,8 @@ devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
     ##  Rcpp           0.12.14    2017-11-23
     ##  readr          1.1.1      2017-05-16
     ##  rgdal          1.2-16     2017-11-21
-    ##  rlang          0.1.4.9000 2017-11-26
-    ##  rmarkdown      1.8.3      2017-11-26
+    ##  rlang          0.1.4.9000 2017-12-07
+    ##  rmarkdown      1.8.5      2017-12-13
     ##  rprojroot      1.2        2017-01-16
     ##  sessioninfo    1.0.0      2017-06-21
     ##  sp             1.2-5      2017-06-29
@@ -350,22 +329,21 @@ devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
     ##  stringr        1.2.0      2017-02-18
     ##  tibble         1.3.4      2017-08-22
     ##  withr          2.1.0.9000 2017-11-26
-    ##  yaml           2.1.14     2016-11-12
+    ##  yaml           2.1.16     2017-12-12
     ##  source                                 
-    ##  cran (@1.1.1)                          
+    ##  cran (@1.1.2)                          
     ##  Github (gaborcsardi/clisymbols@e49b4f5)
-    ##  cran (@3.0)                            
+    ##  cran (@3.1)                            
     ##  cran (@1.10.4-)                        
     ##  cran (@1.13.4)                         
-    ##  CRAN (R 3.4.1)                         
+    ##  cran (@0.6.13)                         
     ##  CRAN (R 3.4.1)                         
     ##  cran (@0.2.0)                          
     ##  cran (@0.4.0)                          
     ##  CRAN (R 3.4.2)                         
     ##  CRAN (R 3.4.1)                         
-    ##  CRAN (R 3.4.1)                         
     ##  CRAN (R 3.4.2)                         
-    ##  CRAN (R 3.4.2)                         
+    ##  CRAN (R 3.4.3)                         
     ##  CRAN (R 3.4.1)                         
     ##  CRAN (R 3.4.1)                         
     ##  CRAN (R 3.4.1)                         
@@ -375,8 +353,8 @@ devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
     ##  cran (@0.12.14)                        
     ##  CRAN (R 3.4.1)                         
     ##  cran (@1.2-16)                         
-    ##  Github (tidyverse/rlang@bd83400)       
-    ##  Github (rstudio/rmarkdown@07f7d8e)     
+    ##  Github (tidyverse/rlang@5ebcf24)       
+    ##  Github (rstudio/rmarkdown@08c7567)     
     ##  CRAN (R 3.4.1)                         
     ##  CRAN (R 3.4.2)                         
     ##  CRAN (R 3.4.1)                         
@@ -384,4 +362,4 @@ devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
     ##  CRAN (R 3.4.1)                         
     ##  cran (@1.3.4)                          
     ##  Github (jimhester/withr@fe81c00)       
-    ##  CRAN (R 3.4.1)
+    ##  cran (@2.1.16)
