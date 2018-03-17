@@ -40,13 +40,60 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+<meta property="og:title" content="WorldClim_Bio
+<dl class='dl-horizontal'>
+<dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
+<dt>bio1</dt><dd><p>Annual Mean Temperature</p></dd>
+<dt>bio2</dt><dd><p>Mean Diurnal Range (Mean of monthly (max temp - min temp))</p></dd>
+<dt>bio3</dt><dd><p>Isothermality (bio2 / bio7) (* 100)</p></dd>
+<dt>bio4</dt><dd><p>Temperature Seasonality (standard deviation * 100)</p></dd>
+<dt>bio5</dt><dd><p>Max Temperature of Warmest Month</p></dd>
+<dt>bio6</dt><dd><p>Min Temperature of Coldest Month</p></dd>
+<dt>bio7</dt><dd><p>Temperature Annual Range (bio5 - bio6)</p></dd>
+<dt>bio8</dt><dd><p>Mean Temperature of Wettest Quarter</p></dd>
+<dt>bio9</dt><dd><p>Mean Temperature of Driest Quarter</p></dd>
+<dt>bio10</dt><dd><p>Mean Temperature of Warmest Quarter</p></dd>
+<dt>bio11</dt><dd><p>Mean Temperature of Coldest Quarter</p></dd>
+<dt>bio12</dt><dd><p>Annual Precipitation</p></dd>
+<dt>bio13</dt><dd><p>Precipitation of Wettest Month</p></dd>
+<dt>bio14</dt><dd><p>Precipitation of Driest Month</p></dd>
+<dt>bio15</dt><dd><p>Precipitation Seasonality (Coefficient of Variation)</p></dd>
+<dt>bio16</dt><dd><p>Precipitation of Wettest Quarter</p></dd>
+<dt>bio17</dt><dd><p>Precipitation of Driest Quarter</p></dd>
+<dt>bio18</dt><dd><p>Precipitation of Warmest Quarter</p></dd>
+<dt>bio19</dt><dd><p>Precipitation of Coldest Quarter</p></dd>
+</dl> — WorldClim_Bio" />
+
+<meta property="og:description" content="WorldClim_Bio
+STNIDUnique station ID to link to GSOD data from GSODR
+bio1Annual Mean Temperature
+bio2Mean Diurnal Range (Mean of monthly (max temp - min temp))
+bio3Isothermality (bio2 / bio7) (* 100)
+bio4Temperature Seasonality (standard deviation * 100)
+bio5Max Temperature of Warmest Month
+bio6Min Temperature of Coldest Month
+bio7Temperature Annual Range (bio5 - bio6)
+bio8Mean Temperature of Wettest Quarter
+bio9Mean Temperature of Driest Quarter
+bio10Mean Temperature of Warmest Quarter
+bio11Mean Temperature of Coldest Quarter
+bio12Annual Precipitation
+bio13Precipitation of Wettest Month
+bio14Precipitation of Driest Month
+bio15Precipitation Seasonality (Coefficient of Variation)
+bio16Precipitation of Wettest Quarter
+bio17Precipitation of Driest Quarter
+bio18Precipitation of Warmest Quarter
+bio19Precipitation of Coldest Quarter
+" />
+<meta name="twitter:card" content="summary" />
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -86,7 +133,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -131,6 +178,7 @@
 <dt>bio18</dt><dd><p>Precipitation of Warmest Quarter</p></dd>
 <dt>bio19</dt><dd><p>Precipitation of Coldest Quarter</p></dd>
 </dl></h1>
+    <small>Source: <a href='https:/github.com/adamhsparks/GSODRdata/blob/master/R/WorldClim_Bio.R'><code>R/WorldClim_Bio.R</code></a></small>
     </div>
 
     
@@ -205,7 +253,7 @@ land areas. International Journal of Climatology 25: 1965-1978.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
@@ -213,3 +261,4 @@ land areas. International Journal of Climatology 25: 1965-1978.</p>
 
   </body>
 </html>
+

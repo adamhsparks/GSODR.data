@@ -8,8 +8,13 @@
 <title>Climate and Ecological Data for the GSODR Package • GSODRdata</title>
 <!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><meta property="og:title" content="Climate and Ecological Data for the GSODR Package">
+<meta property="og:description" content="This data-only package was created for distributing data useful for
+    the GSODR package and illustrated in examples given in the GSODR
+    vignettes and other online documentation.">
+<meta name="twitter:card" content="summary">
+<!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -41,7 +46,7 @@
   <a href="reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="news/index.html">News</a>
+  <a href="news/index.html">Changelog</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -64,14 +69,19 @@
   <div class="contents col-md-9">
     
 
-<section id="gsodrdata" class="level1"><div class="page-header"><h1><em>GSODRdata</em></h1></div>
-<section id="climate-and-ecological-data-for-the-gsodr-package" class="level2"><h2>Climate and Ecological Data for the <em>GSODR</em> Package</h2>
+<div id="gsodrdata" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#gsodrdata" class="anchor"></a><em>GSODRdata</em>
+</h1></div>
+<div id="climate-and-ecological-data-for-the-gsodr-package" class="section level2">
+<h2 class="hasAnchor">
+<a href="#climate-and-ecological-data-for-the-gsodr-package" class="anchor"></a>Climate and Ecological Data for the <em>GSODR</em> Package</h2>
 <p>This data-only package was created for distributing data useful with <a href="https://ropensci.github.io/GSODR/"><em>GSODR</em></a> and used in examples for the <a href="https://github.com/ropensci/GSODR/blob/master/vignettes/Working_with_spatial_and_climate_data.Rmd"><em>GSODR</em> package vignettes</a>.</p>
 <p>Due to the installed package, &gt;9Mb, this package is only available from <a href="https://github.com/adamhsparks/GSODRdata/">GitHub</a>.</p>
 <p>Authors: Adam Sparks, Tomislav Hengl, and Andrew Nelson<br>
 Maintainer: Adam Sparks <a href="mailto:adamhsparks@gmail.com">adamhsparks@gmail.com</a><br>
-URL: https://github.com/adamhsparks/GSODRdata<br>
-BugReports: https://github.com/adamhsparks/GSODRdata/issues<br>
+URL: <a href="https://github.com/adamhsparks/GSODRdata" class="uri">https://github.com/adamhsparks/GSODRdata</a><br>
+BugReports: <a href="https://github.com/adamhsparks/GSODRdata/issues" class="uri">https://github.com/adamhsparks/GSODRdata/issues</a><br>
 Depends: R (&gt;= 3.2.0)<br>
 Suggests: <a href="https://cran.r-project.org/package=GSODR">GSODR</a></p>
 <p>Six data frames of climate data are provided from various sources for GSOD station locations and can be joined with data formatted by the <em>GSODR</em> package using the <code>STNID</code> column.</p>
@@ -80,33 +90,58 @@ Suggests: <a href="https://cran.r-project.org/package=GSODR">GSODR</a></p>
 <li><p><strong>CRU_CL_2</strong> - The <a href="https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html">CRU CL v. 2.0 data-set</a> (New <em>et al.</em> 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be deduced from mean temperature and diurnal temperature range (see <a href="https://crudata.uea.ac.uk/~timm/grid/faq.html">FAQ</a>).</p></li>
 <li><p><strong>ESACCI</strong> - ESA’s CCI-LC snow cover probability <a href="http://maps.elie.ucl.ac.be/CCI/viewer/index.php" class="uri">http://maps.elie.ucl.ac.be/CCI/viewer/index.php</a>.</p></li>
 <li><p><strong>MODCF</strong> - <a href="https://github.com/adammwilson/Cloud">Remotely sensed high-resolution global cloud dynamics for predicting ecosystem and biodiversity distributions</a> (Wilson <em>et al.</em> 2016) provides new near-global, fine-grain (≈1km) monthly cloud frequencies from 15 years of twice-daily MODIS satellite images.</p></li>
-<li><p><strong>WorldClim_Bio 1.4</strong> - <a href="http://www.worldclim.org/version1">WorldClim Global Climate Data - Free climate data for ecological modeling and GIS</a> (Hijmans et al. 2004) provides freely available <a href="http://worldclim.org/bioclim">bioclimatic variables</a>. These data are freely available for download from http://www.worldclim.org/version1.</p></li>
-<li><p><strong>WorldClim_Clim 1.4</strong> - <a href="http://www.worldclim.org/version1">WorldClim Global Climate Data - Free climate data for ecological modeling and GIS</a> (Hijmans et al. 2004) provides freely available, average monthly climate data. Current conditions (interpolations of observed data, representative of 1960-1990) are freely available for download from http://www.worldclim.org/version1.</p></li>
+<li><p><strong>WorldClim_Bio 1.4</strong> - <a href="http://www.worldclim.org/version1">WorldClim Global Climate Data - Free climate data for ecological modeling and GIS</a> (Hijmans et al. 2004) provides freely available <a href="http://worldclim.org/bioclim">bioclimatic variables</a>. These data are freely available for download from <a href="http://www.worldclim.org/version1" class="uri">http://www.worldclim.org/version1</a>.</p></li>
+<li><p><strong>WorldClim_Clim 1.4</strong> - <a href="http://www.worldclim.org/version1">WorldClim Global Climate Data - Free climate data for ecological modeling and GIS</a> (Hijmans et al. 2004) provides freely available, average monthly climate data. Current conditions (interpolations of observed data, representative of 1960-1990) are freely available for download from <a href="http://www.worldclim.org/version1" class="uri">http://www.worldclim.org/version1</a>.</p></li>
 </ul>
-<hr></section><section id="quick-start" class="level2"><h2>Quick Start</h2>
-<section id="install" class="level3"><h3>Install</h3>
+<hr>
+</div>
+<div id="quick-start" class="section level2">
+<h2 class="hasAnchor">
+<a href="#quick-start" class="anchor"></a>Quick Start</h2>
+<div id="install" class="section level3">
+<h3 class="hasAnchor">
+<a href="#install" class="anchor"></a>Install</h3>
 <p>This package is only available from GitHub due to its large size. It provides optional data for use with the <a href="http://adamhsparks.github.io/GSODR/"><em>GSODR</em> package</a>, some of which are demonstrated with examples in the <a href="http://adamhsparks.github.io/GSODR/articles/index.html"><em>GSODR</em> documentation</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co">#install.packages("devtools")</span></a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"adamhsparks/GSODRdata"</span>, <span class="dt">build_vignettes =</span> <span class="ot">TRUE</span>)</a>
 <a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(<span class="st">"GSODRdata"</span>)</a></code></pre></div>
-</section><section id="using-gsodrdata" class="level3"><h3>Using <em>GSODRdata</em>
+</div>
+<div id="using-gsodrdata" class="section level3">
+<h3 class="hasAnchor">
+<a href="#using-gsodrdata" class="anchor"></a>Using <em>GSODRdata</em>
 </h3>
 <p>See the <em>GSODR</em> vignette, <a href="https://ropensci.github.io/GSODR/articles/Working_with_spatial_and_climate_data.html">Working with spatial and climate data from GSODR and GSODRdata</a>, for use and examples.</p>
-</section><section id="keeping-gsodrdata-updated" class="level3"><h3>Keeping <em>GSODRdata</em> updated</h3>
+</div>
+<div id="keeping-gsodrdata-updated" class="section level3">
+<h3 class="hasAnchor">
+<a href="#keeping-gsodrdata-updated" class="anchor"></a>Keeping <em>GSODRdata</em> updated</h3>
 <p>With each new release of <em>GSODR</em>, the <em>GSODRdata</em> package is also updated. To keep your local installation up-to-date, please use:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/update_packages">update_packages</a></span>(<span class="st">"GSODRdata"</span>)</a></code></pre></div>
-<hr></section></section></section><section id="meta" class="level1"><h1>Meta</h1>
+<hr>
+</div>
+</div>
+</div>
+<div id="meta" class="section level1">
+<h1 class="hasAnchor">
+<a href="#meta" class="anchor"></a>Meta</h1>
 <p>If you find bugs or have an idea to make this package better, please <a href="https://github.com/adamhsparks/GSODRdata/issues">file a report with us</a>.</p>
 <p>License: MIT</p>
-<section id="code-of-conduct" class="level2"><h2>Code of Conduct</h2>
-<p>Please note that this project is released with a <a href="CONDUCT.md">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
-</section><section id="references" class="level2"><h2>References</h2>
+<div id="code-of-conduct" class="section level2">
+<h2 class="hasAnchor">
+<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
+<p>Please note that this project is released with a <a href="CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
+</div>
+<div id="references" class="section level2">
+<h2 class="hasAnchor">
+<a href="#references" class="anchor"></a>References</h2>
 <p>Karger, D. N., Conrad, O., Bohner, J., Kawohl, T., Kreft, H., Soria-Auza, R. W., <em>et al</em>. (2016) Climatologies at high resolution for the Earth land surface areas. <em>arXiv preprint</em> <a href="https://www.arxiv.org/abs/1607.00217"><strong>arXiv:1607.00217</strong></a>.</p>
 <p>New, M., Lister, D., Hulme, M., Makin, I. (2002) A high-resolution data set of surface climate over global land areas. <em>Climate Research</em> <strong>21</strong>:1-25 (<a href="https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt">abstract</a>, <a href="http://www.int-res.com/articles/cr2002/21/c021p001.pdf">paper</a>)</p>
 <p>Wilson, A. M., Jetz, W. (2016) Remotely Sensed High-Resolution Global Cloud Dynamics for Predicting Ecosystem and Biodiversity Distributions. <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002415"><em>PLoS Biol</em> <strong>14(3)</strong>: e1002415. doi:10.1371/journal. pbio.1002415</a></p>
 <p>Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis, 2005. Very high resolution interpolated climate surfaces for global land areas. <em>International Journal of Climatology</em> <strong>25</strong>:1965-1978.</p>
-</section></section>
 </div>
+</div>
+
+  </div>
 
   <div class="col-md-3" id="sidebar">
     <h2>Links</h2>
@@ -117,19 +152,16 @@ Suggests: <a href="https://cran.r-project.org/package=GSODR">GSODR</a></p>
 </li>
 </ul>
 <h2>License</h2>
-<p><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE.html">LICENSE</a></p>
+<p><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></p>
 <h2>Citation</h2>
 <ul class="list-unstyled">
 <li><a href="authors.html">Citing GSODRdata</a></li>
 </ul>
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Adam Sparks <br><small class="roles"> Author, maintainer </small> <br><small>(0000-0002-0061-8359)</small>
-</li>
-<li>Tomislav Hengl <br><small class="roles"> Author </small> <br><small>(0000-0002-9921-5129)</small>
-</li>
-<li>Andrew Nelson <br><small class="roles"> Author </small> <br><small>(0000-0002-7249-3778)</small>
-</li>
+<li>Adam Sparks <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-0061-8359" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid"></a> </li>
+<li>Tomislav Hengl <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-9921-5129" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid"></a> </li>
+<li>Andrew Nelson <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-7249-3778" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid"></a> </li>
 </ul>
 <h2>Dev status</h2>
 <ul class="list-unstyled">
@@ -147,7 +179,7 @@ Suggests: <a href="https://cran.r-project.org/package=GSODR">GSODR</a></p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
