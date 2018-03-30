@@ -26,6 +26,8 @@
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 <meta property="og:title" content="Function reference" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -33,6 +35,8 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
 
 
   </head>
@@ -48,8 +52,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">GSODRdata</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">GSODRdata</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.9</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -59,7 +67,7 @@
   </a>
 </li>
 <li>
-  <a href="../articles/GSODRdata.html">Get Started</a>
+  <a href="../articles/GSODRdata.html">Get started</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -77,6 +85,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -84,36 +93,32 @@
       
       </header>
 
-      <div class="row">
-  <div class="col-md-9">
+<div class="row">
+  <div class="contents col-md-9">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;0.2.9</small>
-      </h1>
+      <h1>Reference</h1>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    <table class="ref-index">
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <colgroup>
+      <col class="alias" />
+      <col class="title" />
+    </colgroup>
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="CHELSA.html">CHELSA</a></code> </p>
-          </td>
-          <td><p>CHELSA
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="CHELSA.html">CHELSA</a></code> </p>
+        </td>
+        <td><p>CHELSA
 <dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
 <dt>CHELSA_bio1_1979-2013_V1_1</dt><dd><p>Annual mean temperature [degree C]</p></dd>
@@ -168,12 +173,12 @@
 <dt>CHELSA_temp_12_1979-2013</dt><dd><p>Mean December temperature</p></dd>
 <dt>CHELSA_temp_1979-2013_land</dt><dd><p>Mean annual temperature</p></dd>
 </dl></p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="CRU_CL_2.html">CRU_CL_2</a></code> </p>
-          </td>
-          <td><p>CRU_CL_2.0
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="CRU_CL_2.html">CRU_CL_2</a></code> </p>
+        </td>
+        <td><p>CRU_CL_2.0
 <dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
 <dt>CRU_CL_2_0_dtr_01</dt><dd><p>Mean January diurnal temperature range [degrees Celsius]</p></dd>
@@ -273,12 +278,12 @@
 <dt>CRU_CL_2_0_wnd_11</dt><dd><p>Mean November 10 metre wind speed [metres per second]</p></dd>
 <dt>CRU_CL_2_0_wnd_12</dt><dd><p>Mean December 10 metre wind speed [metres per second]</p></dd>
 </dl></p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="ESACCI.html">ESACCI</a></code> </p>
-          </td>
-          <td><p>ESACCI
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="ESACCI.html">ESACCI</a></code> </p>
+        </td>
+        <td><p>ESACCI
 <dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
 <dt>ESACCI_snow_prob_Apr_500m</dt><dd><p>Mean April snow cover probability</p></dd>
@@ -294,18 +299,18 @@
 <dt>ESACCI_snow_prob_Oct_500m</dt><dd><p>Mean October snow cover probability</p></dd>
 <dt>ESACCI_snow_prob_Sep_500m</dt><dd><p>Mean September snow cover probability</p></dd>
 </dl></p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="GSODRdata-package.html">GSODRdata-package</a></code> </p>
-          </td>
-          <td><p>GSODRdata: Climate and Ecological Data for the GSODR Package</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="MODCF.html">MODCF</a></code> </p>
-          </td>
-          <td><p>MODCF
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="GSODRdata-package.html">GSODRdata-package</a></code> </p>
+        </td>
+        <td><p>GSODRdata: Climate and Ecological Data for the GSODR Package</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="MODCF.html">MODCF</a></code> </p>
+        </td>
+        <td><p>MODCF
 <dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
 <dt>MODCF_meanannual</dt><dd><p>Mean annual cloud fraction</p></dd>
@@ -324,12 +329,12 @@
 <dt>MODCF_seasonality_concentration</dt><dd><p>Cloud fraction seasonality
 concentration</p></dd>
 </dl></p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="WorldClim_Bio.html">WorldClim_Bio</a></code> </p>
-          </td>
-          <td><p>WorldClim_Bio
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="WorldClim_Bio.html">WorldClim_Bio</a></code> </p>
+        </td>
+        <td><p>WorldClim_Bio
 <dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
 <dt>bio1</dt><dd><p>Annual Mean Temperature</p></dd>
@@ -352,12 +357,12 @@ concentration</p></dd>
 <dt>bio18</dt><dd><p>Precipitation of Warmest Quarter</p></dd>
 <dt>bio19</dt><dd><p>Precipitation of Coldest Quarter</p></dd>
 </dl></p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="WorldClim_Clim.html">WorldClim_Clim</a></code> </p>
-          </td>
-          <td><p>WorldClim_Clim
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="WorldClim_Clim.html">WorldClim_Clim</a></code> </p>
+        </td>
+        <td><p>WorldClim_Clim
 <dl class='dl-horizontal'>
 <dt>STNID</dt><dd><p>Unique station ID to link to GSOD data from <code>GSODR</code></p></dd>
 <dt>tmin1</dt><dd><p>Mean Minimum Temperature for January</p></dd>
@@ -409,10 +414,9 @@ concentration</p></dd>
 <dt>prec11</dt><dd><p>Mean Precipitation for November</p></dd>
 <dt>prec12</dt><dd><p>Mean Precipitation for December</p></dd>
 </dl></p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+      </tr>
+    </tbody>
+    </table>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -434,6 +438,8 @@ concentration</p></dd>
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>
