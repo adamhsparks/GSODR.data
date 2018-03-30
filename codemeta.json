@@ -14,10 +14,10 @@
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.4.3",
+    "version": "3.4.4",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.4.3 (2017-11-30)",
+  "runtimePlatform": "R version 3.4.4 (2018-03-15)",
   "author": [
     {
       "@type": "Person",
@@ -106,7 +106,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata/blob/master/README.md",
-  "fileSize": "6466.059KB",
+  "fileSize": "6465.973KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
@@ -128,7 +128,8 @@
         }
       ],
       "name": "{GSODRdata}: Climate and Ecological Data for the GSODR Package",
-      "url": "https://adamhsparks.github.io/GSODRdata/index.html"
+      "url": "https://adamhsparks.github.io/GSODRdata/index.html",
+      "description": "R package version 0.2.9"
     }
   ],
   "applicationCategory": "Tools",
