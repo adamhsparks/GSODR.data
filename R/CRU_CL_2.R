@@ -1,4 +1,13 @@
 #' CRU_CL_2.0
+#'
+#' @description
+#' CRU CL 2.0 data are a set of monthly grids of observed mean climate from
+#' 1961-1990, and covering the global land surface at a 10 arc-minute spatial
+#' resolution. There are eight climatic variables available, and also the
+#' elevations on the grid: diurnal temperature range, precipitation, mean
+#' temperature, wet-day frequency, frost-day frequency, relative humidity,
+#' sunshine, and wind-speed.
+#'
 #' \describe{
 #' \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 #' \item{CRU_CL_2_0_dtr_01}{Mean January diurnal temperature range [degrees Celsius]}
@@ -73,18 +82,6 @@
 #' \item{CRU_CL_2_0_sun_10}{Mean October sunshine [percent of maximum possible (percent of day length)]}
 #' \item{CRU_CL_2_0_sun_11}{Mean November sunshine [percent of maximum possible (percent of day length)]}
 #' \item{CRU_CL_2_0_sun_12}{Mean December sunshine [percent of maximum possible (percent of day length)]}
-#' \item{CRU_CL_2_0_tmp_01}{Mean January temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_02}{Mean February temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_03}{Mean March temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_04}{Mean April temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_05}{Mean May temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_06}{Mean June temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_07}{Mean July temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_08}{Mean August temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_09}{Mean September temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_10}{Mean October temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_11}{Mean November temperature [degrees Celsius]}
-#' \item{CRU_CL_2_0_tmp_12}{Mean December temperature [degrees Celsius]}
 #' \item{CRU_CL_2_0_wnd_01}{Mean January 10 metre wind speed [metres per second]}
 #' \item{CRU_CL_2_0_wnd_02}{Mean February 10 metre wind speed [metres per second]}
 #' \item{CRU_CL_2_0_wnd_03}{Mean March 10 metre wind speed [metres per second]}
@@ -98,6 +95,7 @@
 #' \item{CRU_CL_2_0_wnd_11}{Mean November 10 metre wind speed [metres per second]}
 #' \item{CRU_CL_2_0_wnd_12}{Mean December 10 metre wind speed [metres per second]}
 #' }
+#'
 #'@references
 #' New, M., Lister, D., Hulme, M. and Makin, I., 2002: A high-resolution data
 #' set of surface climate over global land areas. \emph{Climate Research}
