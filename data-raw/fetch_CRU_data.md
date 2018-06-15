@@ -58,26 +58,20 @@ CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
 ## Extract data for station locations
 
 ``` r
-stations <- readr::read_csv(
-  "ftp://ftp.ncdc.noaa.gov/pub/data/noaa/isd-history.csv",
-  col_types = "ccccccddddd",
-  col_names = c("USAF", "WBAN", "STN_NAME", "CTRY", "STATE", "CALL",
-                "LAT", "LON", "ELEV_M", "BEGIN", "END"), skip = 1)
+library(GSODR)
 
-stations[stations == -999.9] <- NA
-stations[stations == -999] <- NA
-stations <- stations[!is.na(stations$LAT) & !is.na(stations$LON), ]
-stations <- stations[stations$LAT != 0 & stations$LON != 0, ]
-stations <- stations[stations$LAT > -90 & stations$LAT < 90, ]
-stations <- stations[stations$LON > -180 & stations$LON < 180, ]
-stations <- stations[!is.na(stations$STN_NAME), ]
-stations$STNID <- as.character(paste(stations$USAF, stations$WBAN, sep = "-"))
+load(system.file("extdata", "isd_history.rda", package = "GSODR"))
 
-stations <- as.data.frame(stations)
+stations <- as.data.frame(isd_history)
 sp::coordinates(stations) <- ~ LON + LAT
 crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 sp::proj4string(stations) <- sp::CRS(crs)
+```
 
+Now we will extract the data from the CRU CL 2.0 data at the GSOD
+station locations.
+
+``` r
 # create a vector of names for the raster layers in new stack
 CRU_stack_names <- c(
   paste0(
@@ -300,37 +294,32 @@ devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
     ##  date     2018-06-15                  
     ## 
     ## ─ Packages ──────────────────────────────────────────────────────────────
-    ##  package      * version date       source        
-    ##  backports      1.1.2   2017-12-13 CRAN (R 3.5.0)
-    ##  clisymbols     1.2.0   2017-05-21 CRAN (R 3.5.0)
-    ##  curl           3.2     2018-03-28 CRAN (R 3.5.0)
-    ##  data.table     1.11.4  2018-05-27 CRAN (R 3.5.0)
-    ##  devtools       1.13.5  2018-02-18 CRAN (R 3.5.0)
-    ##  digest         0.6.15  2018-01-28 CRAN (R 3.5.0)
-    ##  evaluate       0.10.1  2017-06-24 CRAN (R 3.5.0)
-    ##  getCRUCLdata * 0.2.3   2018-05-17 CRAN (R 3.5.0)
-    ##  hms            0.4.2   2018-03-10 CRAN (R 3.5.0)
-    ##  hoardr         0.2.0   2017-05-10 CRAN (R 3.5.0)
-    ##  htmltools      0.3.6   2017-04-28 CRAN (R 3.5.0)
-    ##  knitr          1.20    2018-02-20 CRAN (R 3.5.0)
-    ##  lattice        0.20-35 2017-03-25 CRAN (R 3.5.0)
-    ##  magrittr       1.5     2014-11-22 CRAN (R 3.5.0)
-    ##  memoise        1.1.0   2017-04-21 CRAN (R 3.5.0)
-    ##  pillar         1.2.3   2018-05-25 CRAN (R 3.5.0)
-    ##  pkgconfig      2.0.1   2017-03-21 CRAN (R 3.5.0)
-    ##  R6             2.2.2   2017-06-17 CRAN (R 3.5.0)
-    ##  rappdirs       0.3.1   2016-03-28 CRAN (R 3.5.0)
-    ##  raster         2.6-7   2017-11-13 CRAN (R 3.5.0)
-    ##  Rcpp           0.12.17 2018-05-18 CRAN (R 3.5.0)
-    ##  readr          1.1.1   2017-05-16 CRAN (R 3.5.0)
-    ##  rgdal          1.3-2   2018-06-08 CRAN (R 3.5.0)
-    ##  rlang          0.2.1   2018-05-30 CRAN (R 3.5.0)
-    ##  rmarkdown      1.10    2018-06-11 CRAN (R 3.5.0)
-    ##  rprojroot      1.3-2   2018-01-03 CRAN (R 3.5.0)
-    ##  sessioninfo    1.0.0   2017-06-21 CRAN (R 3.5.0)
-    ##  sp             1.3-1   2018-06-05 CRAN (R 3.5.0)
-    ##  stringi        1.2.3   2018-06-12 cran (@1.2.3) 
-    ##  stringr        1.3.1   2018-05-10 CRAN (R 3.5.0)
-    ##  tibble         1.4.2   2018-01-22 CRAN (R 3.5.0)
-    ##  withr          2.1.2   2018-03-15 CRAN (R 3.5.0)
+    ##  package      * version date       source                         
+    ##  backports      1.1.2   2017-12-13 CRAN (R 3.5.0)                 
+    ##  clisymbols     1.2.0   2017-05-21 CRAN (R 3.5.0)                 
+    ##  data.table     1.11.4  2018-05-27 CRAN (R 3.5.0)                 
+    ##  devtools       1.13.5  2018-02-18 CRAN (R 3.5.0)                 
+    ##  digest         0.6.15  2018-01-28 CRAN (R 3.5.0)                 
+    ##  evaluate       0.10.1  2017-06-24 CRAN (R 3.5.0)                 
+    ##  getCRUCLdata * 0.2.3   2018-05-17 CRAN (R 3.5.0)                 
+    ##  GSODR        * 1.2.1   2018-06-15 Github (ropensci/GSODR@b4d804b)
+    ##  hoardr         0.2.0   2017-05-10 CRAN (R 3.5.0)                 
+    ##  htmltools      0.3.6   2017-04-28 CRAN (R 3.5.0)                 
+    ##  knitr          1.20    2018-02-20 CRAN (R 3.5.0)                 
+    ##  lattice        0.20-35 2017-03-25 CRAN (R 3.5.0)                 
+    ##  magrittr       1.5     2014-11-22 CRAN (R 3.5.0)                 
+    ##  memoise        1.1.0   2017-04-21 CRAN (R 3.5.0)                 
+    ##  R6             2.2.2   2017-06-17 CRAN (R 3.5.0)                 
+    ##  rappdirs       0.3.1   2016-03-28 CRAN (R 3.5.0)                 
+    ##  raster         2.6-7   2017-11-13 CRAN (R 3.5.0)                 
+    ##  Rcpp           0.12.17 2018-05-18 CRAN (R 3.5.0)                 
+    ##  rgdal          1.3-2   2018-06-08 CRAN (R 3.5.0)                 
+    ##  rlang          0.2.1   2018-05-30 CRAN (R 3.5.0)                 
+    ##  rmarkdown      1.10    2018-06-11 CRAN (R 3.5.0)                 
+    ##  rprojroot      1.3-2   2018-01-03 CRAN (R 3.5.0)                 
+    ##  sessioninfo    1.0.0   2017-06-21 CRAN (R 3.5.0)                 
+    ##  sp             1.3-1   2018-06-05 CRAN (R 3.5.0)                 
+    ##  stringi        1.2.3   2018-06-12 cran (@1.2.3)                  
+    ##  stringr        1.3.1   2018-05-10 CRAN (R 3.5.0)                 
+    ##  withr          2.1.2   2018-03-15 CRAN (R 3.5.0)                 
     ##  yaml           2.1.19  2018-05-01 CRAN (R 3.5.0)
