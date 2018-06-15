@@ -30,6 +30,8 @@ if (!require("getCRUCLdata")) {
 CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
                                          rd0 = TRUE,
                                          tmp = TRUE,
+                                         tmx = TRUE,
+                                         tmn = TRUE,
                                          dtr = TRUE,
                                          reh = TRUE,
                                          sunp = TRUE,
