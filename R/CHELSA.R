@@ -1,4 +1,12 @@
 #' CHELSA
+#'
+#' @description
+#' CHELSA (Climatologies at high resolution for the earth’s land surface areas)
+#' is a high resolution (30 arc sec) climate data set for the earth land surface
+#' areas currently hosted by the Swiss Federal Institute for Forest, Snow and
+#' Landscape Research WSL. It includes monthly mean temperature and
+#' precipitation patterns for the time period 1979-2013.
+#'
 #' \describe{
 #' \item{STNID}{Unique station ID to link to GSOD data from \code{GSODR}}
 #' \item{CHELSA_bio1_1979-2013_V1_1}{Annual mean temperature [degree C]}

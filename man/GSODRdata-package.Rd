@@ -5,10 +5,10 @@
 \alias{GSODRdata-package}
 \title{GSODRdata: Climate and Ecological Data for the GSODR Package}
 \source{
-\url{http://chelsa-climate.org/}
-\url{https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html}
-\url{http://maps.elie.ucl.ac.be/CCI/viewer/index.php}
-\url{http://www.earthenv.org/cloud}
+\url{http://chelsa-climate.org/} \cr
+\url{https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html} \cr
+\url{http://maps.elie.ucl.ac.be/CCI/viewer/index.php} \cr
+\url{http://www.earthenv.org/cloud} \cr
 \url{http://www.worldclim.org}
 }
 \description{
@@ -47,11 +47,11 @@ for GSOD station locations.
 \code{\link{MODCF}} Data from EarthEnv MODIS cloud fraction data for
 GSOD station locations.
 
-\code{link{WorldClim_Bio}} WorldClim Global Climate Data - Free
+\code{\link{WorldClim_Bio}} WorldClim Global Climate Data - Free
 climate data for ecological modeling and GIS
 \url{http://www.worldclim.org/bioclim}
 
-\code{link{WorldClim_Clim}} WorlClim Global Climate Data - Free
+\code{\link{WorldClim_Clim}} WorlClim Global Climate Data - Free
 climate data for ecological modeling and GIS
 \url{http://www.worldclim.org/current}
 }
