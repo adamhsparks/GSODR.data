@@ -94,13 +94,13 @@ names(WorldClim_Bio)[1] <- c("STNID")
 devtools::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving WorldClim_Clim as WorldClim_Clim.rda to /Users/adamsparks/Development/GSODRdata/data
+    ## Saving WorldClim_Clim as WorldClim_Clim.rda to /Users/U8004755/Development/GSODRdata/data
 
 ``` r
 devtools::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving WorldClim_Bio as WorldClim_Bio.rda to /Users/adamsparks/Development/GSODRdata/data
+    ## Saving WorldClim_Bio as WorldClim_Bio.rda to /Users/U8004755/Development/GSODRdata/data
 
 # Reference
 
@@ -114,51 +114,51 @@ areas. International Journal of Climatology 25:
     ## Session info -------------------------------------------------------------
 
     ##  setting  value                       
-    ##  version  R version 3.4.4 (2018-03-15)
-    ##  system   x86_64, darwin17.4.0        
-    ##  ui       unknown                     
+    ##  version  R version 3.5.0 (2018-04-23)
+    ##  system   x86_64, darwin16.7.0        
+    ##  ui       X11                         
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2018-03-30
+    ##  date     2018-06-15
 
     ## Packages -----------------------------------------------------------------
 
-    ##  package   * version date       source                      
-    ##  backports   1.1.2   2017-12-13 cran (@1.1.2)               
-    ##  base      * 3.4.4   2018-03-15 local                       
-    ##  compiler    3.4.4   2018-03-15 local                       
-    ##  curl        3.2     2018-03-28 cran (@3.2)                 
-    ##  datasets  * 3.4.4   2018-03-15 local                       
-    ##  devtools    1.13.5  2018-02-18 CRAN (R 3.4.4)              
-    ##  digest      0.6.15  2018-01-28 cran (@0.6.15)              
-    ##  evaluate    0.10.1  2017-06-24 cran (@0.10.1)              
-    ##  graphics  * 3.4.4   2018-03-15 local                       
-    ##  grDevices * 3.4.4   2018-03-15 local                       
-    ##  grid        3.4.4   2018-03-15 local                       
-    ##  hms         0.4.2   2018-03-10 CRAN (R 3.4.4)              
-    ##  htmltools   0.3.6   2017-04-28 cran (@0.3.6)               
-    ##  knitr       1.20    2018-02-20 CRAN (R 3.4.4)              
-    ##  lattice     0.20-35 2017-03-25 CRAN (R 3.4.4)              
-    ##  magrittr    1.5     2014-11-22 CRAN (R 3.4.2)              
-    ##  memoise     1.1.0   2017-04-21 CRAN (R 3.4.2)              
-    ##  methods   * 3.4.4   2018-03-15 local                       
-    ##  pillar      1.2.1   2018-02-27 CRAN (R 3.4.4)              
-    ##  pkgconfig   2.0.1   2017-03-21 CRAN (R 3.4.2)              
-    ##  R6          2.2.2   2017-06-17 CRAN (R 3.4.2)              
-    ##  raster    * 2.6-7   2017-11-13 CRAN (R 3.4.3)              
-    ##  Rcpp        0.12.16 2018-03-13 CRAN (R 3.4.4)              
-    ##  readr       1.1.1   2017-05-16 CRAN (R 3.4.2)              
-    ##  rgdal       1.2-18  2018-03-17 cran (@1.2-18)              
-    ##  rlang       0.2.0   2018-02-20 CRAN (R 3.4.4)              
-    ##  rmarkdown   1.9     2018-03-01 CRAN (R 3.4.4)              
-    ##  rprojroot   1.3-2   2018-01-03 cran (@1.3-2)               
-    ##  sp        * 1.2-7   2018-01-19 CRAN (R 3.4.4)              
-    ##  stats     * 3.4.4   2018-03-15 local                       
-    ##  stringi     1.1.7   2018-03-12 CRAN (R 3.4.4)              
-    ##  stringr     1.3.0   2018-02-19 CRAN (R 3.4.4)              
-    ##  tibble      1.4.2   2018-01-22 cran (@1.4.2)               
-    ##  tools       3.4.4   2018-03-15 local                       
-    ##  utils     * 3.4.4   2018-03-15 local                       
-    ##  withr       2.1.2   2018-03-15 Github (r-lib/withr@79d7b0d)
-    ##  yaml        2.1.18  2018-03-08 CRAN (R 3.4.4)
+    ##  package   * version date       source        
+    ##  backports   1.1.2   2017-12-13 CRAN (R 3.5.0)
+    ##  base      * 3.5.0   2018-06-14 local         
+    ##  compiler    3.5.0   2018-06-14 local         
+    ##  curl        3.2     2018-03-28 CRAN (R 3.5.0)
+    ##  datasets  * 3.5.0   2018-06-14 local         
+    ##  devtools    1.13.5  2018-02-18 CRAN (R 3.5.0)
+    ##  digest      0.6.15  2018-01-28 CRAN (R 3.5.0)
+    ##  evaluate    0.10.1  2017-06-24 CRAN (R 3.5.0)
+    ##  graphics  * 3.5.0   2018-06-14 local         
+    ##  grDevices * 3.5.0   2018-06-14 local         
+    ##  grid        3.5.0   2018-06-14 local         
+    ##  hms         0.4.2   2018-03-10 CRAN (R 3.5.0)
+    ##  htmltools   0.3.6   2017-04-28 CRAN (R 3.5.0)
+    ##  knitr       1.20    2018-02-20 CRAN (R 3.5.0)
+    ##  lattice     0.20-35 2017-03-25 CRAN (R 3.5.0)
+    ##  magrittr    1.5     2014-11-22 CRAN (R 3.5.0)
+    ##  memoise     1.1.0   2017-04-21 CRAN (R 3.5.0)
+    ##  methods   * 3.5.0   2018-06-14 local         
+    ##  pillar      1.2.3   2018-05-25 CRAN (R 3.5.0)
+    ##  pkgconfig   2.0.1   2017-03-21 CRAN (R 3.5.0)
+    ##  R6          2.2.2   2017-06-17 CRAN (R 3.5.0)
+    ##  raster    * 2.6-7   2017-11-13 CRAN (R 3.5.0)
+    ##  Rcpp        0.12.17 2018-05-18 CRAN (R 3.5.0)
+    ##  readr       1.1.1   2017-05-16 CRAN (R 3.5.0)
+    ##  rgdal       1.3-2   2018-06-08 CRAN (R 3.5.0)
+    ##  rlang       0.2.1   2018-05-30 CRAN (R 3.5.0)
+    ##  rmarkdown   1.10    2018-06-11 CRAN (R 3.5.0)
+    ##  rprojroot   1.3-2   2018-01-03 CRAN (R 3.5.0)
+    ##  sp        * 1.3-1   2018-06-05 CRAN (R 3.5.0)
+    ##  stats     * 3.5.0   2018-06-14 local         
+    ##  stringi     1.2.3   2018-06-12 cran (@1.2.3) 
+    ##  stringr     1.3.1   2018-05-10 CRAN (R 3.5.0)
+    ##  tibble      1.4.2   2018-01-22 CRAN (R 3.5.0)
+    ##  tools       3.5.0   2018-06-14 local         
+    ##  utils     * 3.5.0   2018-06-14 local         
+    ##  withr       2.1.2   2018-03-15 CRAN (R 3.5.0)
+    ##  yaml        2.1.19  2018-05-01 CRAN (R 3.5.0)
