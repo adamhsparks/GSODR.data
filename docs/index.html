@@ -8,8 +8,8 @@
 <title>Climate and Ecological Data for the GSODR Package • GSODRdata</title>
 <!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><meta property="og:title" content="Climate and Ecological Data for the GSODR Package">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<script src="pkgdown.js"></script><meta property="og:title" content="Climate and Ecological Data for the GSODR Package">
 <meta property="og:description" content="This data-only package was created for distributing data useful for
     the GSODR package and illustrated in examples given in the GSODR
     vignettes and other online documentation.">
@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">GSODRdata</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.9</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.10</span>
       </span>
     </div>
 
@@ -91,7 +91,7 @@ Suggests: <a href="https://cran.r-project.org/package=GSODR">GSODR</a></p>
 <p>Six data frames of climate data are provided from various sources for GSOD station locations and can be joined with data formatted by the <em>GSODR</em> package using the <code>STNID</code> column.</p>
 <ul>
 <li><p><strong>CHELSA</strong> - <a href="http://chelsa-climate.org">Climatic surfaces at 1 km resolution</a> is based on a quasi-mechanistic statistical down scaling of the ERA interim global circulation model (Karger <em>et al.</em> 2016). ESA’s CCI-LC cloud probability monthly averages are based on the MODIS snow products (MOD10A2).</p></li>
-<li><p><strong>CRU_CL_2</strong> - The <a href="https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html">CRU CL v. 2.0 data-set</a> (New <em>et al.</em> 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be deduced from mean temperature and diurnal temperature range (see <a href="https://crudata.uea.ac.uk/~timm/grid/faq.html">FAQ</a>).</p></li>
+<li><p><strong>CRU_CL_2</strong> - The <a href="https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html">CRU CL v. 2.0 data-set</a> (New <em>et al.</em> 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. Minimum and maximum temperature are also calculated using <a href="https://ropensci.github.io/getCRUCLdata/">getCRUCLdata</a> and included in this data set, (see <a href="https://crudata.uea.ac.uk/~timm/grid/faq.html">FAQ</a>).</p></li>
 <li><p><strong>ESACCI</strong> - ESA’s CCI-LC snow cover probability <a href="http://maps.elie.ucl.ac.be/CCI/viewer/index.php" class="uri">http://maps.elie.ucl.ac.be/CCI/viewer/index.php</a>.</p></li>
 <li><p><strong>MODCF</strong> - <a href="https://github.com/adammwilson/Cloud">Remotely sensed high-resolution global cloud dynamics for predicting ecosystem and biodiversity distributions</a> (Wilson <em>et al.</em> 2016) provides new near-global, fine-grain (≈1km) monthly cloud frequencies from 15 years of twice-daily MODIS satellite images.</p></li>
 <li><p><strong>WorldClim_Bio 1.4</strong> - <a href="http://www.worldclim.org/version1">WorldClim Global Climate Data - Free climate data for ecological modeling and GIS</a> (Hijmans et al. 2004) provides freely available <a href="http://worldclim.org/bioclim">bioclimatic variables</a>. These data are freely available for download from <a href="http://www.worldclim.org/version1" class="uri">http://www.worldclim.org/version1</a>.</p></li>
@@ -187,6 +187,7 @@ Suggests: <a href="https://cran.r-project.org/package=GSODR">GSODR</a></p>
 <li><a href="https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true"><img src="https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true" alt="Build status"></a></li>
 <li><a href=""><img src="http://www.r-pkg.org/badges/version/GSODRdata" alt="CRAN_Status_Badge"></a></li>
 <li><a href="https://zenodo.org/badge/latestdoi/78181238"><img src="https://zenodo.org/badge/78181238.svg" alt="DOI"></a></li>
+<li><a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed."></a></li>
 </ul>
 </div>
 </div>
