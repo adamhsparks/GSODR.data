@@ -87,7 +87,7 @@ CHELSA data is based on a quasi-mechanistic statistical down scaling of the ERA 
 
 ### Source
  
-CHELSA climate layers (http://chelsa-climate.org)
+CHELSA climate layers (<http://chelsa-climate.org>)
 
 ### Reference
  
@@ -202,9 +202,34 @@ The CRU CL v. 2.0 data set (New *et al.* 2002) comprises monthly grids of observ
   * CRU_CL2_0_wnd_10 - Mean October 10 metre wind speed [metres per second]  
   * CRU_CL2_0_wnd_11 - Mean November 10 metre wind speed [metres per second]  
   * CRU_CL2_0_wnd_12 - Mean December 10 metre wind speed [metres per second]  
-
+  * CRU_CL2_0_tmp_01 - Mean January minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_02 - Mean February minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_03 - Mean March minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_04 - Mean April minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_05 - Mean May minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_06 - Mean June minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_07 - Mean July minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_08 - Mean August minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_09 - Mean September minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_10 - Mean October minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_11 - Mean November minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_12 - Mean December minimum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_01 - Mean January maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_02 - Mean February maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_03 - Mean March maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_04 - Mean Apri maximuml temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_05 - Mean May maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_06 - Mean June maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_07 - Mean July maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_08 - Mean August maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_09 - Mean September maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_10 - Mean October maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_11 - Mean November maximum temperature [degrees Celsius]  
+  * CRU_CL2_0_tmp_12 - Mean December maximum temperature [degrees Celsius]  
+  
 ### Source
-https://crudata.uea.ac.uk/cru/data/hrg/tmc/
+
+<https://crudata.uea.ac.uk/cru/data/hrg/tmc/>
 
 ### Reference
   
@@ -237,7 +262,7 @@ ESA's CCI-LC snow cover probability <http://maps.elie.ucl.ac.be/CCI/viewer/index
 
 ### Source
 
-ESA\'s CCI-LC snow cover probability (http://maps.elie.ucl.ac.be/CCI/viewer/index.php)
+ESA\'s CCI-LC snow cover probability (<http://maps.elie.ucl.ac.be/CCI/viewer/index.php>)
 
 
 ------
@@ -268,7 +293,7 @@ monthly cloud frequencies from 15 years of twice-daily MODIS satellite images.
 
 ### Source
 
-EarthEnv MODIS cloud fraction (http://www.earthenv.org/cloud)
+EarthEnv MODIS cloud fraction (<http://www.earthenv.org/cloud>)
 
 ### Reference
 
@@ -279,7 +304,7 @@ e1002415.
 ## WorlClim_Bio
 
 WorlClim Global Climate Data - Free climate data for ecological
-modeling and GIS http://www.worldclim.org/bioclim (Hijmans *et al.* 2004).
+modeling and GIS <http://www.worldclim.org/bioclim> (Hijmans *et al.* 2004).
 
 ### `WorldClim_Bio()` A data frame with 26231 observations of 20 variables:
 
@@ -308,12 +333,12 @@ modeling and GIS http://www.worldclim.org/bioclim (Hijmans *et al.* 2004).
 
 WorldClim are freely available, average monthly climate data. Current
 conditions (interpolations of observed data, representative of 1960-1990)
-are freely available for download from http://www.worldclim.org/version1.
+are freely available for download from <http://www.worldclim.org/version1>.
 Climatic elements include minimum, mean and Mean Maximum temperature and
 precipitation along with derived bioclimatic variables. WorldClim 1.4
 (current conditions) are released under a Creative Commons
 Attribution-ShareAlike 4.0 International License
-http://creativecommons.org/licenses/by-sa/4.0/.
+<http://creativecommons.org/licenses/by-sa/4.0/>.
 
 
 ### Reference
@@ -325,7 +350,7 @@ land areas. *International Journal of Climatology* **25**:1965-1978.
 ## WorlClim_Clim
 
 WorlClim Global Climate Data - Free climate data for ecological
-modeling and GIS http://www.worldclim.org/version1.
+modeling and GIS <http://www.worldclim.org/version1>.
 
 ### `WorldClim_Clim()` A data frame with 26231 observations of 49 variables:
 
@@ -383,12 +408,12 @@ modeling and GIS http://www.worldclim.org/version1.
 
 WorldClim are freely available, average monthly climate data. Current
 conditions (interpolations of observed data, representative of 1960-1990)
-are freely available for download from http://www.worldclim.org/version1.
+are freely available for download from <http://www.worldclim.org/version1>.
 Climatic elements include minimum, mean, maximum temperature and
 precipitation along with derived bioclimatic variables. WorldClim 1.4
 (current conditions) are released under a Creative Commons
 Attribution-ShareAlike 4.0 International License
-http://creativecommons.org/licenses/by-sa/4.0/.
+<http://creativecommons.org/licenses/by-sa/4.0/>.
 
 ### Note 
 
