@@ -2,6 +2,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true)](https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/GSODRdata)]()
 [![DOI](https://zenodo.org/badge/78181238.svg)](https://zenodo.org/badge/latestdoi/78181238)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
 # _GSODRdata_
 
@@ -27,8 +28,10 @@ Six data frames of climate data are provided from various sources for GSOD stati
   is based on a quasi-mechanistic statistical down scaling of the ERA interim global circulation model (Karger *et al.* 2016). ESA's CCI-LC cloud probability monthly averages are based on the MODIS snow products (MOD10A2).
 
   * **CRU_CL_2** - The [CRU CL v. 2.0 data-set](https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html) 
-  (New *et al.* 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. In addition minimum and maximum temperature may be
-  deduced from mean temperature and diurnal temperature range (see [FAQ](https://crudata.uea.ac.uk/~timm/grid/faq.html)).
+  (New *et al.* 2002) comprises monthly grids of observed mean climate from 1961-1990, and covering the global land surface at a 10 minute spatial resolution. There are eight climatic variables available, and also the elevations on the grid: diurnal temperature range, precipitation, mean temperature, wet-day frequency, frost-day frequency, relative humidity, sunshine, and wind-speed. Minimum and maximum temperature are also
+  calculated using [getCRUCLdata](https://ropensci.github.io/getCRUCLdata/) and
+  included in this data set, (see
+  [FAQ](https://crudata.uea.ac.uk/~timm/grid/faq.html)).
 
   * **ESACCI** - ESA's CCI-LC snow cover probability 
   <http://maps.elie.ucl.ac.be/CCI/viewer/index.php>.
@@ -74,6 +77,7 @@ devtools::update_packages("GSODRdata")
 -----
 
 # Meta 
+
 If you find bugs or have an idea to make this package better, please [file a report with us](https://github.com/adamhsparks/GSODRdata/issues).
 
 License: MIT
