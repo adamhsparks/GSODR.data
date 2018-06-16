@@ -1,4 +1,16 @@
 
+# GSODRData v0.2.10
+- Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
+locations as of 17/06/2018
+
+- Adds minimum temperature and maximum temperature to CRU data
+
+- Polishes documentation so it's easier to read and more informative
+
+# GSODRData v0.2.9
+- Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
+locations as of 30/03/2018
+
 # GSODRData v0.2.8
 - Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
 locations as of 27/11/2017
