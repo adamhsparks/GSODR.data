@@ -27,7 +27,6 @@ resolution.
 
 ```{r session_setup}
 library(raster)
-
 ```
 ## Get WorlClim Bio Data
 
@@ -98,5 +97,5 @@ International Journal of Climatology 25: 1965-1978.
 ## R System Information
 
 ```{r system information, echo=FALSE}
-devtools::session_info()
+sessioninfo::session_info()
 ```
