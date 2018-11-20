@@ -98,16 +98,13 @@ Suggests: <a href="https://cran.r-project.org/package=GSODR">GSODR</a></p>
 <li><p><strong>WorldClim_Clim 1.4</strong> - <a href="http://www.worldclim.org/version1">WorldClim Global Climate Data - Free climate data for ecological modeling and GIS</a> (Hijmans et al. 2004) provides freely available, average monthly climate data. Current conditions (interpolations of observed data, representative of 1960-1990) are freely available for download from <a href="http://www.worldclim.org/version1" class="uri">http://www.worldclim.org/version1</a>.</p></li>
 </ul>
 <hr>
-</div>
-<div id="quick-start" class="section level2">
-<h2 class="hasAnchor">
-<a href="#quick-start" class="anchor"></a>Quick Start</h2>
+<p>i## Quick Start</p>
 <div id="install" class="section level3">
 <h3 class="hasAnchor">
 <a href="#install" class="anchor"></a>Install</h3>
 <p>This package is only available from GitHub due to its large size. It provides optional data for use with the <a href="http://adamhsparks.github.io/GSODR/"><em>GSODR</em> package</a>, some of which are demonstrated with examples in the <a href="http://adamhsparks.github.io/GSODR/articles/index.html"><em>GSODR</em> documentation</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co">#install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" title="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"adamhsparks/GSODRdata"</span>, <span class="dt">build_vignettes =</span> <span class="ot">TRUE</span>)</a>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co">#install.packages("remotes")</span></a>
+<a class="sourceLine" id="cb1-2" title="2">remotes<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"adamhsparks/GSODRdata"</span>, <span class="dt">build_vignettes =</span> <span class="ot">TRUE</span>)</a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="kw">library</span>(<span class="st">"GSODRdata"</span>)</a></code></pre></div>
 </div>
 <div id="using-gsodrdata" class="section level3">
