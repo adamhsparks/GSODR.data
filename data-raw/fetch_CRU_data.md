@@ -21,26 +21,6 @@ if (!require("getCRUCLdata")) {
 
     ## Loading required package: getCRUCLdata
 
-    ## 
-    ## CRU CL 2.0 data are provided by the Climate Research Unit
-    ## at the University of East Anglia. This data-set is owned by
-    ## its author, Mark New. It is being distributed, where
-    ## necessary by Tim Mitchell.
-    ## 
-    ## Users should refer to the published literature for details
-    ## of it.
-    ## 
-    ## The data set may be freely used for non-commerical
-    ## scientific and educational purposes, provided it is
-    ## described as CRU CL 2.0 and attributed to:
-    ## 
-    ## New, M., Lister, D., Hulme, M. and Makin, I., 2002: A
-    ## high-resolution data set of surface climate over global
-    ## land areas. Climate Research 21:1-25
-    ## 
-    ## If you use getCRUCLdata, please cite it properly. For citation
-    ## information see `citation(getCRUCLdata)`.
-
 ## Get CRU v. CL 2.0 data
 
 ``` r
@@ -61,21 +41,23 @@ CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
       |                                                                       
       |                                                                 |   0%
       |                                                                       
-      |========                                                         |  12%
+      |=========                                                        |  14%
       |                                                                       
-      |================                                                 |  25%
+      |===================                                              |  29%
       |                                                                       
-      |========================                                         |  38%
+      |============================                                     |  43%
       |                                                                       
-      |================================                                 |  50%
+      |=====================================                            |  57%
       |                                                                       
-      |=========================================                        |  62%
+      |==============================================                   |  71%
       |                                                                       
-      |=================================================                |  75%
-      |                                                                       
-      |=========================================================        |  88%
+      |========================================================         |  86%
       |                                                                       
       |=================================================================| 100%
+
+    ## Warning in data.table::fread(paste0("gzip -dc ", files[[1]]), header =
+    ## FALSE): Discarded single-line footer: <<21.583 14.750 15.2 16.3 15.9 17.0
+    ## 16.4 16.1 14.4 14.2 >>
 
 ## Extract data for station locations
 
@@ -306,7 +288,12 @@ names(CRU_CL_2) <- c("STNID", CRU_stack_names)
 devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## Saving CRU_CL_2 as CRU_CL_2.rda to /Users/adamsparks/Development/GSODRdata/data
+    ## Warning: 'devtools::use_data' is deprecated.
+    ## Use 'usethis::use_data()' instead.
+    ## See help("Deprecated") and help("devtools-deprecated").
+
+    ## ✔ Setting active project to '/Users/asparks/Development/GSODRdata'
+    ## ✔ Saving 'CRU_CL_2' to 'data/CRU_CL_2.rda'
 
 # Data reference and abstract
 
@@ -345,44 +332,65 @@ devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
     ## ─ Session info ──────────────────────────────────────────────────────────
     ##  setting  value                       
     ##  version  R version 3.5.1 (2018-07-02)
-    ##  os       macOS High Sierra 10.13.6   
-    ##  system   x86_64, darwin17.7.0        
+    ##  os       macOS  10.14.1              
+    ##  system   x86_64, darwin18.0.0        
     ##  ui       X11                         
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
+    ##  ctype    en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2018-08-17                  
+    ##  date     2018-11-20                  
     ## 
     ## ─ Packages ──────────────────────────────────────────────────────────────
-    ##  package      * version date       source                            
-    ##  backports      1.1.2   2017-12-13 CRAN (R 3.5.1)                    
-    ##  clisymbols     1.2.0   2017-05-21 CRAN (R 3.5.1)                    
-    ##  colorout     * 1.2-0   2018-08-16 Github (jalvesaq/colorout@cc5fbfa)
-    ##  curl           3.2     2018-03-28 CRAN (R 3.5.1)                    
-    ##  data.table     1.11.4  2018-05-27 CRAN (R 3.5.1)                    
-    ##  devtools       1.13.6  2018-06-27 CRAN (R 3.5.1)                    
-    ##  digest         0.6.15  2018-01-28 CRAN (R 3.5.1)                    
-    ##  evaluate       0.11    2018-07-17 CRAN (R 3.5.1)                    
-    ##  getCRUCLdata * 0.2.4   2018-06-16 CRAN (R 3.5.1)                    
-    ##  GSODR        * 1.2.1   2018-06-16 CRAN (R 3.5.1)                    
-    ##  hoardr         0.2.0   2017-05-10 CRAN (R 3.5.1)                    
-    ##  htmltools      0.3.6   2017-04-28 CRAN (R 3.5.1)                    
-    ##  httr           1.3.1   2017-08-20 CRAN (R 3.5.1)                    
-    ##  knitr          1.20    2018-02-20 CRAN (R 3.5.1)                    
-    ##  lattice        0.20-35 2017-03-25 CRAN (R 3.5.1)                    
-    ##  magrittr       1.5     2014-11-22 CRAN (R 3.5.1)                    
-    ##  memoise        1.1.0   2017-04-21 CRAN (R 3.5.1)                    
-    ##  R6             2.2.2   2017-06-17 CRAN (R 3.5.1)                    
-    ##  rappdirs       0.3.1   2016-03-28 CRAN (R 3.5.1)                    
-    ##  raster         2.6-7   2017-11-13 CRAN (R 3.5.1)                    
-    ##  Rcpp           0.12.18 2018-07-23 CRAN (R 3.5.1)                    
-    ##  rgdal          1.3-4   2018-08-03 CRAN (R 3.5.1)                    
-    ##  rlang          0.2.2   2018-08-16 CRAN (R 3.5.1)                    
-    ##  rmarkdown      1.10    2018-06-11 CRAN (R 3.5.1)                    
-    ##  rprojroot      1.3-2   2018-01-03 CRAN (R 3.5.1)                    
-    ##  sessioninfo    1.0.0   2017-06-21 CRAN (R 3.5.1)                    
-    ##  sp             1.3-1   2018-06-05 CRAN (R 3.5.1)                    
-    ##  stringi        1.2.4   2018-07-20 CRAN (R 3.5.1)                    
-    ##  stringr        1.3.1   2018-05-10 CRAN (R 3.5.1)                    
-    ##  withr          2.1.2   2018-03-15 CRAN (R 3.5.1)                    
-    ##  yaml           2.2.0   2018-07-25 CRAN (R 3.5.1)
+    ##  package      * version date       lib source                            
+    ##  assertthat     0.2.0   2017-04-11 [1] CRAN (R 3.5.1)                    
+    ##  backports      1.1.2   2017-12-13 [1] CRAN (R 3.5.1)                    
+    ##  base64enc      0.1-3   2015-07-28 [1] CRAN (R 3.5.1)                    
+    ##  callr          3.0.0   2018-08-24 [1] CRAN (R 3.5.1)                    
+    ##  cli            1.0.1   2018-09-25 [1] CRAN (R 3.5.1)                    
+    ##  clisymbols     1.2.0   2017-05-21 [1] CRAN (R 3.5.1)                    
+    ##  codetools      0.2-15  2016-10-05 [2] CRAN (R 3.5.1)                    
+    ##  colorout     * 1.2-0   2018-10-17 [1] Github (jalvesaq/colorout@cc5fbfa)
+    ##  crayon         1.3.4   2017-09-16 [1] CRAN (R 3.5.1)                    
+    ##  curl           3.2     2018-03-28 [1] CRAN (R 3.5.1)                    
+    ##  data.table     1.11.8  2018-09-30 [1] CRAN (R 3.5.1)                    
+    ##  desc           1.2.0   2018-05-01 [1] CRAN (R 3.5.1)                    
+    ##  devtools       2.0.1   2018-10-26 [1] CRAN (R 3.5.1)                    
+    ##  digest         0.6.18  2018-10-10 [1] CRAN (R 3.5.1)                    
+    ##  evaluate       0.12    2018-10-09 [1] CRAN (R 3.5.1)                    
+    ##  fs             1.2.6   2018-08-23 [1] CRAN (R 3.5.1)                    
+    ##  getCRUCLdata * 0.2.5   2018-09-12 [1] CRAN (R 3.5.1)                    
+    ##  glue           1.3.0   2018-07-17 [1] CRAN (R 3.5.1)                    
+    ##  GSODR        * 1.3.0   2018-11-19 [1] CRAN (R 3.5.1)                    
+    ##  hoardr         0.5.0   2018-10-13 [1] CRAN (R 3.5.1)                    
+    ##  htmltools      0.3.6   2017-04-28 [1] CRAN (R 3.5.1)                    
+    ##  httr           1.3.1   2017-08-20 [1] CRAN (R 3.5.1)                    
+    ##  knitr          1.20    2018-02-20 [1] CRAN (R 3.5.1)                    
+    ##  lattice        0.20-35 2017-03-25 [2] CRAN (R 3.5.1)                    
+    ##  magrittr       1.5     2014-11-22 [1] CRAN (R 3.5.1)                    
+    ##  memoise        1.1.0   2017-04-21 [1] CRAN (R 3.5.1)                    
+    ##  pkgbuild       1.0.2   2018-10-16 [1] CRAN (R 3.5.1)                    
+    ##  pkgload        1.0.2   2018-10-29 [1] CRAN (R 3.5.1)                    
+    ##  prettyunits    1.0.2   2015-07-13 [1] CRAN (R 3.5.1)                    
+    ##  processx       3.2.0   2018-08-16 [1] CRAN (R 3.5.1)                    
+    ##  ps             1.2.1   2018-11-06 [1] CRAN (R 3.5.1)                    
+    ##  R6             2.3.0   2018-10-04 [1] CRAN (R 3.5.1)                    
+    ##  rappdirs       0.3.1   2016-03-28 [1] CRAN (R 3.5.1)                    
+    ##  raster         2.8-4   2018-11-03 [1] CRAN (R 3.5.1)                    
+    ##  Rcpp           1.0.0   2018-11-07 [1] CRAN (R 3.5.1)                    
+    ##  remotes        2.0.2   2018-10-30 [1] CRAN (R 3.5.1)                    
+    ##  rgdal          1.3-6   2018-10-16 [1] CRAN (R 3.5.1)                    
+    ##  rlang          0.3.0.1 2018-10-25 [1] CRAN (R 3.5.1)                    
+    ##  rmarkdown      1.10    2018-06-11 [1] CRAN (R 3.5.1)                    
+    ##  rprojroot      1.3-2   2018-01-03 [1] CRAN (R 3.5.1)                    
+    ##  sessioninfo    1.1.1   2018-11-05 [1] CRAN (R 3.5.1)                    
+    ##  sp             1.3-1   2018-06-05 [1] CRAN (R 3.5.1)                    
+    ##  stringi        1.2.4   2018-07-20 [1] CRAN (R 3.5.1)                    
+    ##  stringr        1.3.1   2018-05-10 [1] CRAN (R 3.5.1)                    
+    ##  testthat       2.0.1   2018-10-13 [1] CRAN (R 3.5.1)                    
+    ##  usethis        1.4.0   2018-08-14 [1] CRAN (R 3.5.1)                    
+    ##  withr          2.1.2   2018-03-15 [1] CRAN (R 3.5.1)                    
+    ##  yaml           2.2.0   2018-07-25 [1] CRAN (R 3.5.1)                    
+    ## 
+    ## [1] /Users/asparks/Library/R/3.x/library
+    ## [2] /usr/local/Cellar/r/3.5.1/lib/R/library

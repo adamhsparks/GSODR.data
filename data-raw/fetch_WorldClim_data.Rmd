@@ -9,10 +9,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 WorldClim are freely available, average monthly climate data. Current conditions
 (interpolations of observed data, representative of 1960-1990) are freely
-available for download from http://www.worldclim.org/version1. Climatic elements
-include minimum, mean and maximum temperature and precipitation along with
-derived bioclimatic variables. WorldClim 1.4 (current conditions) are released
-under a
+available for download from <http://www.worldclim.org/version1>. Climatic
+elements include minimum, mean and maximum temperature and precipitation along
+with derived bioclimatic variables. WorldClim 1.4 (current conditions) are
+released under a
 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 # Download, extract and merge WorldClim data with provided GSOD climate data
