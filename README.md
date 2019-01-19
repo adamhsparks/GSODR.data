@@ -49,7 +49,7 @@ are freely available for download from http://www.worldclim.org/version1.
 
 -----
 
-i## Quick Start
+## Quick Start
 
 ### Install
 
