@@ -1,10 +1,9 @@
  # GSODRData 0.2.12
-|  2
--  3 §§ Minor changes
-2  4
-2  5   • Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
-2  6   locations as of 19/01/2019
-2  7
+ 
+ ## Minor changes
+
+• Updates for WorldClim and CRU CL 2.0 data to correspond with new GSOD
+locations as of 19/01/2019
 
 # GSODRData 0.2.10
 
