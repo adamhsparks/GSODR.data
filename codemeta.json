@@ -10,14 +10,14 @@
   "codeRepository": "https://github.com/adamhsparks/GSODRdata",
   "issueTracker": "https://github.com/adamhsparks/GSODRdata/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.2.10",
+  "version": "0.2.12",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.0",
+    "version": "3.5.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.0 (2018-04-23)",
+  "runtimePlatform": "R version 3.5.2 (2018-12-20)",
   "author": [
     {
       "@type": "Person",
@@ -86,19 +86,6 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "roxygen2",
-      "name": "roxygen2",
-      "version": ">= 6.0.1",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=roxygen2"
     }
   ],
   "softwareRequirements": [
@@ -112,7 +99,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata/blob/master/README.md",
-  "fileSize": "7218.912KB",
+  "fileSize": "7212.821KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
@@ -139,5 +126,6 @@
   ],
   "applicationCategory": "Tools",
   "keywords": ["ecological-modelling", "meteorological-data", "global-weather", "weather", "weather-data", "meteorology", "station-data", "surface-weather", "climate-data", "temperature", "surface-climate", "gsod", "r", "gis", "rstats"],
-  "developmentStatus": "http://www.repostatus.org/#active"
+  "developmentStatus": "http://www.repostatus.org/#active",
+  "relatedLink": "https://adamhsparks.github.io/GSODRdata/"
 }
