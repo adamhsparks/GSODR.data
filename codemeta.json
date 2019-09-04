@@ -10,14 +10,14 @@
   "codeRepository": "https://github.com/adamhsparks/GSODRdata",
   "issueTracker": "https://github.com/adamhsparks/GSODRdata/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.2",
+    "version": "3.6.1",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.2 (2018-12-20)",
+  "runtimePlatform": "R version 3.6.1 (2019-07-05)",
   "author": [
     {
       "@type": "Person",
@@ -99,7 +99,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata/blob/master/README.md",
-  "fileSize": "7212.821KB",
+  "fileSize": "6985.343KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
@@ -127,5 +127,8 @@
   "applicationCategory": "Tools",
   "keywords": ["ecological-modelling", "meteorological-data", "global-weather", "weather", "weather-data", "meteorology", "station-data", "surface-weather", "climate-data", "temperature", "surface-climate", "gsod", "r", "gis", "rstats"],
   "developmentStatus": "http://www.repostatus.org/#active",
-  "relatedLink": "https://adamhsparks.github.io/GSODRdata/"
+  "relatedLink": "https://adamhsparks.github.io/GSODRdata/",
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {}
 }
