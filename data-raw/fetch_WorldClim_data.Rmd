@@ -83,9 +83,9 @@ names(WorldClim_Bio)[1] <- c("STNID")
 ## Save new data frames to disk for distribution with R package
 
 ```{r save}
-devtools::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
+usethis::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
 
-devtools::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
+usethis::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
 ```
 # Reference
 

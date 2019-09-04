@@ -37,7 +37,7 @@ CRU_stack <- getCRUCLdata::get_CRU_stack(pre = TRUE,
                                          sunp = TRUE,
                                          frs = TRUE,
                                          wnd = TRUE,
-                                         cache = TRUE)
+                                         cache = FALSE)
 ```
 
 ## Extract data for station locations
@@ -266,7 +266,7 @@ names(CRU_CL_2) <- c("STNID", CRU_stack_names)
 ## Save new data to disk for distribution with R package
 
 ```{r save}
-devtools::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
+usethis::use_data(CRU_CL_2, overwrite = TRUE, compress = "bzip2")
 ```
 
 # Data reference and abstract
