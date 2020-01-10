@@ -14,10 +14,10 @@
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.1",
+    "version": "3.6.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.1 (2019-07-05)",
+  "runtimePlatform": "R version 3.6.2 (2019-12-12)",
   "author": [
     {
       "@type": "Person",
@@ -99,7 +99,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata/blob/master/README.md",
-  "fileSize": "6985.343KB",
+  "fileSize": "7017.644KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
