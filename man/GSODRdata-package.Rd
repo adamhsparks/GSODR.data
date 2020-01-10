@@ -3,7 +3,7 @@
 \docType{package}
 \name{GSODRdata-package}
 \alias{GSODRdata-package}
-\title{GSODRdata: Climate and Ecological Data for the GSODR Package}
+\title{GSODRdata: climate and ecological data for the GSODR package}
 \source{
 \url{http://chelsa-climate.org/} \cr
 \url{https://crudata.uea.ac.uk/~timm/grid/CRU_CL_2_0.html} \cr

@@ -4,7 +4,7 @@
 \name{CRU_CL_2}
 \alias{CRU_CL_2}
 \title{CRU_CL_2.0}
-\format{An object of class \code{data.frame} with 23642 rows and 121 columns.}
+\format{An object of class \code{data.frame} with 23665 rows and 121 columns.}
 \usage{
 CRU_CL_2
 }

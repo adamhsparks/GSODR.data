@@ -26,7 +26,7 @@
 \item{bio18}{Precipitation of Warmest Quarter}
 \item{bio19}{Precipitation of Coldest Quarter}
 }}
-\format{An object of class \code{data.frame} with 25007 rows and 20 columns.}
+\format{An object of class \code{data.frame} with 25033 rows and 20 columns.}
 \source{
 WorlClim Global Climate Data - Free climate data for ecological
 modeling and GIS \url{http://www.worldclim.org/bioclim}.

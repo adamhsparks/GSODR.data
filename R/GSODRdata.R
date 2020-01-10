@@ -1,4 +1,4 @@
-#' GSODRdata: Climate and Ecological Data for the GSODR Package
+#' GSODRdata: climate and ecological data for the GSODR package
 #'
 #' This data-only package was created for distributing data useful to the
 #' \code{GSODR} package and used in examples.
