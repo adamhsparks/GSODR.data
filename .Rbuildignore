@@ -9,3 +9,4 @@
 ^CONDUCT\.md$
 ^codemeta\.json$
 ^tic\.R$
+^.github$
