@@ -16,9 +16,6 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@master
 
-      - name: Install XQuartz
-        run: brew cask install xquartz
-
       - name: Query dependencies
         run: |
           install.packages('remotes')
@@ -45,5 +42,4 @@ jobs:
 
       - name: Deploy package
         run: |
-         export DISPLAY=:99 # for rgl
          Rscript -e "pkgdown::deploy_to_branch(new_process = FALSE)"
