@@ -86,14 +86,18 @@ names(WorldClim_Bio)[1] <- c("STNID")
 usethis::use_data(WorldClim_Clim, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## ✔ Setting active project to '/Users/adamsparks/Sources/GitHub/GSODRdata'
-    ## ✔ Saving 'WorldClim_Clim' to 'data/WorldClim_Clim.rda'
+    ## ✓ Setting active project to '/Users/adamsparks/Sources/GitHub/R/GSODRdata'
+
+    ## ✓ Saving 'WorldClim_Clim' to 'data/WorldClim_Clim.rda'
+
+    ## ● Document your data (see 'https://r-pkgs.org/data.html')
 
 ``` r
 usethis::use_data(WorldClim_Bio, overwrite = TRUE, compress = "bzip2")
 ```
 
-    ## ✔ Saving 'WorldClim_Bio' to 'data/WorldClim_Bio.rda'
+    ## ✓ Saving 'WorldClim_Bio' to 'data/WorldClim_Bio.rda'
+    ## ● Document your data (see 'https://r-pkgs.org/data.html')
 
 # Reference
 
@@ -105,48 +109,53 @@ areas. International Journal of Climatology 25: 1965-1978.
 
     ## ─ Session info ───────────────────────────────────────────────────────────────
     ##  setting  value                       
-    ##  version  R version 3.6.2 (2019-12-12)
-    ##  os       macOS Catalina 10.15.2      
-    ##  system   x86_64, darwin15.6.0        
+    ##  version  R version 4.0.1 (2020-06-06)
+    ##  os       macOS Catalina 10.15.5      
+    ##  system   x86_64, darwin17.0          
     ##  ui       X11                         
     ##  language (EN)                        
     ##  collate  en_AU.UTF-8                 
     ##  ctype    en_AU.UTF-8                 
     ##  tz       Australia/Brisbane          
-    ##  date     2020-01-10                  
+    ##  date     2020-06-13                  
     ## 
     ## ─ Packages ───────────────────────────────────────────────────────────────────
-    ##  package     * version date       lib source        
-    ##  assertthat    0.2.1   2019-03-21 [1] CRAN (R 3.6.0)
-    ##  backports     1.1.5   2019-10-02 [1] CRAN (R 3.6.0)
-    ##  cli           2.0.1   2020-01-08 [1] CRAN (R 3.6.2)
-    ##  clisymbols    1.2.0   2017-05-21 [1] CRAN (R 3.6.0)
-    ##  codetools     0.2-16  2018-12-24 [1] CRAN (R 3.6.2)
-    ##  crayon        1.3.4   2017-09-16 [1] CRAN (R 3.6.0)
-    ##  data.table    1.12.8  2019-12-09 [1] CRAN (R 3.6.0)
-    ##  digest        0.6.23  2019-11-23 [1] CRAN (R 3.6.0)
-    ##  evaluate      0.14    2019-05-28 [1] CRAN (R 3.6.0)
-    ##  fansi         0.4.1   2020-01-08 [1] CRAN (R 3.6.2)
-    ##  fs            1.3.1   2019-05-06 [1] CRAN (R 3.6.0)
-    ##  glue          1.3.1   2019-03-12 [1] CRAN (R 3.6.0)
-    ##  GSODR       * 2.0.0   2020-01-10 [1] CRAN (R 3.6.2)
-    ##  htmltools     0.4.0   2019-10-04 [1] CRAN (R 3.6.0)
-    ##  knitr         1.26    2019-11-12 [1] CRAN (R 3.6.0)
-    ##  lattice       0.20-38 2018-11-04 [1] CRAN (R 3.6.2)
-    ##  magrittr      1.5     2014-11-22 [1] CRAN (R 3.6.0)
-    ##  raster      * 3.0-7   2019-09-24 [1] CRAN (R 3.6.0)
-    ##  Rcpp          1.0.3   2019-11-08 [1] CRAN (R 3.6.0)
-    ##  rgdal         1.4-8   2019-11-27 [1] CRAN (R 3.6.0)
-    ##  rlang         0.4.2   2019-11-23 [1] CRAN (R 3.6.0)
-    ##  rmarkdown     2.0     2019-12-12 [1] CRAN (R 3.6.0)
-    ##  rprojroot     1.3-2   2018-01-03 [1] CRAN (R 3.6.0)
-    ##  sessioninfo   1.1.1   2018-11-05 [1] CRAN (R 3.6.0)
-    ##  sp          * 1.3-2   2019-11-07 [1] CRAN (R 3.6.0)
-    ##  stringi       1.4.4   2020-01-09 [1] CRAN (R 3.6.2)
-    ##  stringr       1.4.0   2019-02-10 [1] CRAN (R 3.6.0)
-    ##  usethis       1.5.1   2019-07-04 [1] CRAN (R 3.6.0)
-    ##  withr         2.1.2   2018-03-15 [1] CRAN (R 3.6.0)
-    ##  xfun          0.11    2019-11-12 [1] CRAN (R 3.6.0)
-    ##  yaml          2.2.0   2018-07-25 [1] CRAN (R 3.6.0)
+    ##  package     * version    date       lib source                             
+    ##  assertthat    0.2.1      2019-03-21 [1] CRAN (R 4.0.0)                     
+    ##  backports     1.1.7      2020-05-13 [1] CRAN (R 4.0.0)                     
+    ##  cli           2.0.2      2020-02-28 [1] CRAN (R 4.0.0)                     
+    ##  clisymbols    1.2.0      2017-05-21 [1] CRAN (R 4.0.0)                     
+    ##  codetools     0.2-16     2018-12-24 [2] CRAN (R 4.0.1)                     
+    ##  crayon        1.3.4.9000 2020-06-12 [1] Github (r-lib/crayon@dcf6d44)      
+    ##  data.table    1.12.8     2019-12-09 [1] CRAN (R 4.0.0)                     
+    ##  desc          1.2.0      2018-05-01 [1] CRAN (R 4.0.0)                     
+    ##  digest        0.6.25     2020-02-23 [1] CRAN (R 4.0.0)                     
+    ##  evaluate      0.14       2019-05-28 [1] CRAN (R 4.0.0)                     
+    ##  fansi         0.4.1      2020-01-08 [1] CRAN (R 4.0.0)                     
+    ##  fs            1.4.1      2020-04-04 [1] CRAN (R 4.0.0)                     
+    ##  glue          1.4.1      2020-05-13 [1] CRAN (R 4.0.0)                     
+    ##  GSODR       * 2.1.0.9000 2020-06-10 [1] CRAN (R 4.0.1)                     
+    ##  htmltools     0.4.0      2019-10-04 [1] CRAN (R 4.0.0)                     
+    ##  knitr         1.28       2020-02-06 [1] CRAN (R 4.0.0)                     
+    ##  lattice       0.20-41    2020-04-02 [2] CRAN (R 4.0.1)                     
+    ##  magrittr      1.5        2014-11-22 [1] CRAN (R 4.0.0)                     
+    ##  prompt        1.0.0      2020-04-25 [1] Github (gaborcsardi/prompt@b332c42)
+    ##  R6            2.4.1      2019-11-12 [1] CRAN (R 4.0.0)                     
+    ##  raster      * 3.1-5      2020-04-19 [1] CRAN (R 4.0.0)                     
+    ##  Rcpp          1.0.4.6    2020-04-09 [1] CRAN (R 4.0.0)                     
+    ##  rgdal         1.5-8      2020-05-28 [1] CRAN (R 4.0.0)                     
+    ##  rlang         0.4.6      2020-05-02 [1] CRAN (R 4.0.0)                     
+    ##  rmarkdown     2.2        2020-05-31 [1] CRAN (R 4.0.0)                     
+    ##  rprojroot     1.3-2      2018-01-03 [1] CRAN (R 4.0.0)                     
+    ##  rstudioapi    0.11       2020-02-07 [1] CRAN (R 4.0.0)                     
+    ##  sessioninfo   1.1.1      2018-11-05 [1] CRAN (R 4.0.0)                     
+    ##  sp          * 1.4-2      2020-05-20 [1] CRAN (R 4.0.0)                     
+    ##  stringi       1.4.6      2020-02-17 [1] CRAN (R 4.0.0)                     
+    ##  stringr       1.4.0      2019-02-10 [1] CRAN (R 4.0.0)                     
+    ##  usethis       1.6.1      2020-04-29 [1] CRAN (R 4.0.0)                     
+    ##  withr         2.2.0      2020-04-20 [1] CRAN (R 4.0.0)                     
+    ##  xfun          0.14       2020-05-20 [1] CRAN (R 4.0.0)                     
+    ##  yaml          2.2.1      2020-02-01 [1] CRAN (R 4.0.0)                     
     ## 
-    ## [1] /Library/Frameworks/R.framework/Versions/3.6/Resources/library
+    ## [1] /Users/adamsparks/.R/library
+    ## [2] /Library/Frameworks/R.framework/Versions/4.0/Resources/library
