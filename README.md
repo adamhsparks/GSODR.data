@@ -1,5 +1,4 @@
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/GSODRdata.svg?branch=master)](https://travis-ci.org/adamhsparks/GSODRdata)
-[![Build status](https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true)](https://ci.appveyor.com/api/projects/status/yf34qfha7662val4/branch/master?svg=true)
+
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/GSODRdata)]()
 [![DOI](https://zenodo.org/badge/78181238.svg)](https://zenodo.org/badge/latestdoi/78181238)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
