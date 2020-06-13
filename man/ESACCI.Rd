@@ -19,7 +19,9 @@
 \item{ESACCI_snow_prob_Oct_500m}{Mean October snow cover probability}
 \item{ESACCI_snow_prob_Sep_500m}{Mean September snow cover probability}
 }}
-\format{An object of class \code{data.frame} with 23927 rows and 13 columns.}
+\format{
+An object of class \code{data.frame} with 23927 rows and 13 columns.
+}
 \source{
 ESA's CCI-LC snow cover probability
 (\url{http://maps.elie.ucl.ac.be/CCI/viewer/index.php})

@@ -55,7 +55,9 @@
 \item{prec11}{Mean Precipitation for November}
 \item{prec12}{Mean Precipitation for December}
 }}
-\format{An object of class \code{data.frame} with 25033 rows and 49 columns.}
+\format{
+An object of class \code{data.frame} with 25040 rows and 49 columns.
+}
 \source{
 WorlcClim Global Climate Data - Free climate data for ecological
 modeling and GIS \url{http://www.worldclim.org/current}.

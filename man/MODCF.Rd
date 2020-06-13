@@ -22,7 +22,9 @@
 \item{MODCF_seasonality_concentration}{Cloud fraction seasonality
 concentration}
 }}
-\format{An object of class \code{data.frame} with 23927 rows and 15 columns.}
+\format{
+An object of class \code{data.frame} with 23927 rows and 15 columns.
+}
 \source{
 EarthEnv MODIS cloud fraction (\url{http://www.earthenv.org/cloud})
 }

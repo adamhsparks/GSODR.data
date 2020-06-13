@@ -4,7 +4,9 @@
 \name{CHELSA}
 \alias{CHELSA}
 \title{CHELSA}
-\format{An object of class \code{data.frame} with 23927 rows and 46 columns.}
+\format{
+An object of class \code{data.frame} with 23927 rows and 46 columns.
+}
 \source{
 CHELSA climate layers (\url{http://chelsa-climate.org/})
 }
