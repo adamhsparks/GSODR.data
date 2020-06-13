@@ -5,12 +5,12 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "GSODRdata",
-  "description": "This data-only package was created for distributing data useful for\n    the GSODR package and illustrated in examples given in the GSODR\n    vignettes and other online documentation.",
+  "description": "This data-only package was created for distributing data useful for\n    the 'GSODR' package and illustrated in examples given in the 'GSODR'\n    vignettes and other online documentation.",
   "name": "GSODRdata: Climate and Ecological Data for the GSODR Package",
   "codeRepository": "https://github.com/adamhsparks/GSODRdata",
   "issueTracker": "https://github.com/adamhsparks/GSODRdata/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -99,7 +99,7 @@
   "contIntegration": "https://travis-ci.org/adamhsparks/GSODRdata",
   "releaseNotes": "https://github.com/adamhsparks/GSODRdata/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/GSODRdata/blob/master/README.md",
-  "fileSize": "6937.113KB",
+  "fileSize": "6937.295KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",

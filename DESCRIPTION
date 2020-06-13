@@ -1,7 +1,7 @@
 Package: GSODRdata
 Type: Package
 Title: Climate and Ecological Data for the GSODR Package
-Version: 0.2.13
+Version: 0.2.14
 Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
     email = "adamhsparks@gmail.com",
     comment = c(ORCID = "0000-0002-0061-8359")),
@@ -14,7 +14,7 @@ Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
 URL: https://github.com/adamhsparks/GSODRdata, https://adamhsparks.github.io/GSODRdata/
 BugReports: https://github.com/adamhsparks/GSODRdata/issues
 Description: This data-only package was created for distributing data useful for
-    the GSODR package and illustrated in examples given in the GSODR
+    the 'GSODR' package and illustrated in examples given in the 'GSODR'
     vignettes and other online documentation.
 Depends:
     R (>= 3.5.0)
