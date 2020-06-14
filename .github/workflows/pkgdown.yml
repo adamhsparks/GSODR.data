@@ -8,13 +8,13 @@ jobs:
   pkgdown:
     runs-on: macOS-latest
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.TOKEn }}
     steps:
       - uses: actions/checkout@v2
 
       - uses: r-lib/actions/setup-r@master
 
-      - uses: r-lib/actions/setup-pandoc@masterz
+      - uses: r-lib/actions/setup-pandoc@master
         
       - name: Query dependencies
         run: |
