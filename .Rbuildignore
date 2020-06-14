@@ -10,3 +10,5 @@
 ^codemeta\.json$
 ^tic\.R$
 ^.github$
+^doc$
+^Meta$

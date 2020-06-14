@@ -10,3 +10,5 @@ inst/doc
 *.hdr
 
 .DS_Store
+doc
+Meta

@@ -23,7 +23,6 @@ Suggests: [GSODR](https://cran.r-project.org/package=GSODR)
 
 Six data frames of climate data are provided from various sources for GSOD station locations and can be joined with data formatted by the _GSODR_ package using the `STNID` column.
 
-
   * **CHELSA** - [Climatic surfaces at 1 km resolution](http://chelsa-climate.org)
   is based on a quasi-mechanistic statistical down scaling of the ERA interim global circulation model (Karger *et al.* 2016). ESA's CCI-LC cloud probability monthly averages are based on the MODIS snow products (MOD10A2).
 

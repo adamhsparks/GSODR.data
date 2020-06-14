@@ -1,7 +1,7 @@
 Package: GSODRdata
 Type: Package
 Title: Climate and Ecological Data for the GSODR Package
-Version: 0.2.14
+Version: 0.2.15
 Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
     email = "adamhsparks@gmail.com",
     comment = c(ORCID = "0000-0002-0061-8359")),
@@ -21,7 +21,15 @@ Depends:
 Suggests:
     GSODR,
     knitr,
-    rmarkdown
+    plotKML,
+    reshape2,
+    rgdal (>= 1.1-9),
+    remotes,
+    rmarkdown,
+    roxygen2,
+    sf,
+    sp,
+    spacetime
 License: MIT + file LICENSE
 RoxygenNote: 7.1.0
 Encoding: UTF-8
