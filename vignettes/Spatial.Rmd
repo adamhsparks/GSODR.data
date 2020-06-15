@@ -6,7 +6,7 @@ output:
     toc: true
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{Using GSODR with sf}
+  %\VignetteIndexEntry{Using GSODR Data with sf}
   %\VignetteEncoding{UTF-8}
 ---
 
@@ -125,7 +125,7 @@ AUS_stations <-
 ```
 
 ```
-## Reading layer `GSOD' from data source `/private/var/folders/yv/4xy6zs3x5qsgj96389nkjvtw0000gn/T/Rtmp7zSzwE/GSOD.gpkg' using driver `GPKG'
+## Reading layer `GSOD' from data source `/private/var/folders/yv/4xy6zs3x5qsgj96389nkjvtw0000gn/T/RtmpvmNwf7/GSOD.gpkg' using driver `GPKG'
 ## Simple feature collection with 182508 features and 42 fields
 ## geometry type:  POINT
 ## dimension:      XY

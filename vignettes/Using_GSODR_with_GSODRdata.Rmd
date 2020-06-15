@@ -63,7 +63,7 @@ layers <- ogrListLayers(dsn = file.path(tempdir(), "PHL-2010.gpkg"))
 pnts <-
   readOGR(dsn = file.path(tempdir(), "PHL-2010.gpkg"), layers[1])
 #> OGR data source with driver: GPKG 
-#> Source: "/private/var/folders/yv/4xy6zs3x5qsgj96389nkjvtw0000gn/T/Rtmp7zSzwE/PHL-2010.gpkg", layer: "PHL-2010"
+#> Source: "/private/var/folders/yv/4xy6zs3x5qsgj96389nkjvtw0000gn/T/RtmpvmNwf7/PHL-2010.gpkg", layer: "PHL-2010"
 #> with 4709 features
 #> It has 42 fields
 

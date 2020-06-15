@@ -6,7 +6,7 @@ output:
     toc: true
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{Using GSODR with sf}
+  %\VignetteIndexEntry{Using GSODR Data with sf}
   %\VignetteEncoding{UTF-8}
 ---
 
