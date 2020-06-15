@@ -16,7 +16,7 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@master
 
-    - name: Brew and macOS config
+      - name: Brew and macOS config
         run: |
           brew install pkg-config
           brew install udunits
