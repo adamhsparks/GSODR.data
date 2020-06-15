@@ -119,7 +119,7 @@ jobs:
         if: runner.os == 'macOS'
         run: |
           brew tap osgeo/osgeo4mac
-          brew install Caskroom/cask udunits gdal
+          brew install udunits gdal
           brew unlink proj
           brew install osgeo-proj
           brew link --force osgeo-proj
