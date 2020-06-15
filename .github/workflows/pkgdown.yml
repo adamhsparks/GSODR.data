@@ -6,7 +6,7 @@ name: pkgdown
 
 jobs:
   pkgdown:
-    runs-on: macOS-latest
+    runs-on:  macOS-latest, r: 'latest', args: '--install-args=\"--configure-args=--with-proj-lib=/usr/local/lib/\"", "--ignore-vignettes', build_args: "--no-build-vignettes"
     env:
       GITHUB_PAT: ${{ secrets.TIC_DEPLOY_KEY }}
     steps:
