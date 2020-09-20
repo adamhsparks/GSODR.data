@@ -1,8 +1,8 @@
-
 ![R CMD Check via {tic}](https://github.com/adamhsparks/GSODRdata/workflows/R%20CMD%20Check%20via%20%7Btic%7D/badge.svg)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/GSODRdata)]()
 [![DOI](https://zenodo.org/badge/78181238.svg)](https://zenodo.org/badge/latestdoi/78181238)
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Project Status: Unsupported –  The project has reached a stable, usable state but the author(s) have ceased all work on it.](https://www.repostatus.org/badges/latest/unsupported.svg)](https://www.repostatus.org/#unsupported)
+
 
 # _GSODRdata_
 
